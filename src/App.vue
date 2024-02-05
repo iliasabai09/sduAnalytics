@@ -1,10 +1,10 @@
 <template>
-  <ULogo/>
+  <HeaderModule/>
   <RouterView />
 </template>
 
 <script setup lang="ts">
-import ULogo from '@/ui/ULogo.vue'</script>
+import HeaderModule from '@/modules/HeaderModule.vue'</script>
 
 <style scoped lang="scss">
 
