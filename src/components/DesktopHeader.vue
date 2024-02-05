@@ -3,9 +3,12 @@
     <div class="_container content">
       <UDesktopLogo/>
       <div class="links">
+        <UActionLink/>
         <ULink link="cases">Кейсы</ULink>
         <ULink link="answers">Вопрос-ответ</ULink>
       </div>
+      <div class="_spacer"></div>
+      <USmallButton>Связаться</USmallButton>
     </div>
   </header>
 </template>
@@ -13,7 +16,9 @@
 <script setup lang="ts">
 
 import UDesktopLogo from '@/ui/UDesktopLogo.vue'
-import ULink from '@/ui/ULink.vue'</script>
+import ULink from '@/ui/ULink.vue'
+import UActionLink from '@/ui/UActionLink.vue'
+import USmallButton from '@/ui/USmallButton.vue'</script>
 
 <style scoped lang="scss">
 header {
