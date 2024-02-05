@@ -4,7 +4,7 @@
   </router-link>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   link: {
     type: String,
