@@ -9,9 +9,11 @@
 }
 
 ._container {
-	max-width: 1432px;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 0 16px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 ._spacer {
