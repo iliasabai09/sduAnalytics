@@ -9,15 +9,9 @@
   </section>
 </template>
 
-<script>
-import HomeSectionContent from "@/components/HomeSectionContent.vue";
-import UHomeSectionImg from "@/ui/UHomeSectionImg.vue";
-
-export default {
-  name: "HomeSectionModule",
-  components: {UHomeSectionImg, HomeSectionContent}
-}
-</script>
+<script setup lang="ts">
+import HomeSectionContent from '@/components/HomeSectionContent.vue'
+import UHomeSectionImg from '@/ui/UHomeSectionImg.vue'</script>
 
 <style scoped lang="scss">
 section {
