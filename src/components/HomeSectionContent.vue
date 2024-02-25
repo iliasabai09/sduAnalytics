@@ -15,14 +15,8 @@
   </div>
 </template>
 
-<script>
-import USocialItem from "@/ui/USocialItem.vue";
-
-export default {
-  name: "HomeSectionContent",
-  components: {USocialItem}
-}
-</script>
+<script setup lang="ts">
+import USocialItem from '@/ui/USocialItem.vue'</script>
 
 <style scoped>
 .content {
