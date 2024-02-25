@@ -1,52 +1,31 @@
 <template>
   <header>
     <div class="_container content">
-      <UDesktopLogo/>
-      <div class="links">
-        <UActionLink/>
-        <ULink link="cases">Кейсы</ULink>
-        <ULink link="answers">Вопрос-ответ</ULink>
-      </div>
-      <div class="_spacer"></div>
-      <USmallButton>Связаться</USmallButton>
+      <ULogo/>
+      <DesktopNavbar/>
+      <UButton :title="'Get It Support'"/>
     </div>
   </header>
 </template>
 
 <script setup lang="ts">
-
-import UDesktopLogo from '@/ui/UDesktopLogo.vue'
-import ULink from '@/ui/ULink.vue'
-import UActionLink from '@/ui/UActionLink.vue'
-import USmallButton from '@/ui/USmallButton.vue'</script>
+import ULogo from '@/ui/ULogo.vue'
+import DesktopNavbar from '@/components/DesktopNavbar.vue'
+import UButton from '@/ui/UButton.vue'
+</script>
 
 <style scoped lang="scss">
 header {
-  height: 64px;
-  width: 100%;
   position: fixed;
-  top: 0 !important;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background-color: hsla(0, 0%, 100%, .8);
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .25);
-  -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
-  transition: .2s;
-}
 
-.content {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  gap: 64px;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+  }
 }
 </style>

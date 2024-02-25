@@ -1,11 +1,11 @@
 <template>
   <div>
-    <HelpBusinessModule/>
+    <HomeSectionModule/>
   </div>
 </template>
 
 <script setup lang="ts">
-import HelpBusinessModule from '../modules/HelpBusinessModule.vue'</script>
+import HomeSectionModule from '@/modules/HomeSectionModule.vue'</script>
 
 <style scoped lang="scss">
 
