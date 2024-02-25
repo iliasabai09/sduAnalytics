@@ -41,13 +41,14 @@ const services = ref([
     title: 'Apps Development',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua'
   }
-
 ])
 </script>
 
 <style scoped>
 section {
-  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fff;
 }
 
 .servicesGroup {

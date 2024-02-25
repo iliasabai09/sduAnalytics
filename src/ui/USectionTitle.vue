@@ -37,5 +37,6 @@ defineProps({
 .subtitle {
   color: var(--secondary);
   font-size: 16px;
+  font-weight: 700;
 }
 </style>
