@@ -12,11 +12,17 @@
 import ULogo from '@/ui/ULogo.vue'
 import DesktopNavbar from '@/components/DesktopNavbar.vue'
 import UButton from '@/ui/UButton.vue'
+
+// todo сделать анимацию
+document.body.addEventListener('scroll', (e) => {
+  console.log(e)
+})
+
 </script>
 
 <style scoped lang="scss">
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;

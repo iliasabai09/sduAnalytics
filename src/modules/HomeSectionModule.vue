@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  min-height: 860px;
+  min-height: 1020px;
   background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
   padding-top: 160px;
   box-sizing: border-box;
