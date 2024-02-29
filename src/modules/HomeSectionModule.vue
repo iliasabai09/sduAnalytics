@@ -11,8 +11,7 @@
 
 <script setup lang="ts">
 import HomeSectionContent from '@/components/HomeSectionContent.vue'
-import UHomeSectionImg from '@/ui/UHomeSectionImg.vue'
-</script>
+import UHomeSectionImg from '@/ui/UHomeSectionImg.vue'</script>
 
 <style scoped lang="scss">
 section {
@@ -25,6 +24,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 }
 </style>
