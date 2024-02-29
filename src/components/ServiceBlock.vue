@@ -1,5 +1,5 @@
 <template>
-  <div class="block">
+  <div class="block" v-intersectionObserver="animate" :class="{ animateServiceBlock: animateBlock }">
     <img src="" alt="" width="50" height="50">
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
@@ -9,7 +9,9 @@
 
 <script setup lang="ts">
 import UReadMoreBtn from '@/ui/UReadMoreBtn.vue'
+import { ref } from 'vue'
 
+const animateBlock = ref(false)
 defineProps({
   title: {
     type: String,
@@ -20,6 +22,11 @@ defineProps({
     required: true
   }
 })
+
+function animate(val) {
+  if (val)
+    animateBlock.value = true
+}
 </script>
 
 <style scoped lang="scss">
@@ -33,7 +40,8 @@ defineProps({
   border-radius: 5px;
   box-sizing: border-box;
   position: relative;
-  top: 0;
+  top: 100px;
+  opacity: 0;
 
   &:hover {
     transition: all 500ms ease-out;
@@ -54,5 +62,11 @@ defineProps({
     line-height: 1.8;
     color: #5f5f5f;
   }
+}
+
+.animateServiceBlock {
+  transition: .6s;
+  top: 0;
+  opacity: 1;
 }
 </style>

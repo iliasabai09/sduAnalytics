@@ -1,5 +1,6 @@
 <template>
-  <header>
+<!--  <div v-intersectionObserver="handleHeaderLeave" class="blockToAnimate"></div>-->
+  <header :class="{ headerAnimation: isAnimated }">
     <div class="_container content">
       <ULogo/>
       <DesktopNavbar/>
@@ -12,11 +13,17 @@
 import ULogo from '@/ui/ULogo.vue'
 import DesktopNavbar from '@/components/DesktopNavbar.vue'
 import UButton from '@/ui/UButton.vue'
+import { ref } from 'vue'
 
-// todo сделать анимацию
-document.body.addEventListener('scroll', (e) => {
-  console.log(e)
-})
+const init = ref(false)
+const isAnimated = ref(false)
+
+function handleHeaderLeave(val) {
+  if (init.value) {
+    isAnimated.value = !val
+  }
+  init.value = true
+}
 
 </script>
 
@@ -26,6 +33,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  transition: .6s ease;
 
   .content {
     display: flex;
@@ -33,5 +41,19 @@ header {
     min-height: 80px;
     align-items: center;
   }
+}
+
+.headerAnimation {
+  transition: .6s ease;
+  background-color: #ffffff !important;
+  position: fixed !important;
+}
+
+.blockToAnimate {
+  height: 300px;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 </style>

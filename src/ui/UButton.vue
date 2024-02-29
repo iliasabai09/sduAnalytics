@@ -1,8 +1,10 @@
 <template>
-  <button :class="color">{{ title }}</button>
+  <button :class="color" :style="{ width }">{{ title }}</button>
 </template>
 
 <script setup lang="ts">
+import { PropType } from 'vue'
+
 defineProps({
   title: {
     type: String,
@@ -12,6 +14,11 @@ defineProps({
     type: String,
     required: false,
     default: 'primary'
+  },
+  width: {
+    type: String as PropType<'100%' | 'fit-content'>,
+    required: false,
+    default: 'fit-content'
   }
 })
 </script>
