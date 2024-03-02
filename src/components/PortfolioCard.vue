@@ -1,5 +1,5 @@
 <template>
-  <img :src="'/public/images/' + img + '.jpg'" alt="portfolioImg">
+  <img :src="'/images/' + img + '.jpg'" alt="portfolioImg">
 </template>
 
 <script setup lang="ts">

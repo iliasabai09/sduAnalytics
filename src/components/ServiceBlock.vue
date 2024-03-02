@@ -1,6 +1,6 @@
 <template>
   <div class="block" v-intersectionObserver="animate" :class="{ animateServiceBlock: animateBlock }">
-    <img :src="'/public/images/' + img + '.svg'" alt="img" width="50" height="50">
+    <img :src="'/images/' + img + '.svg'" alt="img" width="50" height="50">
     <h3>{{ title }}</h3>
     <p class="_moduleDescription">{{ description }}</p>
     <UReadMoreBtn/>
