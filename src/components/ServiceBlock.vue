@@ -2,7 +2,7 @@
   <div class="block" v-intersectionObserver="animate" :class="{ animateServiceBlock: animateBlock }">
     <img :src="'/public/images/' + img + '.svg'" alt="img" width="50" height="50">
     <h3>{{ title }}</h3>
-    <p>{{ description }}</p>
+    <p class="_moduleDescription">{{ description }}</p>
     <UReadMoreBtn/>
   </div>
 </template>
@@ -22,7 +22,7 @@ defineProps({
     required: true
   },
   img: {
-    type: String,
+    type: String
   }
 });
 
@@ -44,25 +44,13 @@ function animate(val) {
   position: relative;
   top: 100px;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 
   &:hover {
     transition: all 500ms ease-out;
     top: -16px;
-  }
-
-  img {
-    margin-bottom: 32px;
-  }
-
-  h3 {
-    margin-bottom: 16px;
-  }
-
-  p {
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #5f5f5f;
   }
 }
 
@@ -70,5 +58,9 @@ function animate(val) {
   transition: .6s;
   top: 0;
   opacity: 1;
+}
+
+img {
+  margin-bottom: 16px;
 }
 </style>

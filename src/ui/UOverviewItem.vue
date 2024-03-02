@@ -8,12 +8,11 @@ defineProps({
     type: String,
     required: true
   }
-})
+});
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .item {
-  margin-top: 15px;
   color: var(--titlePrimary);
   font-size: 16px;
   font-weight: 600;
@@ -24,14 +23,13 @@ defineProps({
   -webkit-box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
   box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
   -webkit-transition: 0.4s;
-  
-  
-  /* 
-  Todo: Добавить анимацию
-  background: linear-gradient(to right, black 50%, white 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all .5s ease-out; */
+  transition: .6s ease;
+  cursor: pointer;
+
+  &:hover {
+    transition: .6s ease;
+    background-color: var(--primary);
+    color: #fff;
+  }
 }
 </style>
-  

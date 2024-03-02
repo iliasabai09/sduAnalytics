@@ -1,6 +1,6 @@
 <template>
   <div class="titleGroup">
-    <div class="subtitle">{{ subTitle }}</div>
+    <div class="_secondaryTitle">{{ subTitle }}</div>
     <div class="title">{{ title }}</div>
   </div>
 </template>
@@ -15,7 +15,7 @@ defineProps({
     type: String,
     required: true
   }
-})
+});
 </script>
 
 <style scoped>
@@ -32,11 +32,5 @@ defineProps({
   color: #404040;
   font-size: 32px;
   font-weight: bold;
-}
-
-.subtitle {
-  color: var(--secondary);
-  font-size: 16px;
-  font-weight: 700;
 }
 </style>

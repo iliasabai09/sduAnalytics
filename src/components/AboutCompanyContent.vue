@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="subtitle">ABOUT OUR COMPANY</div>
+    <div class="_secondaryTitle">ABOUT OUR COMPANY</div>
     <h3 class="_moduleTitle">Providing Your Business With A Quality IT Service is Our Passion</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua enim ad minim</p>
@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import UPercentIndicator from '@/ui/UPercentIndicator.vue'
-import UButton from '@/ui/UButton.vue'</script>
+import UPercentIndicator from '@/ui/UPercentIndicator.vue';
+import UButton from '@/ui/UButton.vue';</script>
 
 <style scoped>
 .wrapper {
@@ -28,12 +28,6 @@ import UButton from '@/ui/UButton.vue'</script>
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.subtitle {
-  color: var(--secondary);
-  font-size: 16px;
-  font-weight: 700;
 }
 
 p {
