@@ -2,7 +2,7 @@
   <div>
     <HomeSectionModule/>
     <OurServicesModule/>
-<!--    <AboutCompanyModule/>-->
+    <AboutCompanyModule/>
 <!--    <CounterSectionModule/>-->
 <!--    <OverviewModule/>-->
   </div>

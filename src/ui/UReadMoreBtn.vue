@@ -1,11 +1,12 @@
 <template>
   <a href="#">
-    <i>--></i>
+    <IconArrowForward/>
     <div>Read More</div>
   </a>
 </template>
 
 <script setup lang="ts">
+import IconArrowForward from '@/components/icons/IconArrowForward.vue';
 
 </script>
 
@@ -13,7 +14,7 @@
 a {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   color: var(--primary);
   font-size: 16px;
   font-weight: bold;

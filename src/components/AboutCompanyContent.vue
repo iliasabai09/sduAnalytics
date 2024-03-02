@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="subtitle">ABOUT OUR COMPANY</div>
-    <h3>Providing Your Business With A Quality IT Service is Our Passion</h3>
+    <h3 class="_moduleTitle">Providing Your Business With A Quality IT Service is Our Passion</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua enim ad minim</p>
     <div class="indicator-group">
@@ -42,9 +42,4 @@ p {
   color: #5f5f5f;
 }
 
-h3 {
-  color: #404040;
-  font-size: 32px;
-  font-weight: bold;
-}
 </style>

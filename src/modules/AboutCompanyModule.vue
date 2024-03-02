@@ -8,11 +8,11 @@
 </template>
 
 <script setup lang="ts">
-import AboutCompanyContent from '@/components/AboutCompanyContent.vue'
-import UAboutCompanyImg from '@/ui/UAboutCompanyImg.vue'
+import AboutCompanyContent from '@/components/AboutCompanyContent.vue';
+import UAboutCompanyImg from '@/ui/UAboutCompanyImg.vue';
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content {
   background-color: #F7F8F8;
   padding: 100px 0;
@@ -22,5 +22,16 @@ import UAboutCompanyImg from '@/ui/UAboutCompanyImg.vue'
   display: flex;
   justify-content: space-between;
   gap: 24px;
+
+  img {
+    width: 50%;
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
 }
 </style>

@@ -1,0 +1,8 @@
+h3._moduleTitle {
+  color: #404040;
+  font-size: 32px;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+}

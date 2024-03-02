@@ -8,6 +8,6 @@
 
 <style scoped>
 img {
-  width: 50%;
+  border-radius: 8px;
 }
 </style>
