@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <img :src="'/public/icons/' + social.icon + '.svg'" alt="icon" width="22">
+    <img :src="'public/icons/' + social.icon + '.svg'" alt="icon" width="22">
   </div>
 </template>
 
