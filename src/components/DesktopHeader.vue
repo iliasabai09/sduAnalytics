@@ -1,5 +1,4 @@
 <template>
-<!--  <div v-intersectionObserver="handleHeaderLeave" class="blockToAnimate"></div>-->
   <header :class="{ headerAnimation: isAnimated }">
     <div class="_container content">
       <ULogo/>
@@ -15,15 +14,7 @@ import DesktopNavbar from '@/components/DesktopNavbar.vue'
 import UButton from '@/ui/UButton.vue'
 import { ref } from 'vue'
 
-const init = ref(false)
 const isAnimated = ref(false)
-
-function handleHeaderLeave(val) {
-  if (init.value) {
-    isAnimated.value = !val
-  }
-  init.value = true
-}
 
 </script>
 

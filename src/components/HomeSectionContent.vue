@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="socials">
-      <USocialItem v-for="social in socials" :key="social" :social="social"/>
+      <USocialItem v-for="social in socials" :social="social"/>
     </div>
     <h1 class="heading">
       IT Solutions &

@@ -2,7 +2,6 @@
   <section>
     <div class="countersGroup">
       <CounterBlock
-          :key="counter"
           v-for="counter in counterBlocks"
           :number="counter.number"
           :description="counter.description"

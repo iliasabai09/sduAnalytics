@@ -8,7 +8,7 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </div>
     <div class="features">
-      <UOverviewItem v-for="item in items" :key="item" :text="item.text"/>
+      <UOverviewItem v-for="item in items" :text="item.text"/>
     </div>
   </div>
 </template>

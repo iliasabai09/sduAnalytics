@@ -2,14 +2,14 @@
   <div class="chip">{{ title }}</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   title: {
     type: String,
-    default: "",
+    default: '',
     required: true
   }
-});
+})
 </script>
 
 <style scoped lang="scss">

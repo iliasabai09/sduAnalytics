@@ -2,12 +2,12 @@
   <section class="_container">
     <USectionTitle title="Expert Team" sub-title="TEAM MEMBER"/>
     <div class="teamUsers">
-      <TeamMemberCard v-for="user in users" :key="user" :user="user"/>
+      <TeamMemberCard v-for="user in users" :user="user"/>
     </div>
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import USectionTitle from "@/ui/USectionTitle.vue";
 import TeamMemberCard from "@/components/TeamMemberCard.vue";
 import { ref } from "vue";
@@ -30,7 +30,6 @@ const users = ref([
     username: "Lucas Martinez",
     profession: "Creative Director"
   }
-
 ]);
 
 </script>

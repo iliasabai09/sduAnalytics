@@ -30,7 +30,7 @@ const props: any = defineProps({
   }
 })
 
-function animate(el) {
+function animate(el: any) {
   if (el) animatedPercent.value = props.percent
 }
 </script>

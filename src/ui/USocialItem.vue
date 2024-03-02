@@ -5,14 +5,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from 'vue';
 
 defineProps({
   social: {
-    type: Object as PropType<{
-      href: string,
-      icon: string
-    }>
+    type: Object,
+    required: true
   }
 });
 </script>

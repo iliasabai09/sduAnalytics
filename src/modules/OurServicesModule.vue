@@ -4,7 +4,6 @@
     <div class="servicesGroup">
       <ServiceBlock
           v-for="service in services"
-          :key="service"
           :title="service.title"
           :description="service.description"
           :img="service.image"

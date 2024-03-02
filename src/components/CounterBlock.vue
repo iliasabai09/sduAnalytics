@@ -8,7 +8,7 @@
   <script setup lang="ts">
   import { ref } from 'vue'
 
-  const props: unknown = defineProps({
+  const props: any = defineProps({
     number: {
       type: Number,
       required: true
@@ -21,8 +21,8 @@
 
 
   const count = ref(0)
-  const handleCounter = (val) => {
-    if(!val) return;
+  const handleCounter = (val: any) => {
+    if (!val) return
     setInterval(() => {
       if (count.value < Number(props.number))
         count.value++

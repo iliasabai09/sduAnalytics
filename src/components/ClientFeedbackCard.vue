@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import UStars from "@/ui/UStars.vue";
 
 defineProps({

@@ -3,7 +3,7 @@
     <div class="_container">
       <USectionTitle title="Client Feedback" sub-title="OUR TESTIMONIAL"/>
       <div class="feedbackGroup">
-        <ClientFeedbackCard :feedback="feedback" v-for="feedback in feedbacks" :key="feedback"/>
+        <ClientFeedbackCard :feedback="feedback" v-for="feedback in feedbacks"/>
       </div>
     </div>
   </section>

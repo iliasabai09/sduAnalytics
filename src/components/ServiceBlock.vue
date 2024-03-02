@@ -8,10 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import UReadMoreBtn from '@/ui/UReadMoreBtn.vue';
-import { ref } from 'vue';
+import UReadMoreBtn from '@/ui/UReadMoreBtn.vue'
+import { ref } from 'vue'
 
-const animateBlock = ref(false);
+const animateBlock = ref(false)
 defineProps({
   title: {
     type: String,
@@ -26,9 +26,9 @@ defineProps({
   }
 });
 
-function animate(val) {
+function animate(val: any) {
   if (val)
-    animateBlock.value = true;
+    animateBlock.value = true
 }
 </script>
 
