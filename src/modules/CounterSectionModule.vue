@@ -1,18 +1,19 @@
 <template>
-    <section>
-      <div class="countersGroup">
-        <CounterBlock
-            v-for="counter in counterBlocks"
-            :number="counter.number"
-            :description="counter.description"
-        />
-      </div>
-    </section>
+  <section>
+    <div class="countersGroup">
+      <CounterBlock
+          :key="counter"
+          v-for="counter in counterBlocks"
+          :number="counter.number"
+          :description="counter.description"
+      />
+    </div>
+  </section>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import CounterBlock from '@/components/CounterBlock.vue'
+import { ref } from 'vue';
+import CounterBlock from '@/components/CounterBlock.vue';
 
 const counterBlocks = ref([
   {
@@ -31,7 +32,7 @@ const counterBlocks = ref([
     number: 3000,
     description: 'Happy Customers'
   }
-])
+]);
 </script>
 
 <style scoped>

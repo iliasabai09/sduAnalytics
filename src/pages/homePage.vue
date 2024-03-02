@@ -6,7 +6,8 @@
     <OverviewModule/>
     <TrustUsModule/>
     <OurPortfolioModule/>
-    <!--    <CounterSectionModule/>-->
+    <CounterSectionModule/>
+    <ClientFeedbackModule/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import AboutCompanyModule from '@/modules/AboutCompanyModule.vue';
 import OverviewModule from '@/modules/OverviewModule.vue';
 import TrustUsModule from '@/modules/TrustUsModule.vue';
 import OurPortfolioModule from '@/modules/OurPortfolioModule.vue';
+import ClientFeedbackModule from '@/modules/ClientFeedbackModule.vue';
 </script>
 
 <style scoped lang="scss">
