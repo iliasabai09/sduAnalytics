@@ -52,7 +52,7 @@ const services = ref([
 ]);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -63,5 +63,11 @@ section {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 24px;
+  @media (max-width: 992px) {
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: auto;
+  }
 }
 </style>

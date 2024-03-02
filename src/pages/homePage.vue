@@ -1,7 +1,7 @@
 <template>
   <div>
     <HomeSectionModule/>
-<!--    <OurServicesModule/>-->
+    <OurServicesModule/>
 <!--    <AboutCompanyModule/>-->
 <!--    <CounterSectionModule/>-->
 <!--    <OverviewModule/>-->

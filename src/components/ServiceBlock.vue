@@ -34,7 +34,6 @@ function animate(val) {
 
 <style scoped lang="scss">
 .block {
-  max-width: 416px;
   width: 100%;
   height: 330px;
   transition: all 500ms ease-out;
