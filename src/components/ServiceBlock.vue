@@ -1,6 +1,6 @@
 <template>
   <div class="block" v-intersectionObserver="animate" :class="{ animateServiceBlock: animateBlock }">
-    <img src="" alt="" width="50" height="50">
+    <img :src="'/public/images/' + img + '.svg'" alt="img" width="50" height="50">
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
     <UReadMoreBtn/>
@@ -8,10 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import UReadMoreBtn from '@/ui/UReadMoreBtn.vue'
-import { ref } from 'vue'
+import UReadMoreBtn from '@/ui/UReadMoreBtn.vue';
+import { ref } from 'vue';
 
-const animateBlock = ref(false)
+const animateBlock = ref(false);
 defineProps({
   title: {
     type: String,
@@ -20,12 +20,15 @@ defineProps({
   description: {
     type: String,
     required: true
+  },
+  img: {
+    type: String,
   }
-})
+});
 
 function animate(val) {
   if (val)
-    animateBlock.value = true
+    animateBlock.value = true;
 }
 </script>
 
