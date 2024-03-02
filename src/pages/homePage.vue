@@ -8,6 +8,7 @@
     <OurPortfolioModule/>
     <CounterSectionModule/>
     <ClientFeedbackModule/>
+    <TeamMembersModule/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import OverviewModule from '@/modules/OverviewModule.vue';
 import TrustUsModule from '@/modules/TrustUsModule.vue';
 import OurPortfolioModule from '@/modules/OurPortfolioModule.vue';
 import ClientFeedbackModule from '@/modules/ClientFeedbackModule.vue';
+import TeamMembersModule from '@/modules/TeamMembersModule.vue';
 </script>
 
 <style scoped lang="scss">
