@@ -1,10 +1,10 @@
 <template>
   <div>
     <HomeSectionModule/>
-    <OurServicesModule/>
-    <AboutCompanyModule/>
-    <CounterSectionModule/>
-    <OverviewModule/>
+<!--    <OurServicesModule/>-->
+<!--    <AboutCompanyModule/>-->
+<!--    <CounterSectionModule/>-->
+<!--    <OverviewModule/>-->
   </div>
 </template>
 
