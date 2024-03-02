@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="socials">
-      <USocialItem v-for="_ in 4"/>
+      <USocialItem v-for="social in socials" :key="social" :social="social"/>
     </div>
     <h1 class="heading">
       IT Solutions &
@@ -16,7 +16,30 @@
 </template>
 
 <script setup lang="ts">
-import USocialItem from '@/ui/USocialItem.vue'</script>
+import USocialItem from '@/ui/USocialItem.vue';
+import { ref } from 'vue';
+
+const socials = ref([
+  {
+    href: '',
+    icon: 'facebook'
+  },
+  {
+    href: '',
+    icon: 'twitter'
+  },
+  {
+    href: '',
+    icon: 'instagram'
+  },
+  {
+    href: '',
+    icon: 'youtube'
+  }
+
+]);
+
+</script>
 
 <style scoped>
 .content {
@@ -29,7 +52,7 @@ import USocialItem from '@/ui/USocialItem.vue'</script>
 .socials {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .heading {

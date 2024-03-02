@@ -6,17 +6,18 @@
         <UHomeSectionImg/>
       </div>
     </div>
+    <UHomeBottomShape/>
   </section>
 </template>
 
 <script setup lang="ts">
-import HomeSectionContent from '@/components/HomeSectionContent.vue'
-import UHomeSectionImg from '@/ui/UHomeSectionImg.vue'</script>
+import HomeSectionContent from '@/components/HomeSectionContent.vue';
+import UHomeSectionImg from '@/ui/UHomeSectionImg.vue';
+import UHomeBottomShape from '@/ui/UHomeBottomShape.vue';</script>
 
 <style scoped lang="scss">
 section {
-  min-height: 1020px;
-  background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+  background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc, #fff);
   padding-top: 160px;
   box-sizing: border-box;
 

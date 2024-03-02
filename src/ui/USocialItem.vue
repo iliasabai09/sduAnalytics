@@ -1,20 +1,39 @@
 <template>
-  <div class="item">F</div>
+  <div class="item">
+    <img :src="'/public/icons/' + social.icon + '.svg'" alt="icon" width="22">
+  </div>
 </template>
 
 <script setup lang="ts">
+import { PropType } from 'vue';
 
+defineProps({
+  social: {
+    type: Object as PropType<{
+      href: string,
+      icon: string
+    }>
+  }
+});
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .item {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.50);
+  border: 1px solid rgb(255, 255, 255, 0.2);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transition: .3s ease;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
 }
 </style>
