@@ -1,14 +1,16 @@
 <template>
   <section>
-    <div class="_secondaryTitle">WANT TO WORK WITH US?</div>
-    <h3 class="title">Digitally Transform & Grow Your Business</h3>
-    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consectetur voluptatem accusantium
-      doloremque adipiscing elit.
-    </div>
-    <div class="actions">
-      <UButton :title="'Call Now'"/>
-      <UButton :title="'Contact Us'"/>
+    <div class="content">
+      <div class="_secondaryTitle">WANT TO WORK WITH US?</div>
+      <h3 class="title">Digitally Transform & Grow Your Business</h3>
+      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consectetur voluptatem accusantium
+        doloremque adipiscing elit.
+      </div>
+      <div class="actions">
+        <UButton :title="'Call Now'"/>
+        <UButton :title="'Contact Us'"/>
+      </div>
     </div>
   </section>
 </template>
@@ -17,16 +19,18 @@
 import UButton from '@/ui/UButton.vue'</script>
 
 <style scoped lang="scss">
-section {
+.content {
   display: flex;
   flex-direction: column;
   gap: 24px;
   justify-content: center;
   align-items: center;
-  padding: 60px 0;
+  padding: 60px 16px;
   position: relative;
   z-index: 1;
   background: url(../../public/images/banner-bg.jpg) fixed;
+  text-align: center;
+
   &::before {
     content: "";
     position: absolute;
