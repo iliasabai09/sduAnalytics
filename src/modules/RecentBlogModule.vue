@@ -5,7 +5,6 @@
       <div class="blogs">
         <BlogCard
             v-for="blog in blogs"
-            :key="blog"
             :title="blog.title"
             :description="blog.description"
             :img="blog.img"
