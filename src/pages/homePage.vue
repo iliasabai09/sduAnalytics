@@ -10,6 +10,7 @@
     <ClientFeedbackModule/>
     <TeamMembersModule/>
     <RecentBlogModule/>
+    <WantToWorkModule/>
   </div>
 </template>
 
@@ -23,7 +24,8 @@ import TrustUsModule from '@/modules/TrustUsModule.vue'
 import OurPortfolioModule from '@/modules/OurPortfolioModule.vue'
 import ClientFeedbackModule from '@/modules/ClientFeedbackModule.vue'
 import TeamMembersModule from '@/modules/TeamMembersModule.vue'
-import RecentBlogModule from '@/modules/RecentBlogModule.vue'</script>
+import RecentBlogModule from '@/modules/RecentBlogModule.vue'
+import WantToWorkModule from '@/modules/WantToWorkModule.vue'</script>
 
 <style scoped lang="scss">
 
