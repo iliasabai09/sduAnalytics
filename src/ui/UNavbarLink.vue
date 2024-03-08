@@ -1,5 +1,5 @@
 <template>
-  <a :href="link">{{ title }}</a>
+  <a :href="link" :style="{ color: color }">{{ title }}</a>
 </template>
 
 <script setup lang="ts">
@@ -12,13 +12,16 @@ defineProps({
   title: {
     type: String,
     required: true
+  },
+  color: {
+    type: String,
+    required: false
   }
 })
 </script>
 
 <style scoped>
 a {
-  color: #fff;
   font-size: 16px;
   font-weight: bold;
 }
