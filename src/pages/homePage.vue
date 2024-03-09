@@ -9,6 +9,7 @@
     <CounterSectionModule/>
     <ClientFeedbackModule/>
     <TeamMembersModule/>
+    <FooterModule/>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import TrustUsModule from '@/modules/TrustUsModule.vue';
 import OurPortfolioModule from '@/modules/OurPortfolioModule.vue';
 import ClientFeedbackModule from '@/modules/ClientFeedbackModule.vue';
 import TeamMembersModule from '@/modules/TeamMembersModule.vue';
+import FooterModule from '@/modules/FooterModule.vue';
 </script>
 
 <style scoped lang="scss">
