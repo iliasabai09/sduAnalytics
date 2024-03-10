@@ -1,26 +1,28 @@
 <template>
-  <section class="_container">
-    <USectionTitle title="Expert Team" sub-title="TEAM MEMBER"/>
-    <div class="teamUsers">
-      <TeamMemberCard v-for="user in users" :user="user"/>
+  <section>
+    <div class="_container">
+      <USectionTitle title="Expert Team" sub-title="TEAM MEMBER"/>
+      <div class="teamUsers">
+        <TeamMemberCard v-for="user in users" :user="user"/>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import USectionTitle from "@/ui/USectionTitle.vue";
-import TeamMemberCard from "@/components/TeamMemberCard.vue";
-import { ref } from "vue";
+import USectionTitle from '@/ui/USectionTitle.vue'
+import TeamMemberCard from '@/components/TeamMemberCard.vue'
+import { ref } from 'vue'
 
 const users = ref([
   {
-    img: "https://cutesolution.com/html/techvio/assets/img/team/team-1.jpg",
-    username: "Ava Farrington",
-    profession: "Founder, CEO"
+    img: 'https://cutesolution.com/html/techvio/assets/img/team/team-1.jpg',
+    username: 'Ava Farrington',
+    profession: 'Founder, CEO'
   }, {
-    img: "https://cutesolution.com/html/techvio/assets/img/team/team-2.jpg",
-    username: "Kevin Haley",
-    profession: "Co-Founder, CTO"
+    img: 'https://cutesolution.com/html/techvio/assets/img/team/team-2.jpg',
+    username: 'Kevin Haley',
+    profession: 'Co-Founder, CTO'
   }, {
     img: "https://cutesolution.com/html/techvio/assets/img/team/team-3.jpg",
     username: "Alishia Fulton",
@@ -35,6 +37,13 @@ const users = ref([
 </script>
 
 <style scoped lang="scss">
+section {
+  padding: 80px 0;
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
 .teamUsers {
   display: grid;
   grid-template-columns: auto auto auto auto;

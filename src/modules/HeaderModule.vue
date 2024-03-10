@@ -1,5 +1,5 @@
 <template>
-<!--  <DesktopHeader/>-->
+  <DesktopHeader/>
   <MobileHeader/>
 </template>
 

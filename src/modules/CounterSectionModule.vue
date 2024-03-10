@@ -38,15 +38,11 @@ const counterBlocks = ref([
 section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #fff;
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../../public/images/banner-bg.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #fff url(../../public/images/banner-bg.jpg) no-repeat fixed center;
 }
 
 section::before {
