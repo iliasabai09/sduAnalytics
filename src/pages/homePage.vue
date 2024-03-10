@@ -11,6 +11,7 @@
     <TeamMembersModule/>
     <RecentBlogModule/>
     <WantToWorkModule/>
+    <OurCustomersModule/>
     <FooterModule/>
   </div>
 </template>
@@ -27,6 +28,7 @@ import ClientFeedbackModule from '@/modules/ClientFeedbackModule.vue'
 import TeamMembersModule from '@/modules/TeamMembersModule.vue'
 import RecentBlogModule from '@/modules/RecentBlogModule.vue'
 import WantToWorkModule from '@/modules/WantToWorkModule.vue'
+import OurCustomersModule from '@/modules/OurCustomersModule.vue'
 import FooterModule from '@/modules/FooterModule.vue';
 </script>
 
