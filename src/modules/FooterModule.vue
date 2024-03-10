@@ -16,9 +16,24 @@
   section {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    position: relative;
     z-index: 1;
     background-color: #042c4c;
+  }
+
+  section::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url(../../public/images/dot-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 
   
