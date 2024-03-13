@@ -19,3 +19,17 @@ p._moduleDescription {
   line-height: 1.8;
   color: #5f5f5f;
 }
+
+._mobile {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+._desktop {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
