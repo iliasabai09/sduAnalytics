@@ -29,7 +29,7 @@ document.addEventListener('scroll', (e) => {
   isAnimated.value = scrolledPixels > 300
 })
 
-function toggleMenu(val) {
+function toggleMenu(val: boolean) {
   openedMenu.value = val
 }
 </script>

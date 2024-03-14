@@ -5,7 +5,7 @@
 <script setup lang="ts">
 defineProps({
   height: {
-    type: Number,
+    type: String,
     required: false,
     default: 45
   }
