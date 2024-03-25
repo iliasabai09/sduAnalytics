@@ -1,6 +1,6 @@
 <template>
   <div class="menu" :class="{ opened }">
-    <div class="menu-item" v-for="(link, idx) in links" @click="scrollToSection(link); emits('toggle', false)">
+    <div class="menu-item" v-for="(link, idx) in links" @click="scrollToSection(link.link); emits('toggle', false)">
       <UNavbarLink class="menu-link" :title="link.title" :color="'#000'" :link="link.link"/>
       <div class="line" v-if="idx !== links.length - 1"></div>
     </div>

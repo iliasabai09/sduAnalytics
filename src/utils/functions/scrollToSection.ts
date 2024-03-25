@@ -1,6 +1,6 @@
-export function scrollToSection(id): void {
-	const el: HTMLElement = document.getElementById(id)
+export function scrollToSection(id: string): void {
+	const el: HTMLElement = document.getElementById(id) as HTMLElement
 	const scrollHeight = el.offsetTop
 	window.scrollTo({top: scrollHeight, behavior: 'smooth'})
-	history.pushState(null, null, `#${id}`)
+	history.pushState(null, 'null', `#${id}`)
 }
