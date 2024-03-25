@@ -1,11 +1,11 @@
 <template>
   <div class="content">
-    <h6 class="_secondaryTitle">Why Choose Us?</h6>
+    <h6 class="_secondaryTitle">Почему нужно выбрать нас?</h6>
     <h3 class="_moduleTitle">
-      Safeguard Your Brand with Cyber Security and IT Solutions
+      Увеличьте производительность своего бизнеса
     </h3>
     <div class="_moduleDescription">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      При выборе нашей аутсорс компании вы получаете доступ к множеству преимуществ, которые делают нас идеальным партнером для вашего бизнеса
     </div>
     <div class="features">
       <UOverviewItem v-for="item in items" :text="item.text"/>
@@ -19,22 +19,22 @@ import { ref } from 'vue';
 
 const items = ref([
   {
-    text: 'Remote IT Assistance'
+    text: 'Глубокая техничесская экспертиза'
   },
   {
-    text: 'Cloud Services'
+    text: 'Индивидуальный подход'
   },
   {
-    text: 'Managed IT Service '
+    text: 'Успешный опыт и довольные клиенты'
   },
   {
-    text: 'IT Security Services '
+    text: 'Профессионализм и ответственность'
   },
   {
-    text: 'Practice IT Management'
+    text: 'Прозрачность и своевременная отчетность'
   },
   {
-    text: 'Solving IT Problems'
+    text: 'Гибкие условия сотрудничества'
   }
 ]);
 </script>

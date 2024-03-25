@@ -1,8 +1,10 @@
 <template>
-  <a :href="link" :style="{ color: color }">{{ title }}</a>
+  <a @click.prevent="scrollToSection(link)" :href="`#${link}`" :style="{ color: color }">{{ title }}</a>
 </template>
 
 <script setup lang="ts">
+import { scrollToSection } from '@/utils/functions/scrollToSection'
+
 defineProps({
   link: {
     type: String,
@@ -18,6 +20,7 @@ defineProps({
     required: false
   }
 })
+
 </script>
 
 <style scoped lang="scss">

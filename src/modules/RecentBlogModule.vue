@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section id="blog">
     <div class="_container">
-      <USectionTitle title="Recent Blog" sub-title="BLOG & ARTICLE"/>
+      <USectionTitle title="Последние блоги" sub-title="Блог и статьи"/>
       <div class="blogs">
         <BlogCard
             v-for="blog in blogs"

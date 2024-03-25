@@ -12,7 +12,7 @@
     <RecentBlogModule/>
     <WantToWorkModule/>
     <OurCustomersModule/>
-    <FooterModule/>
+<!--    <FooterModule/>-->
   </div>
 </template>
 

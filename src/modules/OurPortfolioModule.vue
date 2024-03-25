@@ -1,14 +1,13 @@
 <template>
   <section>
-    <div class="_container">
-      <USectionTitle title="Our Portfolio" sub-title="RECENT WORKS"/>
+    <div class="_container" id="portfolio">
+      <USectionTitle title="Наше портфолио" sub-title="Последние работы"/>
       <div class="content">
         <div class="filters">
           <UChip title="All"/>
-          <UChip title="Branding"/>
-          <UChip title="Application"/>
-          <UChip title="Web Design"/>
-          <UChip title="Photography"/>
+          <UChip title="1с"/>
+          <UChip title="Сайты"/>
+          <UChip title="Сервисы"/>
         </div>
         <div class="portfolios">
           <PortfolioCard img="portfolio-1"/>

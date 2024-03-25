@@ -1,14 +1,12 @@
 <template>
   <a href="#">
     <IconArrowForward/>
-    <div>Read More</div>
+    <div>Подробнее</div>
   </a>
 </template>
 
 <script setup lang="ts">
-import IconArrowForward from '@/components/icons/IconArrowForward.vue';
-
-</script>
+import IconArrowForward from '@/components/icons/IconArrowForward.vue'</script>
 
 <style scoped lang="scss">
 a {

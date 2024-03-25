@@ -1,15 +1,12 @@
 <template>
   <section>
     <div class="content">
-      <div class="_secondaryTitle">WANT TO WORK WITH US?</div>
-      <h3 class="title">Digitally Transform & Grow Your Business</h3>
-      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud consectetur voluptatem accusantium
-        doloremque adipiscing elit.
-      </div>
+      <div class="_secondaryTitle">Хотите поработать с нами?</div>
+      <h3 class="title">Оцифруйте и развивайте свой бизнес</h3>
+      <div class="description">Мы всегда открыты к новым партнерствам и сотрудничеству. Если вы ищете надежного и профессионального партнера для реализации своих проектов, обращайтесь к нам. Вместе мы достигнем новых высот.</div>
       <div class="actions">
-        <UButton :title="'Call Now'"/>
-        <UButton :title="'Contact Us'"/>
+        <UButton :title="'Позвоните сейчас'"/>
+        <UButton :title="'Свяжитесь с нами'"/>
       </div>
     </div>
   </section>

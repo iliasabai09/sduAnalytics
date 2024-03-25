@@ -1,17 +1,17 @@
 <template>
-    <section class="footer">
+    <section class="footer" id="contact">
       <div class="_container">
         <SubscribeArea/>
         <FooterArea/>
       </div>
     </section>
   </template>
-  
+
   <script setup lang="ts">
   import SubscribeArea from '@/components/SubscribeArea.vue';
   import FooterArea from '@/components/FooterArea.vue';
   </script>
-  
+
   <style scoped lang="scss">
   section {
     display: flex;
@@ -36,6 +36,5 @@
     background-position: center center;
   }
 
-  
+
   </style>
-  

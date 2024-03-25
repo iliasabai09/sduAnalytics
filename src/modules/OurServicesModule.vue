@@ -1,9 +1,9 @@
 <template>
-  <section class="_container">
-    <USectionTitle title="Our Services" sub-title="What We Provide"/>
+  <section class="_container" id="services">
+    <USectionTitle title="Услуги" sub-title="Что мы предоставляем"/>
     <div class="servicesGroup">
       <ServiceBlock
-          v-for="service in services"
+          v-for="service in services.services"
           :title="service.title"
           :description="service.description"
           :img="service.image"
@@ -16,39 +16,7 @@
 import USectionTitle from '@/ui/USectionTitle.vue';
 import ServiceBlock from '@/components/ServiceBlock.vue';
 import { ref } from 'vue';
-
-const services = ref([
-  {
-    title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua',
-    image: 'app-development'
-  },
-  {
-    title: 'Digital Marketing',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua',
-    image: 'targeted'
-  },
-  {
-    title: 'Startup Solutions',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua',
-    image: 'analysis'
-  },
-  {
-    title: 'Networking Services',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua',
-    image: 'super-intelligence'
-  },
-  {
-    title: 'SEO Optimization',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua',
-    image: 'app-development'
-  },
-  {
-    title: 'Apps Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua',
-    image: 'ui-design'
-  }
-]);
+import * as services from "../db/services.json"
 </script>
 
 <style scoped lang="scss">

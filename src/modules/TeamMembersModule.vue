@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="_container">
-      <USectionTitle title="Expert Team" sub-title="TEAM MEMBER"/>
+      <USectionTitle title="Наша команда" sub-title="Члены команды"/>
       <div class="teamUsers">
-        <TeamMemberCard v-for="user in users" :user="user"/>
+        <TeamMemberCard v-for="user in members.members" :user="user"/>
       </div>
     </div>
   </section>
@@ -12,27 +12,7 @@
 <script setup lang="ts">
 import USectionTitle from '@/ui/USectionTitle.vue'
 import TeamMemberCard from '@/components/TeamMemberCard.vue'
-import { ref } from 'vue'
-
-const users = ref([
-  {
-    img: 'https://cutesolution.com/html/techvio/assets/img/team/team-1.jpg',
-    username: 'Ava Farrington',
-    profession: 'Founder, CEO'
-  }, {
-    img: 'https://cutesolution.com/html/techvio/assets/img/team/team-2.jpg',
-    username: 'Kevin Haley',
-    profession: 'Co-Founder, CTO'
-  }, {
-    img: "https://cutesolution.com/html/techvio/assets/img/team/team-3.jpg",
-    username: "Alishia Fulton",
-    profession: "Chief Creative Officer"
-  }, {
-    img: "https://cutesolution.com/html/techvio/assets/img/team/team-4.jpg",
-    username: "Lucas Martinez",
-    profession: "Creative Director"
-  }
-]);
+import * as members from "../db/members.json"
 
 </script>
 

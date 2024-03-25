@@ -1,21 +1,22 @@
 <template>
   <div class="wrapper">
-    <div class="_secondaryTitle">ABOUT OUR COMPANY</div>
-    <h3 class="_moduleTitle">Providing Your Business With A Quality IT Service is Our Passion</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua enim ad minim</p>
+    <div class="_secondaryTitle">О НАШЕЙ КОМПАНИИ</div>
+    <h3 class="_moduleTitle">Предоставление вашему бизнесу качественных ИТ-услуг - наша основная миссия и призвание</h3>
+    <p>Мы - команда профессионалов, целеустремленных на предоставление вашему бизнесу высококачественных ИТ-услуг. Наша
+      страсть к инновациям и стремление к превосходству позволяют нам создавать и поддерживать современные, эффективные
+      решения, которые оптимизируют вашу деятельность и удовлетворяют ваши потребности.</p>
     <div class="indicator-group">
-      <UPercentIndicator title="IT Consulting" percent="90"/>
-      <UPercentIndicator title="Cloud Solutions" percent="75"/>
-      <UPercentIndicator title="Managed IT Service" percent="85"/>
+      <UPercentIndicator title="IT Консультация" percent="90"/>
+      <UPercentIndicator title="Облачные решения" percent="75"/>
+      <UPercentIndicator title="Управляемые ИТ-услуги" percent="85"/>
     </div>
-    <UButton title="Learn More"/>
+    <UButton title="Узнать больше"/>
   </div>
 </template>
 
 <script setup lang="ts">
-import UPercentIndicator from '@/ui/UPercentIndicator.vue';
-import UButton from '@/ui/UButton.vue';</script>
+import UPercentIndicator from '@/ui/UPercentIndicator.vue'
+import UButton from '@/ui/UButton.vue'</script>
 
 <style scoped>
 .wrapper {

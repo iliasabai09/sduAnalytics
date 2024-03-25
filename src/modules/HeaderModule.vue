@@ -9,7 +9,17 @@
 
 <script lang="ts" setup>
 import DesktopHeader from '@/components/DesktopHeader.vue'
-import MobileHeader from '@/components/MobileHeader.vue'</script>
+import MobileHeader from '@/components/MobileHeader.vue'
+import { onMounted } from 'vue'
+import { scrollToSection } from '@/utils/functions/scrollToSection'
+
+onMounted(() => {
+  let hash = document.location.href.split('#')[1]
+  setTimeout(() => {
+    scrollToSection(hash)
+  }, 100)
+})
+</script>
 
 <style scoped>
 

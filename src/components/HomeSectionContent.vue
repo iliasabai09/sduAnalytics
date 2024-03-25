@@ -4,17 +4,15 @@
       <USocialItem v-for="social in socials" :social="social"/>
     </div>
     <h1 class="heading">
-      IT Solutions &
-      Business Services
-      Company
+      IT Решения для вашего бизнеса
     </h1>
     <div class="description">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua,
       magna aliqua. ipsum is simply dummy text of the printing.
     </div>
     <div class="actions">
-      <UButton :title="'Our Service'"/>
-      <UButton :title="'Contact Us'"/>
+      <UButton :title="'Сервисы'"/>
+      <UButton :title="'Связаться с нами'"/>
     </div>
   </div>
 </template>

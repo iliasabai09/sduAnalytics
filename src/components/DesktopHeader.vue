@@ -3,12 +3,12 @@
     <div class="_container content" :class="{ noVisible: !isAnimated }">
       <UBlackLogo/>
       <DesktopNavbar color="#000"/>
-      <UButton :title="'Get It Support'"/>
+      <UButton :title="'Связаться с нами'"/>
     </div>
     <div class="_container content" v-if="!isAnimated">
       <ULogo/>
       <DesktopNavbar/>
-      <UButton :title="'Get It Support'"/>
+      <UButton :title="'Связаться с нами'"/>
     </div>
   </header>
 </template>

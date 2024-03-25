@@ -1,5 +1,5 @@
 <template>
-  <section class="content">
+  <section class="content" id="about">
     <div class="_container contentBlocks">
       <AboutCompanyContent/>
       <UAboutCompanyImg/>

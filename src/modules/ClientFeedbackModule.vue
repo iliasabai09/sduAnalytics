@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="_container">
-      <USectionTitle title="Client Feedback" sub-title="OUR TESTIMONIAL"/>
+      <USectionTitle title="Отзывы клиентов" sub-title="Наши отзывы"/>
       <div class="feedbackGroup">
         <ClientFeedbackCard :feedback="feedback" v-for="feedback in feedbacks"/>
       </div>

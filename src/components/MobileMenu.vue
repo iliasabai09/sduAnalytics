@@ -1,6 +1,6 @@
 <template>
   <div class="menu" :class="{ opened }">
-    <div class="menu-item" v-for="(link, idx) in links">
+    <div class="menu-item" v-for="(link, idx) in links" @click="scrollToSection(link); emits('toggle', false)">
       <UNavbarLink class="menu-link" :title="link.title" :color="'#000'" :link="link.link"/>
       <div class="line" v-if="idx !== links.length - 1"></div>
     </div>
@@ -10,6 +10,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import UNavbarLink from '@/ui/UNavbarLink.vue'
+import { scrollToSection } from '@/utils/functions/scrollToSection'
 
 defineProps({
   opened: {
@@ -21,28 +22,29 @@ defineProps({
 
 const links = ref([
   {
-    title: 'Home',
+    title: 'Главная',
     link: '/'
   }, {
-    title: 'About Us',
-    link: '/'
+    title: 'О нас',
+    link: 'about'
   }, {
-    title: 'Services ',
-    link: '/'
+    title: 'Сервисы ',
+    link: 'services'
   }, {
-    title: 'Portfolio ',
-    link: '/'
+    title: 'Портфолио',
+    link: 'portfolio'
   }, {
-    title: 'Pages',
-    link: '/'
+    title: 'Страницы',
+    link: 'pages'
   }, {
-    title: 'Blog',
-    link: '/'
+    title: 'Блог',
+    link: 'blog'
   }, {
-    title: 'Contact',
-    link: '/'
+    title: 'Контакты',
+    link: 'contact'
   }
 ])
+const emits = defineEmits(['toggle'])
 </script>
 
 <style scoped lang="scss">

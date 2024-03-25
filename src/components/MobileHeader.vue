@@ -9,7 +9,7 @@
       <UBurgerButton :color="'#fff'" @toggle="toggleMenu"/>
     </div>
   </header>
-  <MobileMenu :opened="openedMenu"/>
+  <MobileMenu :opened="openedMenu" @toggle="toggleMenu($event)"/>
 </template>
 
 <script setup lang="ts">
