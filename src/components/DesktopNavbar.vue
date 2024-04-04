@@ -26,19 +26,24 @@ const links = ref([
   }, {
     title: 'Сервисы ',
     link: 'services'
-  }, {
+  },
+  /*{
     title: 'Портфолио',
     link: 'portfolio'
-  }, {
+  },
+  {
     title: 'Страницы',
     link: 'pages'
-  }, {
+  }, 
+  {
     title: 'Блог',
     link: 'blog'
-  }, {
+  }, 
+  {
     title: 'Контакты',
     link: 'contact'
   }
+  */
 ])
 </script>
 

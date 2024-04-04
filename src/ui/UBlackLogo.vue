@@ -1,3 +1,3 @@
 <template>
-  <img src="https://cutesolution.com/html/techvio/assets/img/logo-black.png" alt="logo" height="45">
+  <img src="../assets/newLogo.png" alt="logo" height="80">
 </template>

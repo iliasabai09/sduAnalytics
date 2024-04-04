@@ -52,7 +52,7 @@ header {
 
 .headerAnimation {
   transition: .6s ease;
-  background-color: #ffffff !important;
+  background-color: #F7F8F8 !important;
   position: fixed !important;
   top: 0;
 }
