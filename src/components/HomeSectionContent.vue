@@ -39,7 +39,6 @@ const socials = ref([
     href: '',
     icon: 'youtube'
   }
-
 ]);
 
 </script>

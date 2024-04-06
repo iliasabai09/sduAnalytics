@@ -5,27 +5,15 @@
     </div>
     <div class="_container content">
       <img src="/public/images/portfolio-details-banner.jpg" alt="portfolio-details-banner">
-      <div>Our Mission is to Establish Healthy Work Relationships</div>
-      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea commodo
-        consequat.
-      </div>
-      <div>We work to Create a Better way</div>
-      <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-        qui ratione voluptatem sequi nesciunt.
-      </div>
-      <div>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-        dolores eos qui ratione voluptatem sequi nesciunt.quis nostrum exercitationem ullam corporis suscipit
-        laboriosam, nisi ut aliquid ex ea commodi consequatur.
-      </div>
+      <PortfolioDetailInfoModule/>
+      <PortfolioDetailSpecsModule/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-</script>
+import PortfolioDetailSpecsModule from '@/modules/PortfolioDetailSpecsModule.vue'
+import PortfolioDetailInfoModule from '@/modules/PortfolioDetailInfoModule.vue'</script>
 
 <style scoped lang="scss">
 .header {
@@ -51,6 +39,7 @@
   img {
     width: 100%;
     border-radius: 16px;
+    margin-bottom: 24px;
   }
 }
 
