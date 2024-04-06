@@ -20,7 +20,7 @@
     </div>
     <div class="specs-spec">
       <h4>Works Preview</h4>
-      <UButton :title="'Live preview'"/>
+      <UButton :title="'Live preview'" :mobile-width="true"/>
     </div>
   </div>
 </template>
@@ -54,16 +54,26 @@ const socials = ref([
 .specs {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 
   &-spec {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
+
   }
 }
 
 .socials {
   display: flex;
   gap: 8px;
+  @media (max-width: 475px) {
+    justify-content: space-between;
+  }
 }
 </style>

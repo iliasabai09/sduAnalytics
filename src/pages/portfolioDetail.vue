@@ -30,6 +30,7 @@ import PortfolioDetailInfoModule from '@/modules/PortfolioDetailInfoModule.vue'<
     font-weight: 700;
     margin-bottom: 0;
     font-family: 'Dosis', sans-serif;
+    text-align: center;
   }
 }
 

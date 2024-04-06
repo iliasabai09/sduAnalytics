@@ -1,5 +1,5 @@
 <template>
-  <button :class="color" :style="{ width }">{{ title }}</button>
+  <button :class="[color, mobileWidth && 'mobileWidth']" :style="{ width }">{{ title }}</button>
 </template>
 
 <script setup lang="ts">
@@ -19,6 +19,10 @@ defineProps({
     type: String as PropType<'100%' | 'fit-content'>,
     required: false,
     default: 'fit-content'
+  },
+  mobileWidth: {
+    type: Boolean,
+    required: false,
   }
 })
 </script>
@@ -37,5 +41,11 @@ button {
 
 button.primary {
   background-color: var(--primary);
+}
+
+button.mobileWidth {
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
 }
 </style>
