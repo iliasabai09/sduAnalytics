@@ -5,14 +5,14 @@
     <AboutCompanyModule/>
     <OverviewModule/>
     <TrustUsModule/>
-    <OurPortfolioModule/>
+<!--<OurPortfolioModule/>-->
     <CounterSectionModule/>
     <ClientFeedbackModule/>
-    <TeamMembersModule/>
-    <RecentBlogModule/>
+<!--<TeamMembersModule/>-->
+<!--<RecentBlogModule/>-->
     <WantToWorkModule/>
     <OurCustomersModule/>
-<!--    <FooterModule/>-->
+<!--<FooterModule/>-->
   </div>
 </template>
 
@@ -29,7 +29,7 @@ import TeamMembersModule from '@/modules/TeamMembersModule.vue'
 import RecentBlogModule from '@/modules/RecentBlogModule.vue'
 import WantToWorkModule from '@/modules/WantToWorkModule.vue'
 import OurCustomersModule from '@/modules/OurCustomersModule.vue'
-import FooterModule from '@/modules/FooterModule.vue';
+import FooterModule from '@/modules/FooterModule.vue'
 </script>
 
 
