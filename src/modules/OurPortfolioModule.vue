@@ -10,12 +10,24 @@
           <UChip title="Сервисы"/>
         </div>
         <div class="portfolios">
-          <PortfolioCard img="portfolio-1"/>
-          <PortfolioCard img="portfolio-2"/>
-          <PortfolioCard img="portfolio-3"/>
-          <PortfolioCard img="portfolio-4"/>
-          <PortfolioCard img="portfolio-5"/>
-          <PortfolioCard img="portfolio-6"/>
+          <RouterLink to="/portfolioDetail">
+            <PortfolioCard img="portfolio-1"/>
+          </RouterLink>
+          <RouterLink to="/portfolioDetail">
+            <PortfolioCard img="portfolio-2"/>
+          </RouterLink>
+          <RouterLink to="/portfolioDetail">
+            <PortfolioCard img="portfolio-3"/>
+          </RouterLink>
+          <RouterLink to="/portfolioDetail">
+            <PortfolioCard img="portfolio-4"/>
+          </RouterLink>
+          <RouterLink to="/portfolioDetail">
+            <PortfolioCard img="portfolio-5"/>
+          </RouterLink>
+          <RouterLink to="/portfolioDetail">
+            <PortfolioCard img="portfolio-6"/>
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -23,11 +35,9 @@
 </template>
 
 <script setup lang="ts">
-import USectionTitle from '@/ui/USectionTitle.vue';
-import UChip from '@/ui/UChip.vue';
-import PortfolioCard from '@/components/PortfolioCard.vue';
-
-</script>
+import USectionTitle from '@/ui/USectionTitle.vue'
+import UChip from '@/ui/UChip.vue'
+import PortfolioCard from '@/components/PortfolioCard.vue'</script>
 
 <style scoped lang="scss">
 
