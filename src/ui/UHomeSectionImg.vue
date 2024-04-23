@@ -1,5 +1,7 @@
 <template>
-  <img src="/public/images/home-persons.png" alt="">
+  <img
+      src="https://static.vecteezy.com/system/resources/previews/009/314/269/original/magnetic-compass-vector-illustration-free-png.png"
+      alt="" height="400">
 </template>
 
 <style scoped lang="scss">

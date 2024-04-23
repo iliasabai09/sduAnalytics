@@ -4,15 +4,16 @@
       <USocialItem v-for="social in socials" :social="social"/>
     </div>
     <h1 class="heading">
-      IT Решения для вашего бизнеса
+      Academic Compass
     </h1>
     <div class="description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua,
-      magna aliqua. ipsum is simply dummy text of the printing.
+      We offer an innovative approach to assessing students and enhancing their productivity. Our website predicts
+      students' successes, helps identify their strengths and weaknesses, and provides personalized
+      recommendations for achieving outstanding results.
     </div>
     <div class="actions">
-      <UButton :title="'Сервисы'"/>
-      <UButton :title="'Связаться с нами'"/>
+      <UButton :title="'About us'"/>
+      <UButton :title="'Talk with AC'"/>
     </div>
   </div>
 </template>
