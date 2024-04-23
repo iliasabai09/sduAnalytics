@@ -6,8 +6,7 @@
 
 <script setup lang="ts">
 import UNavbarLink from '@/ui/UNavbarLink.vue'
-import { onMounted, ref } from 'vue'
-import { scrollToSection } from '@/utils/functions/scrollToSection'
+import { ref } from 'vue'
 
 defineProps({
   color: {
@@ -18,32 +17,26 @@ defineProps({
 
 const links = ref([
   {
-    title: 'Главная',
+    title: 'Home',
     link: '/'
   }, {
-    title: 'О нас',
+    title: 'About us',
     link: 'about'
-  }, {
-    title: 'Сервисы ',
+  },
+  {
+    title: 'Talk with AC',
     link: 'services'
+  }, {
+    title: 'OurStory',
+    link: 'ourStory'
+  }, {
+    title: 'OurTeam',
+    link: 'OurTeam'
   },
-  /*{
-    title: 'Портфолио',
-    link: 'portfolio'
+  {
+    title: 'HowItWorks',
+    link: 'howItWorks'
   },
-  {
-    title: 'Страницы',
-    link: 'pages'
-  }, 
-  {
-    title: 'Блог',
-    link: 'blog'
-  }, 
-  {
-    title: 'Контакты',
-    link: 'contact'
-  }
-  */
 ])
 </script>
 
