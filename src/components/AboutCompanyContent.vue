@@ -1,14 +1,12 @@
 <template>
   <div class="wrapper">
-    <div class="_secondaryTitle">О НАШЕЙ КОМПАНИИ</div>
-    <h3 class="_moduleTitle">Предоставление вашему бизнесу качественных ИТ-услуг - наша основная миссия и призвание</h3>
-    <p>Мы - команда профессионалов, целеустремленных на предоставление вашему бизнесу высококачественных ИТ-услуг. Наша
-      страсть к инновациям и стремление к превосходству позволяют нам создавать и поддерживать современные, эффективные
-      решения, которые оптимизируют вашу деятельность и удовлетворяют ваши потребности.</p>
+    <div class="_secondaryTitle">About Us</div>
+    <h3 class="_moduleTitle">Elevate: Empowering Student Success</h3>
+    <p>We are creating a platform designed for students to help them improve their grades and enhance productivity. Our project is developed with the needs of modern students in mind, offering tools for performance analysis and personalized recommendations for enhancing the learning process. We strive to be your reliable partner in achieving academic goals, providing innovative solutions and supporting you on the path to success.</p>
     <div class="indicator-group">
-      <UPercentIndicator title="IT Консультация" percent="90"/>
-      <UPercentIndicator title="Облачные решения" percent="75"/>
-      <UPercentIndicator title="Управляемые ИТ-услуги" percent="85"/>
+      <UPercentIndicator title="Productivity" percent="90"/>
+      <UPercentIndicator title="Concentration" percent="75"/>
+      <UPercentIndicator title="Right Approach to Learning" percent="85"/>
     </div>
     <UButton title="Узнать больше"/>
   </div>
