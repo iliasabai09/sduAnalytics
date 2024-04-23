@@ -1,17 +1,17 @@
 <template>
   <div>
     <HomeSectionModule/>
-    <OurServicesModule/>
+<!--    <OurServicesModule/>-->
     <AboutCompanyModule/>
     <OverviewModule/>
-    <TrustUsModule/>
+<!--    <TrustUsModule/>-->
 <!--<OurPortfolioModule/>-->
-    <CounterSectionModule/>
-    <ClientFeedbackModule/>
+<!--    <CounterSectionModule/>-->
+<!--    <ClientFeedbackModule/>-->
 <!--<TeamMembersModule/>-->
 <!--<RecentBlogModule/>-->
-    <WantToWorkModule/>
-    <OurCustomersModule/>
+<!--    <WantToWorkModule/>-->
+<!--    <OurCustomersModule/>-->
 <!--<FooterModule/>-->
   </div>
 </template>

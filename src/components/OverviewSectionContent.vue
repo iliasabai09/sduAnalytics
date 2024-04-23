@@ -1,11 +1,11 @@
 <template>
   <div class="content">
-    <h6 class="_secondaryTitle">Почему нужно выбрать нас?</h6>
+    <h6 class="_secondaryTitle">Why Choose Us?</h6>
     <h3 class="_moduleTitle">
-      Увеличьте производительность своего бизнеса
+      Increase Your Study Productivity
     </h3>
     <div class="_moduleDescription">
-      При выборе нашей аутсорс компании вы получаете доступ к множеству преимуществ, которые делают нас идеальным партнером для вашего бизнеса
+      When registering on our portal, you gain access to a multitude of benefits that will help you choose the right direction.
     </div>
     <div class="features">
       <UOverviewItem v-for="item in items" :text="item.text"/>
@@ -19,22 +19,22 @@ import { ref } from 'vue';
 
 const items = ref([
   {
-    text: 'Глубокая техничесская экспертиза'
+    text: 'Grade Analysis'
   },
   {
-    text: 'Индивидуальный подход'
+    text: 'Analytics Compilation'
   },
   {
-    text: 'Успешный опыт и довольные клиенты'
+    text: 'Unique Approach to Each Individual'
   },
   {
-    text: 'Профессионализм и ответственность'
+    text: 'Quality Calculations in Direction'
   },
   {
-    text: 'Прозрачность и своевременная отчетность'
+    text: 'Ease of Understanding the Material'
   },
   {
-    text: 'Гибкие условия сотрудничества'
+    text: 'Master Everything You Need'
   }
 ]);
 </script>
