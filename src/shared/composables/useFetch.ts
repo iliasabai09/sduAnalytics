@@ -1,6 +1,6 @@
 import { URL_LIST } from '@/shared/constants/url-list'
 
-export async function useFetch(url = 'users', method, body, id?, params?) {
+export async function useFetch(url = 'users', method: string, body: any, id?: any, params?: any) {
 	let listUrl = URL_LIST[url].url
 	if (!listUrl) throw new Error('Данный роут не найден')
 	if (id) listUrl = listUrl + '/' + id

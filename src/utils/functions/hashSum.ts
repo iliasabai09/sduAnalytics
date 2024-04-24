@@ -1,4 +1,4 @@
-export async function hashSum(inputString): Promise<string> {
+export async function hashSum(inputString: string): Promise<string> {
 	// Преобразование строки в ArrayBuffer
 	const data = new TextEncoder().encode(inputString)
 	// Вычисление хэша с использованием алгоритма SHA-256
