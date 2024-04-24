@@ -20,7 +20,7 @@
           </form>
         </div>
         <div class="form-container sign-in">
-          <form>
+          <form @submit.prevent="loginUser">
             <h1>Sign In</h1>
             <!--        <div class="social-icons">-->
             <!--          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>-->
@@ -29,10 +29,10 @@
             <!--          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>-->
             <!--        </div>-->
             <span>or use your email password</span>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email" v-model="loginForm.email">
+            <input type="password" placeholder="Password" v-model="loginForm.password">
             <a href="#">Forget Your Password?</a>
-            <button>Sign In</button>
+            <button type="submit">Sign In</button>
           </form>
         </div>
         <div class="toggle-container">
@@ -79,6 +79,11 @@ const registerForm = {
   password: null
 }
 
+const loginForm = {
+  email: null,
+  password: null
+}
+
 async function registerUser() {
   try {
     await AuthService.registerUser(registerForm)
@@ -86,6 +91,16 @@ async function registerUser() {
     console.error(e.message)
   }
 }
+
+async function loginUser() {
+  try {
+    await AuthService.loginUser(loginForm)
+  } catch (e) {
+    console.error(e.message)
+  }
+}
+
+
 
 </script>
 
