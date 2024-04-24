@@ -3,7 +3,7 @@
     <div class="loginForm-form">
       <div class="container" id="container">
         <div class="form-container sign-up">
-          <form>
+          <form @submit.prevent="registerUser">
             <h1>Create Account</h1>
             <!--        <div class="social-icons">-->
             <!--          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>-->
@@ -12,11 +12,11 @@
             <!--          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>-->
             <!--        </div>-->
             <span>or use your email for registeration</span>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Surname">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button>Sign Up</button>
+            <input type="text" placeholder="Name" v-model="registerForm.name">
+            <input type="text" placeholder="Surname" v-model="registerForm.surname">
+            <input type="email" placeholder="Email" v-model="registerForm.email">
+            <input type="password" placeholder="Password" v-model="registerForm.password">
+            <button type="submit">Sign Up</button>
           </form>
         </div>
         <div class="form-container sign-in">
@@ -56,6 +56,7 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
+import { AuthService } from '@/shared/services/auth.service'
 
 onMounted(() => {
   const container = document.getElementById('container')
@@ -70,6 +71,22 @@ onMounted(() => {
     container.classList.remove('active')
   })
 })
+
+const registerForm = {
+  name: null,
+  surname: null,
+  email: null,
+  password: null
+}
+
+async function registerUser() {
+  try {
+    await AuthService.registerUser(registerForm)
+  } catch (e) {
+    console.error(e.message)
+  }
+}
+
 </script>
 
 <style scoped lang="scss">
