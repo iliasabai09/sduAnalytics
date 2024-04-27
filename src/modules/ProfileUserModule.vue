@@ -10,8 +10,10 @@
     </div>
     <div class="menu">
       <div class="menu-link textMedium" v-for="link in menu">
-        <span class="material-symbols-outlined">feed</span>
+        <span class="material-symbols-outlined">{{ link.icon }}</span>
         <div>{{ link.title }}</div>
+        <div class="_spacer"></div>
+        <span class="material-symbols-outlined">chevron_right</span>
       </div>
     </div>
   </div>
@@ -25,26 +27,36 @@ const menu = ref([
     id: 1,
     title: 'info',
     isActive: true,
-    route: '/profile/info'
-  }, {
+    route: '/profile/info',
+    icon: 'feed'
+  },
+  {
     id: 2,
     title: 'teachers',
     isActive: false,
-    route: '/profile/teachers'
-  }, {
+    route: '/profile/teachers',
+    icon: 'for_you'
+  },
+  {
     id: 3,
     title: 'plan',
     isActive: false,
-    route: '/profile/plan'
-  }, {
+    route: '/profile/plan',
+    icon: 'note_alt'
+  },
+  {
     id: 4,
-    title: 'activity',
+    title: 'grades',
     isActive: false,
-    route: '/profile/activity'
-  }, {
+    route: '/profile/grades',
+    icon: 'grade'
+  },
+  {
     id: 5,
-    title: 'baga',
-    isActive: false
+    title: 'courses',
+    isActive: false,
+    route: '/profile/courses',
+    icon: 'school'
   }
 ])
 </script>
@@ -56,10 +68,10 @@ const menu = ref([
   gap: 16px;
   min-width: 320px;
   background-color: #fff;
-
   border-radius: 16px;
   padding: 16px;
   box-sizing: border-box;
+  height: fit-content;
 }
 
 .user {

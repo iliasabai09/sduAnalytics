@@ -1,38 +1,66 @@
 <template>
   <div class="infoData boxShadow">
-    <div class="infoData-header titleLarge">User info</div>
+    <div class="infoData-header titleLarge secondaryText">User info</div>
     <div class="infoData-list">
-      <div class="infoData-field">
-        <span class="material-symbols-outlined">badge</span>
-        <div class="textLarge">Name:</div>
-        <div class="text greyText">Aizere</div>
-      </div>
-      <div class="infoData-field">
-        <span class="material-symbols-outlined">person</span>
-        <div class="textLarge">Surname:</div>
-        <div class="text greyText">Abzelbekova</div>
-      </div>
-      <div class="infoData-field">
-        <span class="material-symbols-outlined">person</span>
-        <div class="textLarge">Age:</div>
-        <div class="text greyText">18</div>
-      </div>
-      <div class="infoData-field">
-        <span class="material-symbols-outlined">school</span>
-        <div class="textLarge">Course:</div>
-        <div class="text greyText">4</div>
-      </div>
-      <div class="infoData-field">
-        <span class="material-symbols-outlined">cake</span>
-        <div class="textLarge">Birthday:</div>
-        <div class="text greyText">2002y 1 april</div>
+      <div class="infoData-field" v-for="val in userInfo">
+        <span class="material-symbols-outlined">{{ val.icon }}</span>
+        <div class="textLarge">{{ val.type }}:</div>
+        <div class="text greyText">{{ val.value }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 
+const userInfo = ref([
+  {
+    type: 'ID',
+    value: '38725361275',
+    icon: 'person_2'
+  },
+  {
+    type: 'Name',
+    value: 'Aizere',
+    icon: 'badge'
+  },
+  {
+    type: 'Surname',
+    value: 'Abzelbekova',
+    icon: 'person'
+  },
+  {
+    type: 'Email',
+    value: 'brdene@sdu.kz',
+    icon: 'mail'
+  },
+  {
+    type: 'Adviser',
+    value: 'Brdene Brdenesovich',
+    icon: 'person'
+  },
+  {
+    type: 'Course',
+    value: '4',
+    icon: 'school'
+  },
+  {
+    type: 'Birthday',
+    value: '2002y 1 april',
+    icon: 'cake'
+  },
+  {
+    type: 'Gender',
+    value: 'Male',
+    icon: 'agender'
+  },
+  {
+    type: 'Group',
+    value: '42BT19',
+    icon: 'group'
+  }
+])
 </script>
 
 <style scoped lang="scss">

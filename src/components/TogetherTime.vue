@@ -1,6 +1,6 @@
 <template>
   <div class="time boxShadow">
-    <div class="time-title titleLarge">{{ 'With Us' }}</div>
+    <div class="time-title titleLarge secondaryText">{{ 'With Us' }}</div>
     <div class="titleLarge time-value">{{ withTime }}</div>
   </div>
 </template>

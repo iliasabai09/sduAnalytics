@@ -4,12 +4,12 @@
       <div class="_container content" :class="{ noVisible: !isAnimated }">
         <UBlackLogo/>
         <DesktopNavbar color="#000"/>
-        <UButton :title="'Связаться с нами'"/>
+        <UButton :title="'Мой кабинет'"/>
       </div>
       <div class="_container content" v-if="!isAnimated">
         <ULogo/>
         <DesktopNavbar/>
-        <UButton :title="'Связаться с нами'"/>
+        <UButton :title="'Мой кабинет'"/>
       </div>
     </header>
   </template>
@@ -19,7 +19,7 @@
       <div class="_container content" :class="{ noVisible: isAnimated}">
         <UBlackLogo/>
         <DesktopNavbar color="#000"/>
-        <UButton :title="'Связаться с нами'"/>
+        <UButton :title="'Мой кабинет'"/>
       </div>
     </header>
   </template>
@@ -40,7 +40,7 @@ document.addEventListener('scroll', (e) => {
   isAnimated.value = scrolledPixels > 300
 })
 
-const isHaveAnimatePage = !document.location.href.includes('auth')
+const isHaveAnimatePage = ['auth', 'profile'].includes(!document.location.href as string)
 
 </script>
 
