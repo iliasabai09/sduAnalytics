@@ -23,7 +23,13 @@ const router = createRouter({
           path: 'info',
           name: 'profile-info',
           component: import('../pages/profile-info.vue')
+        },
+        {
+          path: 'teachers',
+          name: 'profile-teachers',
+          component: import('../pages/profile-teachers.vue')
         }
+
       ]
     }
   ]
