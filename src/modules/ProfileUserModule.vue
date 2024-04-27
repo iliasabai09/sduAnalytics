@@ -9,7 +9,12 @@
       </div>
     </div>
     <div class="menu">
-      <div class="menu-link textMedium" v-for="link in menu">
+      <div
+          class="menu-link textMedium"
+          v-for="link in menu"
+          @click="toContent(link.route)"
+          :class="{ 'menu-link-active': link.isActive }"
+      >
         <span class="material-symbols-outlined">{{ link.icon }}</span>
         <div>{{ link.title }}</div>
         <div class="_spacer"></div>
@@ -20,8 +25,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
+const router = useRouter()
+const route = useRoute()
 const menu = ref([
   {
     id: 1,
@@ -59,6 +67,18 @@ const menu = ref([
     icon: 'school'
   }
 ])
+
+function toContent(r) {
+  router.push(r)
+}
+
+watch(() => route.fullPath, (value, oldValue, onCleanup) => {
+  console.log(value)
+  menu.value = menu.value.map(menu => {
+    menu.isActive = menu.route === value
+    return menu
+  })
+})
 </script>
 
 <style scoped lang="scss">
@@ -105,12 +125,12 @@ const menu = ref([
     gap: 12px;
     cursor: pointer;
 
-    span {
-      color: var(--primary);
+    &-active {
+      background-color: var(--primary-light);
     }
 
-    &:first-child {
-      background-color: var(--primary-light);
+    span {
+      color: var(--primary);
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <v-card text="teachers"></v-card>
+  <v-card text="courses"></v-card>
 </template>
 
 <script setup lang="ts">

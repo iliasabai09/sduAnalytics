@@ -28,8 +28,22 @@ const router = createRouter({
           path: 'teachers',
           name: 'profile-teachers',
           component: import('../pages/profile-teachers.vue')
+        },
+        {
+          path: 'plan',
+          name: 'profile-plan',
+          component: import('../pages/profile-plan.vue')
+        },
+        {
+          path: 'grades',
+          name: 'profile-grades',
+          component: import('../pages/profile-grades.vue')
+        },
+        {
+          path: 'courses',
+          name: 'profile-courses',
+          component: import('../pages/profile-courses.vue')
         }
-
       ]
     }
   ]
