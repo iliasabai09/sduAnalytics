@@ -14,7 +14,7 @@
     </header>
   </template>
 
-  <template v-if="isHaveAnimatePage">
+  <template v-if="!isHaveAnimatePage">
     <header ref="header" :class="{ headerAnimation: !isAnimated }" class="headerWithoutAnimate">
       <div class="_container content" :class="{ noVisible: isAnimated}">
         <UBlackLogo/>

@@ -9,7 +9,10 @@
       </div>
     </div>
     <div class="menu">
-      <div class="menu-link textMedium" v-for="link in menu">{{ link.title }}</div>
+      <div class="menu-link textMedium" v-for="link in menu">
+        <span class="material-symbols-outlined">feed</span>
+        <div>{{ link.title }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -21,23 +24,27 @@ const menu = ref([
   {
     id: 1,
     title: 'info',
-    isActive: true
+    isActive: true,
+    route: '/profile/info'
   }, {
     id: 2,
     title: 'teachers',
-    isActive: true
+    isActive: false,
+    route: '/profile/teachers'
   }, {
     id: 3,
     title: 'plan',
-    isActive: true
+    isActive: false,
+    route: '/profile/plan'
   }, {
     id: 4,
     title: 'activity',
-    isActive: true
+    isActive: false,
+    route: '/profile/activity'
   }, {
     id: 5,
     title: 'baga',
-    isActive: true
+    isActive: false
   }
 ])
 </script>
@@ -81,9 +88,17 @@ const menu = ref([
   &-link {
     padding: 16px;
     border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+
+    span {
+      color: var(--primary);
+    }
 
     &:first-child {
-      background-color: var(--secondary-light);
+      background-color: var(--primary-light);
     }
   }
 }
