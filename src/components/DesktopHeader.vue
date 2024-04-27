@@ -1,16 +1,28 @@
 <template>
-  <header ref="header" :class="{ headerAnimation: isAnimated }">
-    <div class="_container content" :class="{ noVisible: !isAnimated }">
-      <UBlackLogo/>
-      <DesktopNavbar color="#000"/>
-      <UButton :title="'Связаться с нами'"/>
-    </div>
-    <div class="_container content" v-if="!isAnimated">
-      <ULogo/>
-      <DesktopNavbar/>
-      <UButton :title="'Связаться с нами'"/>
-    </div>
-  </header>
+  <template v-if="isHaveAnimatePage">
+    <header ref="header" :class="{ headerAnimation: isAnimated }">
+      <div class="_container content" :class="{ noVisible: !isAnimated }">
+        <UBlackLogo/>
+        <DesktopNavbar color="#000"/>
+        <UButton :title="'Связаться с нами'"/>
+      </div>
+      <div class="_container content" v-if="!isAnimated">
+        <ULogo/>
+        <DesktopNavbar/>
+        <UButton :title="'Связаться с нами'"/>
+      </div>
+    </header>
+  </template>
+
+  <template v-if="isHaveAnimatePage">
+    <header ref="header" :class="{ headerAnimation: !isAnimated }" class="headerWithoutAnimate">
+      <div class="_container content" :class="{ noVisible: isAnimated}">
+        <UBlackLogo/>
+        <DesktopNavbar color="#000"/>
+        <UButton :title="'Связаться с нами'"/>
+      </div>
+    </header>
+  </template>
 </template>
 
 <script setup lang="ts">
@@ -28,6 +40,7 @@ document.addEventListener('scroll', (e) => {
   isAnimated.value = scrolledPixels > 300
 })
 
+const isHaveAnimatePage = !document.location.href.includes('auth')
 
 </script>
 
@@ -59,5 +72,11 @@ header {
 
 .noVisible {
   visibility: hidden;
+}
+
+.headerWithoutAnimate {
+  -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
 }
 </style>
