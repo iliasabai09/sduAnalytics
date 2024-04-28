@@ -40,7 +40,7 @@ document.addEventListener('scroll', (e) => {
   isAnimated.value = scrolledPixels > 300
 })
 
-const isHaveAnimatePage = ['auth', 'profile'].includes(!document.location.href as string)
+const isHaveAnimatePage = !['auth', 'profile'].includes(document.location.href as string)
 
 </script>
 

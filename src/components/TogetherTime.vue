@@ -9,8 +9,8 @@
 import { onMounted, onUnmounted, ref } from 'vue'
 import { formatTimeElapsed } from '@/utils/functions/formatTimeElapsed'
 
-const withTime = ref('')
-const timer = ref(null)
+const withTime: any = ref('')
+const timer: any = ref(null)
 
 const props: any = defineProps({
   startedTime: {

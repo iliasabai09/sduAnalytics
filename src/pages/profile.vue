@@ -4,7 +4,9 @@
       <div class="layout">
         <ProfileUserModule/>
         <div class="profilePage-content">
-          <RouterView/>
+          <Transition>
+            <RouterView/>
+          </Transition>
         </div>
       </div>
     </div>

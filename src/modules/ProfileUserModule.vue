@@ -68,7 +68,7 @@ const menu = ref([
   }
 ])
 
-function toContent(r) {
+function toContent(r: string) {
   router.push(r)
 }
 

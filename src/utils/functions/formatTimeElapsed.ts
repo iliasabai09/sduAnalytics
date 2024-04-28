@@ -17,15 +17,15 @@ export function formatTimeElapsed(timestamp) {
 }
 */
 
-export function formatTimeElapsed(timestamp) {
-	const millisecondsPerSecond = 1000;
-	const millisecondsPerMinute = millisecondsPerSecond * 60;
-	const millisecondsPerHour = millisecondsPerMinute * 60;
+export function formatTimeElapsed(timestamp: number) {
+	const millisecondsPerSecond = 1000
+	const millisecondsPerMinute = millisecondsPerSecond * 60
+	const millisecondsPerHour = millisecondsPerMinute * 60
 
-	const currentTime = new Date().getTime();
-	const elapsedTime = currentTime - timestamp;
+	const currentTime = new Date().getTime()
+	const elapsedTime = currentTime - timestamp
 
-	let result = '';
+	let result = ''
 
 	// Вычисляем количество дней
 	const days = Math.floor(elapsedTime / (millisecondsPerHour * 24));
