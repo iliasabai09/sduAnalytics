@@ -6,7 +6,7 @@ import Profile from '../pages/profile.vue'
 import ProfilePlan from '../pages/profile-plan.vue'
 import ProfileGrades from '../pages/profile-grades.vue'
 import ProfileCourses from '../pages/profile-courses.vue'
-
+import Auth from "../pages/auth.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,7 +19,7 @@ const router = createRouter({
     {
       path: '/auth',
       name: 'auth',
-      component: import('../pages/auth.vue')
+      component: Auth
     },
     {
       path: '/profile',
