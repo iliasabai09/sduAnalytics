@@ -11,7 +11,7 @@ import TeacherCard from '@/components/TeacherCard.vue'
 import { onMounted, ref } from 'vue'
 import { TeachersService } from '@/shared/services/teachers.service'
 
-const teachers = ref([])
+const teachers: any = ref([])
 
 onMounted(() => {
   teachers.value = TeachersService.getTeachers() || []

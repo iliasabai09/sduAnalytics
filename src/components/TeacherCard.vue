@@ -10,12 +10,11 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from 'vue'
-import { ITeacher } from '@/shared/interfaces/teacher.interface'
 
 defineProps({
   teacher: {
-    type: Object as PropType<ITeacher[]>
+    type: Object,
+    required: true
   }
 })
 </script>
