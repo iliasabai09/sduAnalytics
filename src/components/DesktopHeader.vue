@@ -2,18 +2,22 @@
   <template v-if="isHaveAnimatePage">
     <header ref="header" :class="{ headerAnimation: isAnimated }">
       <div class="_container content" :class="{ noVisible: !isAnimated }">
-        <UBlackLogo/>
+        <RouterLink to="/">
+          <UBlackLogo/>
+        </RouterLink>
         <DesktopNavbar color="#000"/>
-        <RouterView to="/profile">
+        <RouterLink to="/profile">
           <UButton :title="'Мой кабинет'"/>
-        </RouterView>
+        </RouterLink>
       </div>
       <div class="_container content" v-if="!isAnimated">
-        <ULogo/>
+        <RouterLink to="/">
+          <ULogo/>
+        </RouterLink>
         <DesktopNavbar/>
-        <RouterView to="/profile">
+        <RouterLink to="/profile/info">
           <UButton :title="'Мой кабинет'"/>
-        </RouterView>
+        </RouterLink>
       </div>
     </header>
   </template>
@@ -21,11 +25,13 @@
   <template v-if="!isHaveAnimatePage">
     <header ref="header" :class="{ headerAnimation: !isAnimated }" class="headerWithoutAnimate">
       <div class="_container content" :class="{ noVisible: isAnimated}">
-        <UBlackLogo/>
+        <RouterLink to="/">
+          <UBlackLogo/>
+        </RouterLink>
         <DesktopNavbar color="#000"/>
-        <RouterView to="/profile">
+        <RouterLink to="/profile/info">
           <UButton :title="'Мой кабинет'"/>
-        </RouterView>
+        </RouterLink>
       </div>
     </header>
   </template>
@@ -35,8 +41,12 @@
 import ULogo from '@/ui/ULogo.vue'
 import DesktopNavbar from '@/components/DesktopNavbar.vue'
 import UButton from '@/ui/UButton.vue'
-import { ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import UBlackLogo from '@/ui/UBlackLogo.vue'
+import { useRoute, useRouter } from 'vue-router'
+
+const router = useRouter()
+const route = useRoute()
 
 const header = ref(null)
 const isAnimated = ref(false)
@@ -46,8 +56,21 @@ document.addEventListener('scroll', (e) => {
   isAnimated.value = scrolledPixels > 300
 })
 
-const isHaveAnimatePage = !(document.location.href as string).includes('profile')
+const isHaveAnimatePage = computed(() => {
+  return !['profile', 'profile-info', 'profile-teachers', 'profile-plan', 'profile-grades', 'profile-courses'].includes(router.currentRoute.value.name)
+})
 
+watch(
+    () => router,
+    (val) => {
+      console.log(val)
+    }
+)
+
+onMounted(() => {
+  // console.log(route)
+  console.log(router.currentRoute)
+})
 </script>
 
 <style scoped lang="scss">
