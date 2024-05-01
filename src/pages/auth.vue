@@ -23,14 +23,14 @@
                 <div class="body">Gender</div>
                 <div class="userGender-chips">
                   <v-chip
-                      :color="registerForm.gender === 1 && 'blue'"
+                      :color="registerForm.gender === 1 ? 'blue' : ''"
                       style="cursor: pointer"
                       @click="registerForm.gender = 1"
                   >
                     Male
                   </v-chip>
                   <v-chip
-                      :color="registerForm.gender === 2 && 'blue'"
+                      :color="registerForm.gender === 2 ? 'blue' : ''"
                       style="cursor: pointer"
                       @click="registerForm.gender = 2"
                   >
@@ -94,7 +94,7 @@ onMounted(() => {
   })
 })
 
-const registerForm = ref({
+const registerForm: any = ref({
   name: null,
   surname: null,
   email: null,

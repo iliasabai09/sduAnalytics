@@ -7,7 +7,7 @@
         clearable
         v-model="form.teachers"
         label="teachers"
-        :items="teachers.map(teacher => teacher.fullName)"
+        :items="teachers.map((teacher:any) => teacher.fullName)"
         multiple
     ></v-select>
     <div class="group">
@@ -54,12 +54,12 @@
 import { onMounted, ref } from 'vue'
 import { TeachersService } from '@/shared/services/teachers.service'
 
-function addAndReset(key, val) {
+function addAndReset(key: any, val: any) {
   form.value[key].push(val)
   clearMiniForms()
 }
 
-const form = ref({
+const form: any = ref({
   title: null,
   semester: null,
   description: '',
@@ -69,13 +69,13 @@ const form = ref({
   assessment_methods: []
 })
 
-const course_plan = ref({
+const course_plan: any = ref({
   week: null,
   topics: null,
   activity: null
 })
 
-const reading_list = ref({
+const reading_list: any = ref({
   type: '',
   authors: '',
   title: '',
@@ -84,7 +84,7 @@ const reading_list = ref({
   publisher_web_site: ''
 })
 
-const assessment_methods = ref({
+const assessment_methods: any = ref({
   assessment: '',
   description: '',
   qty: '',
@@ -128,9 +128,9 @@ function clearForm() {
 }
 
 function toggleFilters() {
-  form.value.teachers = form.value.teachers.map(t => {
+  form.value.teachers = form.value.teachers.map((t: any) => {
     return {
-      id: teachers.value.find(fi => fi.fullName === t).id
+      id: teachers.value.find((fi: any) => fi.fullName === t).id
     }
   })
 }
@@ -146,7 +146,7 @@ async function submit() {
     })
     clearForm()
     alert('Айзок походу успех')
-  } catch (e) {
+  } catch (e: any) {
     alert(e.message)
   }
 
