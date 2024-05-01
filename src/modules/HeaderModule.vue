@@ -14,6 +14,7 @@ import { onMounted } from 'vue'
 import { scrollToSection } from '@/utils/functions/scrollToSection'
 
 onMounted(() => {
+  if (document.location.href.includes('auth') || document.location.href.includes('profile')) return
   let hash = document.location.href.split('#')[1]
   setTimeout(() => {
     scrollToSection(hash)
