@@ -13,10 +13,34 @@
               <input type="password" placeholder="Password" v-model="registerForm.password">
             </template>
             <template v-if="step === 2">
-              <input type="text" placeholder="Birsthday" v-model="registerForm.name">
-              <input type="text" placeholder="day" v-model="registerForm.surname">
-              <input type="email" placeholder="adviser" v-model="registerForm.email">
-              <input type="password" placeholder="Password" v-model="registerForm.password">
+              <input type="text" placeholder="Adviser" v-model="registerForm.adviser">
+              <input type="text" placeholder="Course" v-model="registerForm.course">
+              <input type="date" placeholder="Birthday" v-model="registerForm.birthday">
+              <input type="number" placeholder="Group" v-model="registerForm.group">
+            </template>
+            <template v-if="step === 3">
+              <div class="userGender">
+                <div class="body">Gender</div>
+                <div class="userGender-chips">
+                  <v-chip
+                      :color="registerForm.gender === 1 && 'blue'"
+                      style="cursor: pointer"
+                      @click="registerForm.gender = 1"
+                  >
+                    Male
+                  </v-chip>
+                  <v-chip
+                      :color="registerForm.gender === 2 && 'blue'"
+                      style="cursor: pointer"
+                      @click="registerForm.gender = 2"
+                  >
+                    Female
+                  </v-chip>
+                </div>
+              </div>
+              <div class="userGrades">
+
+              </div>
             </template>
             <button type="submit">{{ step < 3 ? "Next" : "Submit" }}</button>
           </form>
@@ -53,7 +77,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { AuthService } from '@/shared/services/auth.service'
-import { TeachersService } from '@/shared/services/teachers.service'
 
 const step = ref(1)
 
@@ -71,12 +94,18 @@ onMounted(() => {
   })
 })
 
-const registerForm = {
+const registerForm = ref({
   name: null,
   surname: null,
   email: null,
-  password: null
-}
+  password: null,
+  adviser: null,
+  course: null,
+  birthday: null,
+  gender: null,
+  group: null,
+  courses: []
+})
 
 const loginForm = {
   email: null,
@@ -85,9 +114,9 @@ const loginForm = {
 
 async function registerUser() {
   try {
-    // if (step.value < 4) return step.value++
-    // await AuthService.registerUser(registerForm)
-    TeachersService.getTeachers()
+    if (step.value < 4) return step.value++
+    await AuthService.registerUser(registerForm.value)
+    // TeachersService.getTeachers()
   } catch (e: any) {
     console.error(e.message)
   }
@@ -123,6 +152,24 @@ async function loginUser() {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.userGender {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+
+  &-chips {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.userGrades {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
