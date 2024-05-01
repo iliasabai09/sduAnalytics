@@ -60,13 +60,6 @@ const isHaveAnimatePage = computed(() => {
   return !['profile', 'profile-info', 'profile-teachers', 'profile-plan', 'profile-grades', 'profile-courses'].includes((router.currentRoute as any).value.name)
 })
 
-watch(
-    () => router,
-    (val) => {
-      console.log(val)
-    }
-)
-
 onMounted(() => {
   // console.log(route)
   console.log(router.currentRoute)

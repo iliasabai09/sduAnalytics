@@ -1,14 +1,22 @@
 <template>
   <div class="wrapper">
     <div class="teachers">
-      <TeacherCard v-for="_ in 6"/>
+      <TeacherCard v-for="teacher in teachers" :teacher="teacher"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import TeacherCard from '@/components/TeacherCard.vue'
+import { onMounted, ref } from 'vue'
+import { TeachersService } from '@/shared/services/teachers.service'
 
-import TeacherCard from '@/components/TeacherCard.vue'</script>
+const teachers = ref([])
+
+onMounted(() => {
+  teachers.value = TeachersService.getTeachers() || []
+})
+</script>
 
 <style scoped lang="scss">
 .wrapper {

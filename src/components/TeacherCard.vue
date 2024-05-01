@@ -1,16 +1,23 @@
 <template>
   <div class="teacher boxShadow">
     <div class="teacher-img">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfq6R5pVJ7m9mpFCUsuyeHMAzCZe5-JmS1XppinhIT9A&s"
+      <img :src="teacher.img || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJ8PzPLg8d2HJkNytkC-WYHjElSVJ3fHRfw&s'"
            alt="teacher">
     </div>
-    <div class="teacher-subject bodyMedium">{{ 'Algebra' }}</div>
-    <div class="teacher-title textLarge">{{ 'Brbale Brablesovich' }}</div>
+    <div class="teacher-subject bodyMedium">{{ teacher.subjects }}</div>
+    <div class="teacher-title textLarge">{{ teacher.fullName }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { PropType } from 'vue'
+import { ITeacher } from '@/shared/interfaces/teacher.interface'
 
+defineProps({
+  teacher: {
+    type: Object as PropType<ITeacher[]>
+  }
+})
 </script>
 
 <style scoped lang="scss">

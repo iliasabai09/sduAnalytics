@@ -53,6 +53,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { AuthService } from '@/shared/services/auth.service'
+import { TeachersService } from '@/shared/services/teachers.service'
 
 const step = ref(1)
 
@@ -84,8 +85,9 @@ const loginForm = {
 
 async function registerUser() {
   try {
-    if (step.value < 4) return step.value++
-    await AuthService.registerUser(registerForm)
+    // if (step.value < 4) return step.value++
+    // await AuthService.registerUser(registerForm)
+    TeachersService.getTeachers()
   } catch (e: any) {
     console.error(e.message)
   }

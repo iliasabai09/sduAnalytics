@@ -1,0 +1,196 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "fullName": "Nauryzbay Sapargali",
+      "subjects": "Programming Technologies and Educational Practice",
+      "degree": "Bachelor",
+      "contact_info": "nauryzbay.sapargali@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "fullName": "Kuanyshbek Mamay",
+      "subjects": "Programming Technologies and Educational Practice",
+      "degree": "Bachelor",
+      "contact_info": "kuanyshbek.mamay@sdu.edu.kz ",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "fullName": "SumeyraBetul Polat",
+      "subjects": "Programming Technologies and Educational Practice",
+      "degree": "Bachelor",
+      "contact_info": "sumeyrabetul.polat@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 4,
+      "fullName": "Ulzhan Mukasheva",
+      "subjects": "Programming Technologies and Educational Practice",
+      "degree": "Master",
+      "contact_info": "ulzhan.mukasheva@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 5,
+      "fullName": "Saulet Borambayeva",
+      "subjects": "Mathematical analysis 1,Mathematical analysis 2,Mathematical analysis 3",
+      "degree": "Candidate of Science",
+      "contact_info": "saulet.borambayeva@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 6,
+      "fullName": "Aiman Shakulikova",
+      "subjects": "Mathematical analysis 1,Mathematical analysis 2,Mathematical analysis 3",
+      "degree": "Candidate of Science",
+      "contact_info": "aiman.shakulikova@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 7,
+      "fullName": "Bayan Bekbolat",
+      "subjects": "Mathematical analysis 1,Mathematical analysis 2,Mathematical analysis 3,Mathematical and Complex analysis",
+      "degree": "Doctor PhD",
+      "contact_info": "bayan.bekbolat@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 8,
+      "fullName": "Almat Abdrashit",
+      "subjects": "Mathematical analysis 2, Algebra",
+      "degree": "Bachelor",
+      "contact_info": "almat.abdrashit@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 9,
+      "fullName": "Bauyrzhan Sartayev",
+      "subjects": "Algebra,Linear Algebra and Analytic Geometry",
+      "degree": "Doctor PhD",
+      "contact_info": "bauyrzhan.sartayev@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 10,
+      "fullName": "Farukh Mashurov",
+      "subjects": "Algebra",
+      "degree": "Doctor PhD",
+      "contact_info": "farukh.mashurov@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 11,
+      "fullName": "Abdibek Ydyrys",
+      "subjects": "Algebra",
+      "degree": "Bachelor",
+      "contact_info": "abdibek.ydyrys@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 12,
+      "fullName": "Medina Yeskendir",
+      "subjects": "Discrete mathematics",
+      "degree": "Master",
+      "contact_info": "medina.yeskendir@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 13,
+      "fullName": "Syndar Zhenis",
+      "subjects": "Discrete mathematics,Ordinary differential equations",
+      "degree": "Master",
+      "contact_info": "syndar.zhenis@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 14,
+      "fullName": "Aishabibi Dukenbayeva",
+      "subjects": "Ordinary differential equations",
+      "degree": "Doctor PhD",
+      "contact_info": "a.dukenbayeva@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 15,
+      "fullName": "Nail Ussembayev",
+      "subjects": "Classical mechanics",
+      "degree": "Doctor PhD",
+      "contact_info": "nail.ussembayev@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 16,
+      "fullName": "Kuralay Apseit",
+      "subjects": "Classical mechanics",
+      "degree": "Bachelor",
+      "contact_info": " kuralay.apseit@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 17,
+      "fullName": "Larissa Bazarbayeva",
+      "subjects": "Theory of Probablility and Mathematical Statistics",
+      "degree": "Candidate of Science",
+      "contact_info": "larissa.bazarbayeva@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 18,
+      "fullName": "Gulsim Darkenbayeva",
+      "subjects": "Theory of Probablility and Mathematical Statistics",
+      "degree": "Doctor PhD",
+      "contact_info": "gulsim.darkenbayeva@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 19,
+      "fullName": "Aleksei Kavokin",
+      "subjects": "Mathematical and Complex analysis, Numerical methods",
+      "degree": "Candidate of Science",
+      "contact_info": "aleksei.kavokin@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 20,
+      "fullName": "Aziza Aipenova",
+      "subjects": "Data wrangling and visualization",
+      "degree": "Doctor PhD",
+      "contact_info": "aziza.aipenova@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 21,
+      "fullName": "Assem Talasbek",
+      "subjects": "Data wrangling and visualization",
+      "degree": "Doctor PhD",
+      "contact_info": "assem.talasbek@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 22,
+      "fullName": "Gulnaz Ilyassova",
+      "subjects": "Numerical methods",
+      "degree": "Master",
+      "contact_info": "gulnaz.baimenshina@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 23,
+      "fullName": "Bekzat Zhakhaev",
+      "subjects": "Linear Algebra and Analytic Geometry",
+      "degree": "Doctor PhD",
+      "contact_info": "bekzat.zhakhaev@sdu.edu.kz",
+      "img": ""
+    },
+    {
+      "id": 24,
+      "fullName": "Meraryslan Meraliyev",
+      "subjects": "Fundamentals of Programming",
+      "degree": "Doctor PhD",
+      "contact_info": "meraryslan.meraliev@sdu.edu.kz",
+      "img": ""
+    }
+  ]
+}
