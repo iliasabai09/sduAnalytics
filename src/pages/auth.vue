@@ -77,7 +77,9 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { AuthService } from '@/shared/services/auth.service'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 const step = ref(1)
 
 onMounted(() => {
@@ -116,7 +118,7 @@ async function registerUser() {
   try {
     if (step.value < 4) return step.value++
     await AuthService.registerUser(registerForm.value)
-    // TeachersService.getTeachers()
+    await router.push('/profile/info')
   } catch (e: any) {
     console.error(e.message)
   }
@@ -125,6 +127,7 @@ async function registerUser() {
 async function loginUser() {
   try {
     await AuthService.loginUser(loginForm)
+    await router.push('/profile/info')
   } catch (e: any) {
     console.error(e.message)
   }

@@ -1,8 +1,8 @@
 <template>
   <div class="form">
-    <v-text-field label="title" v-model="form.title"></v-text-field>
-    <v-text-field label="semester" v-model="form.semester"></v-text-field>
-    <v-text-field label="description" v-model="form.description"></v-text-field>
+    <v-text-field label="title" v-model.trim="form.title"></v-text-field>
+    <v-text-field label="semester" v-model.trim="form.semester"></v-text-field>
+    <v-text-field label="description" v-model.trim="form.description"></v-text-field>
     <v-select
         clearable
         v-model="form.teachers"
@@ -13,9 +13,9 @@
     <div class="group">
       <div>course_plan</div>
       <div class="group-fields">
-        <v-text-field label="week" v-model="course_plan.week"></v-text-field>
-        <v-text-field label="topics" v-model="course_plan.topics"></v-text-field>
-        <v-text-field label="title" v-model="course_plan.activity"></v-text-field>
+        <v-text-field label="week" v-model.trim="course_plan.week"></v-text-field>
+        <v-text-field label="topics" v-model.trim="course_plan.topics"></v-text-field>
+        <v-text-field label="title" v-model.trim="course_plan.activity"></v-text-field>
         <v-btn @click="addAndReset('course_plan',course_plan)">Add</v-btn>
       </div>
       <div class="group-data">{{ form.course_plan.length }}</div>
@@ -24,12 +24,12 @@
     <div class="group">
       <div>reading_list</div>
       <div class="group-fields">
-        <v-text-field label="type" v-model="reading_list.type"></v-text-field>
-        <v-text-field label="authors" v-model="reading_list.authors"></v-text-field>
-        <v-text-field label="title" v-model="reading_list.title"></v-text-field>
-        <v-text-field label="publishing_year" v-model="reading_list.publishing_year"></v-text-field>
-        <v-text-field label="isbn" v-model="reading_list.isbn"></v-text-field>
-        <v-text-field label="publisher_web_site" v-model="reading_list.publisher_web_site"></v-text-field>
+        <v-text-field label="type" v-model.trim="reading_list.type"></v-text-field>
+        <v-text-field label="authors" v-model.trim="reading_list.authors"></v-text-field>
+        <v-text-field label="title" v-model.trim="reading_list.title"></v-text-field>
+        <v-text-field label="publishing_year" v-model.trim="reading_list.publishing_year"></v-text-field>
+        <v-text-field label="isbn" v-model.trim="reading_list.isbn"></v-text-field>
+        <v-text-field label="publisher_web_site" v-model.trim="reading_list.publisher_web_site"></v-text-field>
         <v-btn @click="addAndReset('reading_list',reading_list)">Add</v-btn>
       </div>
       <div class="group-data">{{ form.reading_list.length }}</div>
@@ -38,10 +38,10 @@
     <div class="group">
       <div>assessment_methods</div>
       <div class="group-fields">
-        <v-text-field label="assessment" v-model="assessment_methods.assessment"></v-text-field>
-        <v-text-field label="description" v-model="assessment_methods.description"></v-text-field>
-        <v-text-field label="qty" v-model="assessment_methods.qty"></v-text-field>
-        <v-text-field label="percent" v-model="assessment_methods.percent"></v-text-field>
+        <v-text-field label="assessment" v-model.trim="assessment_methods.assessment"></v-text-field>
+        <v-text-field label="description" v-model.trim="assessment_methods.description"></v-text-field>
+        <v-text-field label="qty" v-model.trim="assessment_methods.qty"></v-text-field>
+        <v-text-field label="percent" v-model.trim="assessment_methods.percent"></v-text-field>
         <v-btn @click="addAndReset('assessment_methods',assessment_methods)">Add</v-btn>
       </div>
       <div class="group-data">{{ form.assessment_methods.length }}</div>
