@@ -1,5 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '@/pages/homePage.vue'
+import ProfileInfo from '../pages/profile-info.vue'
+import ProfileTeachers from '../pages/profile-teachers.vue'
+import Profile from '../pages/profile.vue'
+import ProfilePlan from '../pages/profile-plan.vue'
+import ProfileGrades from '../pages/profile-grades.vue'
+import ProfileCourses from '../pages/profile-courses.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,32 +24,32 @@ const router = createRouter({
     {
       path: '/profile',
       name: 'profile',
-      component: import('../pages/profile.vue'),
+      component: Profile,
       children: [
         {
           path: 'info',
           name: 'profile-info',
-          component: import('../pages/profile-info.vue')
+          component: ProfileInfo
         },
         {
           path: 'teachers',
           name: 'profile-teachers',
-          component: import('../pages/profile-teachers.vue')
+          component: ProfileTeachers
         },
         {
           path: 'plan',
           name: 'profile-plan',
-          component: import('../pages/profile-plan.vue')
+          component: ProfilePlan
         },
         {
           path: 'grades',
           name: 'profile-grades',
-          component: import('../pages/profile-grades.vue')
+          component: ProfileGrades
         },
         {
           path: 'courses',
           name: 'profile-courses',
-          component: import('../pages/profile-courses.vue')
+          component: ProfileCourses
         }
       ]
     }

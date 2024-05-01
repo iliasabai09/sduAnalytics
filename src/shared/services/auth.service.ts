@@ -1,6 +1,7 @@
 import { useGet } from '@/shared/composables/useGet'
 import { usePut } from '@/shared/composables/usePut'
 import { hashSum } from '@/utils/functions/hashSum'
+import { LocalstorageProvider } from '@/shared/providers/localstorage.provider'
 
 export class AuthService {
 	static async registerUser(user: any) {
@@ -17,7 +18,12 @@ export class AuthService {
 		if (response.password !== user.password) {
 			throw new Error('Введен неверный пароль')
 		}
-		console.log(response)
 		return response
 	}
+
+	static async logout() {
+		LocalstorageProvider.removeItem('user')
+	}
+
+
 }

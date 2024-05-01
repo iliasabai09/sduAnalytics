@@ -4,9 +4,11 @@
       <div class="layout">
         <ProfileUserModule/>
         <div class="profilePage-content">
-          <Transition>
-            <RouterView/>
-          </Transition>
+          <router-view v-slot="{ Component }">
+            <transition name="fade">
+              <component :is="Component" />
+            </transition>
+          </router-view>
         </div>
       </div>
     </div>

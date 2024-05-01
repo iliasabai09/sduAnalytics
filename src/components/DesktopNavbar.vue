@@ -19,23 +19,26 @@ const links = ref([
   {
     title: 'Home',
     link: '/'
-  }, {
+  },
+  {
     title: 'About us',
     link: 'about'
+  },
+  // {
+  //   title: 'OurStory',
+  //   link: 'ourStory'
+  // },
+  // {
+  //   title: 'OurTeam',
+  //   link: 'OurTeam'
+  // },
+  {
+    title: 'HowItWorks',
+    link: 'howItWorks'
   },
   {
     title: 'Talk with AC',
     link: 'services'
-  }, {
-    title: 'OurStory',
-    link: 'ourStory'
-  }, {
-    title: 'OurTeam',
-    link: 'OurTeam'
-  },
-  {
-    title: 'HowItWorks',
-    link: 'howItWorks'
   },
 ])
 </script>

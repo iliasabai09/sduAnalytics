@@ -10,15 +10,18 @@
     </div>
     <div class="menu">
       <div
+          :style="{ color: idx === menu.length - 1 ? 'red' : '#000'}"
           class="menu-link textMedium"
-          v-for="link in menu"
+          v-for="(link,idx) in menu"
           @click="toContent(link.route)"
           :class="{ 'menu-link-active': link.isActive }"
       >
-        <span class="material-symbols-outlined">{{ link.icon }}</span>
+        <span class="material-symbols-outlined" :style="{ color: idx === menu.length - 1 ? 'red' : '#000'}">{{
+            link.icon
+          }}</span>
         <div>{{ link.title }}</div>
         <div class="_spacer"></div>
-        <span class="material-symbols-outlined">chevron_right</span>
+        <span class="material-symbols-outlined" :style="{ color: idx === menu.length - 1 ? 'red' : '#000'}">chevron_right</span>
       </div>
     </div>
   </div>
@@ -27,6 +30,7 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { AuthService } from '@/shared/services/auth.service'
 
 const router = useRouter()
 const route = useRoute()
@@ -65,15 +69,25 @@ const menu = ref([
     isActive: false,
     route: '/profile/courses',
     icon: 'school'
+  },
+  {
+    id: 6,
+    title: 'logout',
+    isActive: false,
+    route: '/auth',
+    icon: 'logout'
   }
+
 ])
 
 function toContent(r: string) {
+  if (r === '/auth') {
+    AuthService.logout()
+  }
   router.push(r)
 }
 
 watch(() => route.fullPath, (value, oldValue, onCleanup) => {
-  console.log(value)
   menu.value = menu.value.map(menu => {
     menu.isActive = menu.route === value
     return menu
