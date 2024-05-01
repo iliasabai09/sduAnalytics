@@ -1,14 +1,14 @@
 export class LocalstorageProvider {
-	static setItem(key, val) {
+	static setItem(key: string, val: any) {
 		localStorage.setItem(key, JSON.stringify(val))
 	}
 
-	static getItem(key) {
+	static getItem(key: string) {
 		const json = localStorage.getItem(key)
 		return json ? JSON.parse(json) : null
 	}
 
-	static removeItem(key) {
+	static removeItem(key: string) {
 		localStorage.removeItem(key)
 	}
 
