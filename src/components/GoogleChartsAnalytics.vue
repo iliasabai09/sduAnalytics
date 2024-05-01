@@ -18,8 +18,8 @@ const options = {
     title: 'Company Performance',
     subtitle: 'Sales, Expenses, and Profit: 2014-2017'
   },
-  width: 800,
-  height: 600
+  width: 500,
+  height: 400
 }
 
 </script>

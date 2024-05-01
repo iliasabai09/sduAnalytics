@@ -15,9 +15,9 @@ const data = [
   ['Sleep', 7]
 ]
 const options = {
-  title: 'My Daily Activities',
+  title: '',
   pieHole: 0.4,
-  width: 800,
-  height: 600
+  width: 500,
+  height: 400
 }
 </script>

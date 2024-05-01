@@ -57,7 +57,7 @@ document.addEventListener('scroll', (e) => {
 })
 
 const isHaveAnimatePage = computed(() => {
-  return !['profile', 'profile-info', 'profile-teachers', 'profile-plan', 'profile-grades', 'profile-courses'].includes(router.currentRoute.value.name)
+  return !['profile', 'profile-info', 'profile-teachers', 'profile-plan', 'profile-grades', 'profile-courses'].includes((router.currentRoute as any).value.name)
 })
 
 watch(

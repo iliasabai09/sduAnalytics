@@ -6,11 +6,19 @@
           <form @submit.prevent="registerUser">
             <h1>Create Account</h1>
             <span>or use your email for registeration</span>
-            <input type="text" placeholder="Name" v-model="registerForm.name">
-            <input type="text" placeholder="Surname" v-model="registerForm.surname">
-            <input type="email" placeholder="Email" v-model="registerForm.email">
-            <input type="password" placeholder="Password" v-model="registerForm.password">
-            <button type="submit">Sign Up</button>
+            <template v-if="step === 1">
+              <input type="text" placeholder="Name" v-model="registerForm.name">
+              <input type="text" placeholder="Surname" v-model="registerForm.surname">
+              <input type="email" placeholder="Email" v-model="registerForm.email">
+              <input type="password" placeholder="Password" v-model="registerForm.password">
+            </template>
+            <template v-if="step === 2">
+              <input type="text" placeholder="Birsthday" v-model="registerForm.name">
+              <input type="text" placeholder="day" v-model="registerForm.surname">
+              <input type="email" placeholder="adviser" v-model="registerForm.email">
+              <input type="password" placeholder="Password" v-model="registerForm.password">
+            </template>
+            <button type="submit">{{ step < 3 ? "Next" : "Submit" }}</button>
           </form>
         </div>
         <div class="form-container sign-in">
@@ -43,8 +51,10 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { AuthService } from '@/shared/services/auth.service'
+
+const step = ref(1)
 
 onMounted(() => {
   const container = document.getElementById('container')
@@ -74,6 +84,7 @@ const loginForm = {
 
 async function registerUser() {
   try {
+    if (step.value < 4) return step.value++
     await AuthService.registerUser(registerForm)
   } catch (e: any) {
     console.error(e.message)
