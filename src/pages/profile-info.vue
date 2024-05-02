@@ -5,7 +5,7 @@
       <UserInfoData/>
       <div class="info-results">
         <TogetherTime/>
-        <OnlineUsers/>
+<!--        <OnlineUsers/>-->
       </div>
     </div>
   </div>
