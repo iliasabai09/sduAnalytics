@@ -3,14 +3,14 @@
     <HomeSectionModule/>
 <!--    <OurServicesModule/>-->
     <AboutCompanyModule/>
-<!--    <OverviewModule/>-->
+    <OverviewModule/>
     <TrustUsModule/>
 <!--    <OurPortfolioModule/>-->
 <!--    <CounterSectionModule/>-->
 <!--    <ClientFeedbackModule/>-->
 <!--    <TeamMembersModule/>-->
-<!--    <RecentBlogModule/>-->
-<!--    <WantToWorkModule/>-->
+    <RecentBlogModule/> <!--todo изменить контент-->
+    <WantToWorkModule/>
 <!--    <OurCustomersModule/>-->
 <!--    <FooterModule/>-->
   </div>

@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="content">
-      <div class="_secondaryTitle">Хотите поработать с нами?</div>
-      <h3 class="title">Оцифруйте и развивайте свой бизнес</h3>
-      <div class="description">Мы всегда открыты к новым партнерствам и сотрудничеству. Если вы ищете надежного и профессионального партнера для реализации своих проектов, обращайтесь к нам. Вместе мы достигнем новых высот.</div>
+      <div class="_secondaryTitle">Develop your performance with us.</div>
+      <h3 class="title">Analyze your performance</h3>
+      <div class="description">Feel free to reach out to us if you have any questions or need further assistance. We are always ready to help and address all your inquiries. Contact us using the provided contact information, and our team will ensure you receive all the necessary support. Your satisfaction is our priority!</div>
       <div class="actions">
         <UButton :title="'Позвоните сейчас'"/>
         <UButton :title="'Свяжитесь с нами'"/>
