@@ -62,7 +62,6 @@ const isHaveAnimatePage = computed(() => {
 
 onMounted(() => {
   // console.log(route)
-  console.log(router.currentRoute)
 })
 </script>
 

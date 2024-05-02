@@ -12,55 +12,72 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import { UserService } from '@/shared/services/user.service'
 
 const userInfo = ref([
   {
     type: 'ID',
     value: '38725361275',
-    icon: 'person_2'
+    icon: 'person_2',
+    key: 'createdAt'
   },
   {
     type: 'Name',
     value: 'Aizere',
-    icon: 'badge'
+    icon: 'badge',
+    key: 'name'
   },
   {
     type: 'Surname',
     value: 'Abzelbekova',
-    icon: 'person'
+    icon: 'person',
+    key: 'surname'
   },
   {
     type: 'Email',
     value: 'brdene@sdu.kz',
-    icon: 'mail'
+    icon: 'mail',
+    key: 'email'
   },
   {
     type: 'Adviser',
     value: 'Brdene Brdenesovich',
-    icon: 'person'
+    icon: 'person',
+    key: 'adviser'
   },
   {
     type: 'Course',
     value: '4',
-    icon: 'school'
+    icon: 'school',
+    key: 'course'
   },
   {
     type: 'Birthday',
     value: '2002y 1 april',
-    icon: 'cake'
+    icon: 'cake',
+    key: 'birthday'
   },
-  {
-    type: 'Gender',
-    value: 'Male',
-    icon: 'agender'
-  },
+  // {
+  //   type: 'Gender',
+  //   value: 'Male',
+  //   icon: 'agender'
+  // },
   {
     type: 'Group',
     value: '42BT19',
-    icon: 'group'
+    icon: 'group',
+    key: 'group'
   }
 ])
+
+onMounted(() => {
+  const user = UserService.getUser()
+  for (const key in userInfo.value) {
+    const keyUp = userInfo.value[key].key
+    userInfo.value[key].value = user[keyUp]
+  }
+})
 </script>
 
 <style scoped lang="scss">

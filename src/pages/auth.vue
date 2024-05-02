@@ -19,27 +19,33 @@
               <input type="number" placeholder="Group" v-model="registerForm.group">
             </template>
             <template v-if="step === 3">
-              <div class="userGender">
-                <div class="body">Gender</div>
-                <div class="userGender-chips">
-                  <v-chip
-                      :color="registerForm.gender === 1 ? 'blue' : ''"
-                      style="cursor: pointer"
-                      @click="registerForm.gender = 1"
-                  >
-                    Male
-                  </v-chip>
-                  <v-chip
-                      :color="registerForm.gender === 2 ? 'blue' : ''"
-                      style="cursor: pointer"
-                      @click="registerForm.gender = 2"
-                  >
-                    Female
-                  </v-chip>
-                </div>
-              </div>
+              <!--              <div class="userGender">-->
+              <!--                <div class="body">Gender</div>-->
+              <!--                <div class="userGender-chips">-->
+              <!--                  <v-chip-->
+              <!--                      :color="registerForm.gender === 1 ? 'blue' : ''"-->
+              <!--                      style="cursor: pointer"-->
+              <!--                      @click="registerForm.gender = 1"-->
+              <!--                  >-->
+              <!--                    Male-->
+              <!--                  </v-chip>-->
+              <!--                  <v-chip-->
+              <!--                      :color="registerForm.gender === 2 ? 'blue' : ''"-->
+              <!--                      style="cursor: pointer"-->
+              <!--                      @click="registerForm.gender = 2"-->
+              <!--                  >-->
+              <!--                    Female-->
+              <!--                  </v-chip>-->
+              <!--                </div>-->
+              <!--              </div>-->
               <div class="userGrades">
-
+                <div class="titleMedium">Grades</div>
+                <input
+                    type="number"
+                    :placeholder="course?.title + ' grade'"
+                    v-model="course.grade"
+                    v-for="(course, index) in registerForm.courses"
+                >
               </div>
             </template>
             <button type="submit">{{ step < 3 ? "Next" : "Submit" }}</button>
@@ -78,9 +84,12 @@
 import { onMounted, ref } from 'vue'
 import { AuthService } from '@/shared/services/auth.service'
 import { useRouter } from 'vue-router'
+import { CoursesService } from '@/shared/services/courses.service'
+import { UserService } from '@/shared/services/user.service'
 
 const router = useRouter()
 const step = ref(1)
+const courses = ref([])
 
 onMounted(() => {
   const container = document.getElementById('container')
@@ -97,6 +106,7 @@ onMounted(() => {
 })
 
 const registerForm: any = ref({
+  createdAt: Date.now(),
   name: null,
   surname: null,
   email: null,
@@ -114,10 +124,16 @@ const loginForm = {
   password: null
 }
 
+function setCourses() {
+  registerForm.value.courses = CoursesService.getCoursesFromSemester(Number(registerForm.value.course))
+}
+
 async function registerUser() {
   try {
-    if (step.value < 4) return step.value++
-    await AuthService.registerUser(registerForm.value)
+    if (step.value === 2) setCourses()
+    if (step.value < 3) return step.value++
+    const user = await AuthService.registerUser(registerForm.value)
+    UserService.setUser(user)
     await router.push('/profile/info')
   } catch (e: any) {
     console.error(e.message)
@@ -126,14 +142,13 @@ async function registerUser() {
 
 async function loginUser() {
   try {
-    await AuthService.loginUser(loginForm)
+    const user = await AuthService.loginUser(loginForm)
+    UserService.setUser(user)
     await router.push('/profile/info')
   } catch (e: any) {
     console.error(e.message)
   }
 }
-
-
 
 </script>
 
@@ -173,6 +188,7 @@ async function loginUser() {
 .userGrades {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .container {

@@ -1,0 +1,536 @@
+{
+  "1714602984370": {
+    "assessment_methods": [
+      {
+        "assessment": "Midterm",
+        "description": "10 problems related to topics of the subject",
+        "percent": "20 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "10 problems related to the all topics of the subject",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "Solve problems given in the main book",
+        "percent": "20 %",
+        "qty": "4"
+      },
+      {
+        "assessment": "Field Work",
+        "description": "10 problems related to topics of the subject",
+        "percent": "20 %",
+        "qty": "1"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Groups and homomorphisms (part 1)",
+        "week": "1"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Groups and homomorphisms (part 2)",
+        "week": "2"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Vector spaces and linear transformations (part 1)",
+        "week": "3"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Vector spaces and linear transformations (part 2)",
+        "week": "4"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Group representations",
+        "week": "5"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "FG-modules (part 1)",
+        "week": "6"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "FG-modules (part 2)",
+        "week": "7"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "FG-submodules and reducibility",
+        "week": "8"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Group algebras",
+        "week": "9"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "FG-homomorphisms (part 1)",
+        "week": "10"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "FG-homomorphisms (part 2)",
+        "week": "11"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Maschke's theorem",
+        "week": "12"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Schur's lemma (part 1)",
+        "week": "13"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Schur's lemma (part 2)",
+        "week": "14"
+      },
+      {
+        "activity": "Prove theorems and solve problems",
+        "topics": "Irreducible modules and group algebra",
+        "week": "15"
+      }
+    ],
+    "description": "In this discipline we will consider groups, subgroups, morphism of groups, quotient groups, direct products of groups and some applications of groups.",
+    "reading_list": [
+      {
+        "authors": "Gordon James, Martin Liebeck",
+        "isbn": "052100392X",
+        "publisher_web_site": "Cambridge University Press",
+        "publishing_year": "2001",
+        "title": "Representations and Characters of Groups, Second Edition 2nd Edition",
+        "type": "Required"
+      }
+    ],
+    "semester": "3",
+    "teachers": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "title": "Algebra"
+  },
+  "1714603534692": {
+    "assessment_methods": [
+      {
+        "assessment": "Midterm",
+        "description": "",
+        "percent": "30 %",
+        "qty": "2"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "",
+        "percent": "10 %",
+        "qty": "2"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "",
+        "percent": "20 %",
+        "qty": "2"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Propositional Logic. Applications of Propositional Logic. Propositional Equivalences",
+        "topics": "The Foundations: Logic and Proofs",
+        "week": "1"
+      },
+      {
+        "activity": "Predicates and Quantifiers. Nested Quantifiers. Rules of Inference.",
+        "topics": "The Foundations: Logic and Proofs",
+        "week": "2"
+      },
+      {
+        "activity": "Sets. Set Operations.",
+        "topics": "Basic Structures: Sets, Functions, Sequences.",
+        "week": "3"
+      },
+      {
+        "activity": "Functions. Cardinality of Sets.",
+        "topics": "Basic Structures: Sets, Functions, Sequences.",
+        "week": "4"
+      },
+      {
+        "activity": "Relations and Their Properties . n-ary Relations and Their Applications. Representing Relations",
+        "topics": "Relations",
+        "week": "5"
+      },
+      {
+        "activity": "Equivalence Relations Partial Orderings",
+        "topics": "Relations",
+        "week": "6"
+      },
+      {
+        "topics": "Midterm Exam",
+        "week": "7"
+      },
+      {
+        "activity": "Divisibility and Modular Arithmetic. Integer Representations.",
+        "topics": "Number Theory",
+        "week": "8"
+      },
+      {
+        "activity": "Primes and Greatest Common Divisors.",
+        "topics": "Number Theory",
+        "week": "9"
+      },
+      {
+        "activity": "Mathematical Induction",
+        "topics": "Mathematical Induction",
+        "week": "10"
+      },
+      {
+        "activity": "\tThe Basics of Counting. Counting Functions",
+        "topics": "Counting",
+        "week": "11"
+      },
+      {
+        "activity": "Permutations and Combinations . Binomial Coefficients and Identities.",
+        "topics": "Counting",
+        "week": "12"
+      },
+      {
+        "activity": "\tSome special simple graph",
+        "topics": "Graphs",
+        "week": "13"
+      },
+      {
+        "activity": "Digraphs. Graph Isomorphism.",
+        "topics": "Graphs",
+        "week": "14"
+      },
+      {
+        "topics": "\tMidterm Exam. Course review. Preparation for Final Exam.",
+        "week": "15"
+      }
+    ],
+    "description": "This class starts with a discussion of mathematical logic. Logic is the basis of all mathematical reasoning, and of all automated reasoning. It has practical applications to the design of computing machines, to the specification of systems, to artificial intelligence, to computer programming, to programming languages, and to other areas of computer science, as well as to many other fields of study.  Discrete Structures: students will be able to work with discrete structures, which are the abstract mathematical structures used to represent discrete objects and relationships between these objects. These discrete structures include sets, permutations, relations, graphs, and trees. Next is Combinatorial Analysis: an important problem-solving skill is the ability to count or enumerate objects. The discussion of enumeration in this book begins with the basic techniques of counting. The stress is on performing combinatorial analysis to solve counting problems and analyze algorithms, not on applying formulae. Certain classes of problems are solved by the specification of an algorithm. After an algorithm has been described, a computer program can be constructed implementing it. The mathematical portions of this activity, which include the specification of the algorithm, the verification that it works properly are all covered in this course.",
+    "reading_list": [
+      {
+        "authors": "Kenneth H. Rosen",
+        "isbn": "978-0073383095",
+        "publisher_web_site": "McGraw-Hill",
+        "publishing_year": "2012",
+        "title": "Discrete Mathematics and its Applications",
+        "type": "Required"
+      }
+    ],
+    "semester": "3",
+    "teachers": [
+      12,
+      13
+    ],
+    "title": "Discrete mathematics"
+  },
+  "1714604345153": {
+    "assessment_methods": [
+      {
+        "assessment": "Midterm",
+        "description": "Midterm at 6th week and endterm at 14th week",
+        "percent": "30 %",
+        "qty": "2"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "At the end of semester",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "Every other week",
+        "percent": "15 %",
+        "qty": "7"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "",
+        "percent": "15 %\t",
+        "qty": "3"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1],[2].",
+        "topics": "Introduction & direction fields. Definitions and basic concepts of ordinary differential equations. Initial value problems and boundary value problems. Existence and uniqueness of the solution",
+        "week": "1"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. HW1",
+        "topics": "Classifications of differential equations. First order differential equations. Linear differential equations. Separable differential equations",
+        "week": "2"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2].",
+        "topics": "Exact differential equations and Integrating Factors. Homogeneous equations",
+        "week": "3"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. HW2 Quiz 1",
+        "topics": "Linear differential equations of order greater than one. Linear homogeneous equations",
+        "week": "4"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1],[2].",
+        "topics": "Nonhomogeneous equations. Method of undetermined coefficients",
+        "week": "5"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. Midterm HW3",
+        "topics": "Variation of parameters",
+        "week": "6"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1],[2]",
+        "topics": "Reduction of order",
+        "week": "7"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. HW4 Quiz 2",
+        "topics": "Systems of first-order linear equations. A brief review of linear algebra. Matrices",
+        "week": "8"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2].",
+        "topics": "Systems of linear algebraic equations; Linear independence, eigenvalues, eigenvectors",
+        "week": "9"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. HW5",
+        "topics": "Homogeneous linear systems with constant coefficients",
+        "week": "10"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2].",
+        "topics": "Homogeneous linear systems. Complex-valued eigenvalues",
+        "week": "11"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. HW6",
+        "topics": "Homogeneous linear systems. Repeated eigenvalues",
+        "week": "12"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works. Endterm 2, [1], [2].",
+        "topics": "Nonhomogeneous linear systems",
+        "week": "13"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2]. HW7 Quiz 3",
+        "topics": "The Laplace transform",
+        "week": "14"
+      },
+      {
+        "activity": "Lectures, practical hours, homeworks and independent works, [1], [2].",
+        "topics": "Lectures review. Final exam preparation",
+        "week": "15"
+      }
+    ],
+    "description": "Differential Equations are among the important subjects in mathematics which are essential for analysis and solving various problems in the natural sciences, engineering, economics and so on. In addition to learning basic techniques of solving first and second-order differential equations and system of linear ODEs, we will also study their applications to mathematical physics, mathematics and other fields.",
+    "reading_list": [
+      {
+        "authors": "Willliam E. Boyce, Richard C. Diprima, Douglas B. Meade, 11th edition",
+        "isbn": "ISBN: 13 978-1-119- 37792-4",
+        "publisher_web_site": "John Wiley and Sons, lnc.",
+        "publishing_year": "2017",
+        "title": "Elementary Differential Equations and Boundary Value Problems",
+        "type": "Required"
+      },
+      {
+        "authors": "Morris Tenenbaum, Harry Pollard",
+        "isbn": "9780486649",
+        "publisher_web_site": "Dover (republiation), good for self-study",
+        "publishing_year": "1985",
+        "title": "Ordinary Differential Equations",
+        "type": "Required"
+      },
+      {
+        "authors": "V.I. Arnold",
+        "isbn": "0262510189",
+        "publisher_web_site": "The MIT Press, for more advanced students",
+        "publishing_year": "1978",
+        "title": "Ordinary Differential Equations",
+        "type": "Recommended"
+      },
+      {
+        "authors": "Shepley L. Ross",
+        "isbn": "978-81-265",
+        "publisher_web_site": "John Wiley and Sons, Inc",
+        "publishing_year": "2004",
+        "title": "Differential equations, 3trd edition",
+        "type": "Recommended"
+      }
+    ],
+    "semester": "3",
+    "teachers": [
+      13,
+      14
+    ],
+    "title": "Ordinary differential equations"
+  },
+  "1714605085997": {
+    "assessment_methods": [
+      {
+        "assessment": "Midterm",
+        "description": "MT1 and MT2",
+        "percent": "25 %",
+        "qty": "2"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "End of semester cumulative written exam",
+        "percent": "30 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "Bi-weekly assignments",
+        "percent": "30 %",
+        "qty": "8"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "Weekly short quizzes",
+        "percent": "5 %",
+        "qty": "10"
+      },
+      {
+        "assessment": "Extra exam",
+        "description": "End of semester cumulative oral exam",
+        "percent": "10 %",
+        "qty": "1"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Read pp. 9-19 in Günther. Quiz 1",
+        "topics": "Introduction to the calculus of variations",
+        "week": "1"
+      },
+      {
+        "activity": "Read pp. 23-31 in Günther. Quiz 2",
+        "topics": "\tLagrange's lemma. Euler-Lagrange equations I",
+        "week": "2"
+      },
+      {
+        "activity": "Read pp. 31-41 in Günther. Quiz 3",
+        "topics": "Euler-Lagrange equations II",
+        "week": "3"
+      },
+      {
+        "activity": "Read §1, §2 in the main textbook (by Landau and Lifshitz). Quiz 4",
+        "topics": "Generalized coordinates. Hamilton's principle of least action",
+        "week": "4"
+      },
+      {
+        "activity": "Read §3, §4 and §5 in the main textbook. Quiz 5",
+        "topics": "Galileo's relativity principle. Lagrangian for a free particle and a system of particles",
+        "week": "5"
+      },
+      {
+        "activity": "Midterm 1 (covering weeks 1-5)",
+        "topics": "Invariance of the equations of motion with respect to Galilean transformations",
+        "week": "6"
+      },
+      {
+        "activity": "Read §6 in the main textbook. Quiz 6. Early withdrawal period ends",
+        "topics": "Euler's theorem on homogeneous functions. Conservation of energy. Noether's theorem",
+        "week": "7"
+      },
+      {
+        "activity": "Read §7, §8 and §9 in the main textbook. Quiz 7",
+        "topics": "Conservation of linear and angular momentum",
+        "week": "8"
+      },
+      {
+        "activity": "Read §11, §13 in the main textbook. Quiz 8",
+        "topics": "Motion in one dimension. The reduced mass",
+        "week": "9"
+      },
+      {
+        "activity": "Read §14, §15 in the main textbook. Quiz 9",
+        "topics": "Motion in a central field. Kepler's problem",
+        "week": "10"
+      },
+      {
+        "activity": "Read §21 in the main textbook. Midterm 2 (covering weeks 7-10)",
+        "topics": "Free oscillations in one dimension",
+        "week": "11"
+      },
+      {
+        "activity": "Read §22 in the main textbook. Quiz 10",
+        "topics": "Forced oscillations",
+        "week": "12"
+      },
+      {
+        "activity": "Read §23, § 25 in the main textbook. Quiz 11",
+        "topics": "Oscillations of systems with more than one degree of freedom. Damped oscillations",
+        "week": "13"
+      },
+      {
+        "activity": "Read §40, § 41 in the main textbook. Quiz 12",
+        "topics": "Legendre transform. Hamilton's equations. The Routhian",
+        "week": "14"
+      },
+      {
+        "activity": "\tRead §42 in the main textbook. Quiz 13",
+        "topics": "Poisson brakets",
+        "week": "15"
+      }
+    ],
+    "description": "The course is devoted to understanding the mathematical aspects of classical Newtonian mechanics. In this course we derive Newton's laws of motion from the variational principle, obtain conservation laws from Noether's theorem, examine a two-body problem and small oscillations from the perspective of the dynamical systems theory. The Hamiltonian formulation of the laws of mechanics will be briefly presented at the end of the course.",
+    "reading_list": [
+      {
+        "authors": "L. D. Landau and E. M. Lifshitz",
+        "isbn": "978-0750628969",
+        "publisher_web_site": "https://www.elsevier.com/books/mechanics/landau/978-0-08-050347-9",
+        "publishing_year": "1976",
+        "title": "Mechanics (3rd edition)",
+        "type": ""
+      },
+      {
+        "authors": "Н. М. Гюнтер",
+        "isbn": "978-5-8114-0893-1",
+        "publisher_web_site": "https://lanbook.com/catalog/author/gyunter-n.m./",
+        "publishing_year": "2009",
+        "title": "Курс вариационного исчисления",
+        "type": "Other"
+      },
+      {
+        "authors": "H. Goldstein, C. P. Poole, J. L. Safko",
+        "isbn": "9780201657029",
+        "publisher_web_site": "https://www.pearson.com/en-us/subject-catalog/p/classical-mechanics/P200000006871/9780201657029",
+        "publishing_year": "2002",
+        "title": "Classical Mechanics",
+        "type": "Recommended"
+      }
+    ],
+    "semester": "4",
+    "teachers": [
+      15,
+      16
+    ],
+    "title": "Classical mechanics"
+  }
+}

@@ -8,7 +8,7 @@ export class AuthService {
 		const _id = await hashSum(user.email.trim())
 		const isAvailableUser = await useGet('users', _id)
 		if (isAvailableUser) throw new Error('Пользователь с такой почтой уже существует')
-		await usePut('users', user, _id)
+		return await usePut('users', {...user, id: _id}, _id)
 	}
 
 	static async loginUser(user: any) {

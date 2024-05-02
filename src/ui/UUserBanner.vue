@@ -1,10 +1,13 @@
 <template>
   <div class="banner">
-    <div class="banner-text">{{ 'Добро пожаловать User' }}</div>
+    <div class="banner-text">{{ 'Добро пожаловать ' + user?.name }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { UserService } from '@/shared/services/user.service'
+
+const user = UserService.getUser()
 </script>
 
 <style scoped lang="scss">

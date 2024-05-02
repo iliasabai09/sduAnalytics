@@ -8,6 +8,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
 import { formatTimeElapsed } from '@/utils/functions/formatTimeElapsed'
+import { UserService } from '@/shared/services/user.service'
 
 const withTime: any = ref('')
 const timer: any = ref(null)
@@ -18,10 +19,11 @@ const props: any = defineProps({
     default: Date.now()
   }
 })
+const time = UserService.getUser().createdAt;
 
 onMounted(() => {
   timer.value = setInterval(() => {
-    withTime.value = formatTimeElapsed(props.startedTime)
+    withTime.value = formatTimeElapsed(time)
   }, 1000)
 })
 
