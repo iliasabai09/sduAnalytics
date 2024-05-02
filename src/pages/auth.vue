@@ -19,32 +19,37 @@
               <input type="text" placeholder="Group" v-model="registerForm.group">
             </template>
             <template v-if="step === 3">
-              <!--              <div class="userGender">-->
-              <!--                <div class="body">Gender</div>-->
-              <!--                <div class="userGender-chips">-->
-              <!--                  <v-chip-->
-              <!--                      :color="registerForm.gender === 1 ? 'blue' : ''"-->
-              <!--                      style="cursor: pointer"-->
-              <!--                      @click="registerForm.gender = 1"-->
-              <!--                  >-->
-              <!--                    Male-->
-              <!--                  </v-chip>-->
-              <!--                  <v-chip-->
-              <!--                      :color="registerForm.gender === 2 ? 'blue' : ''"-->
-              <!--                      style="cursor: pointer"-->
-              <!--                      @click="registerForm.gender = 2"-->
-              <!--                  >-->
-              <!--                    Female-->
-              <!--                  </v-chip>-->
-              <!--                </div>-->
-              <!--              </div>-->
               <div class="userGrades">
                 <div class="titleMedium">Grades</div>
+<!--                <input-->
+<!--                    type="number"-->
+<!--                    :placeholder="course?.title + ' grade'"-->
+<!--                    v-model="course.grade"-->
+<!--                    v-for="(course, index) in registerForm.courses"-->
+<!--                >-->
                 <input
                     type="number"
-                    :placeholder="course?.title + ' grade'"
-                    v-model="course.grade"
-                    v-for="(course, index) in registerForm.courses"
+                    :placeholder="'Linear Algebra and Analytic Geometry' + ' grade'"
+                >
+                <input
+                    type="number"
+                    :placeholder="'Fundamentals of Programming' + ' grade'"
+                >
+                <input
+                    type="number"
+                    :placeholder="'Mathematical analysis 1' + ' grade'"
+                >
+                <input
+                    type="number"
+                    :placeholder="'Programming Technologies and Educational Practice' + ' grade'"
+                >
+                <input
+                    type="number"
+                    :placeholder="'Additional chapters of linear algebra' + ' grade'"
+                >
+                <input
+                    type="number"
+                    :placeholder="'Mathematical analysis 2' + ' grade'"
                 >
               </div>
             </template>
@@ -57,7 +62,7 @@
             <span>or use your email password</span>
             <input type="email" placeholder="Email" v-model="loginForm.email">
             <input type="password" placeholder="Password" v-model="loginForm.password">
-            <a href="#">Forget Your Password?</a>
+<!--            <a href="#">Forget Your Password?</a>-->
             <button type="submit">Sign In</button>
           </form>
         </div>
@@ -126,7 +131,6 @@ const loginForm = {
 
 function setCourses() {
   registerForm.value.courses = CoursesService.getCoursesFromSemester(Number(registerForm.value.course))
-  console.log(registerForm.value.courses)
 }
 
 async function registerUser() {
