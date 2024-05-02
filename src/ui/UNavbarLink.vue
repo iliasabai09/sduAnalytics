@@ -1,5 +1,5 @@
 <template>
-  <a @click.prevent="scrollToSection(link)" :href="`#${link}`" :style="{ color: color }">{{ title }}</a>
+  <a @click.prevent="scrollToSection(link)" :href="`/#${link}`" :style="{ color: color }">{{ title }}</a>
 </template>
 
 <script setup lang="ts">

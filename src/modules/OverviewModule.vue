@@ -1,5 +1,5 @@
 <template>
-  <section class="_container">
+  <section class="_container" id="howItWorks">
     <UOverviewSectionImg/>
     <OverviewSectionContent/>
   </section>

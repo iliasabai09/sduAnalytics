@@ -38,7 +38,7 @@ const links = ref([
   },
   {
     title: 'Talk with AC',
-    link: 'services'
+    link: 'talkWithAc'
   },
 ])
 </script>
