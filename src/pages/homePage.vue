@@ -4,7 +4,7 @@
 <!--    <OurServicesModule/>-->
     <AboutCompanyModule/>
 <!--    <OverviewModule/>-->
-<!--    <TrustUsModule/>-->
+    <TrustUsModule/>
 <!--    <OurPortfolioModule/>-->
 <!--    <CounterSectionModule/>-->
 <!--    <ClientFeedbackModule/>-->

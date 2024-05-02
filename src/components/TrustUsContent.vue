@@ -1,15 +1,19 @@
 <template>
   <div class="content">
-    <div class="_secondaryTitle">Почему нам доверяют?</div>
-    <h3 class="_moduleTitle">Обеспечьте цифровую трансформацию для услуг вашего розничного бизнеса.</h3>
-    <p class="_moduleDescription">Наши клиенты нам доверяют благодаря нашему непревзойденному опыту в области розничного бизнеса и цифровой трансформации. Мы обеспечиваем высокий уровень профессионализма и преданы достижению успеха каждого нашего клиента. Наш подход основан на индивидуальном внимании к потребностям и целям каждого бизнеса, что позволяет нам создавать и внедрять эффективные решения, способствующие росту и развитию.</p>
+    <div class="_secondaryTitle">How it works?</div>
+    <h3 class="_moduleTitle">Your reliable assistant in the world of study and grades.</h3>
+    <p class="_moduleDescription">Academic Compass provides users with tools to
+      analyze and predict their learning outcomes. Users
+      can upload their grades, view their progress
+      statistics, and receive recommendations to improve
+      their academic performance.</p>
     <div class="features">
-      <UOverviewItem :text="'Защитите ваш бизнес'"/>
-      <UOverviewItem :text="'Безопасность данных'"/>
-      <UOverviewItem :text="'Управление вашим бизнесом'"/>
-      <UOverviewItem :text="'Сетевая безопасность'"/>
-      <UOverviewItem :text="'Владельцы малых бизнесов'"/>
-      <UOverviewItem :text="'Мониторинг сети'"/>
+      <UOverviewItem :text="'Grade Analysis'"/>
+      <UOverviewItem :text="'Analytics Compilation'"/>
+      <UOverviewItem :text="'Unique Approach to Each Individual'"/>
+      <UOverviewItem :text="'Quality Calculations in Direction'"/>
+      <UOverviewItem :text="'Ease of Understanding the Material'"/>
+      <UOverviewItem :text="'Master Everything You Need'"/>
     </div>
   </div>
 </template>
