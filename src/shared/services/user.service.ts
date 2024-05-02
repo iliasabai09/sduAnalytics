@@ -1,7 +1,7 @@
 import { LocalstorageProvider } from '@/shared/providers/localstorage.provider'
 
 export class UserService {
-	static setUser(user) {
+	static setUser(user: any) {
 		LocalstorageProvider.setItem('user', user)
 	}
 

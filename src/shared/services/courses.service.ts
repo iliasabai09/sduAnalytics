@@ -3,6 +3,7 @@ import { TeachersService } from '@/shared/services/teachers.service'
 
 export class CoursesService {
 	static getCourses() {
+		//@ts-ignore
 		const cur = courses.default
 		const coursesMap = []
 		for (const key in cur) {
@@ -11,7 +12,8 @@ export class CoursesService {
 		return coursesMap
 	}
 
-	static getCoursesFromSemester(sem) {
+	static getCoursesFromSemester(sem: string | number) {
+		//@ts-ignore
 		const cur = {...courses.default}
 		const coursesMap = []
 		for (const key in cur) {
