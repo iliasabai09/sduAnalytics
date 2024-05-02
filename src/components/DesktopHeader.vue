@@ -6,7 +6,7 @@
           <UBlackLogo/>
         </RouterLink>
         <DesktopNavbar color="#000"/>
-        <RouterLink to="/profile">
+        <RouterLink :to="authRoute">
           <UButton :title="'Мой кабинет'"/>
         </RouterLink>
       </div>
@@ -15,7 +15,7 @@
           <ULogo/>
         </RouterLink>
         <DesktopNavbar/>
-        <RouterLink to="/profile/info">
+        <RouterLink :to="authRoute">
           <UButton :title="'Мой кабинет'"/>
         </RouterLink>
       </div>
@@ -29,7 +29,7 @@
           <UBlackLogo/>
         </RouterLink>
         <DesktopNavbar color="#000"/>
-        <RouterLink to="/profile/info">
+        <RouterLink :to="authRoute">
           <UButton :title="'Мой кабинет'"/>
         </RouterLink>
       </div>
@@ -41,9 +41,10 @@
 import ULogo from '@/ui/ULogo.vue'
 import DesktopNavbar from '@/components/DesktopNavbar.vue'
 import UButton from '@/ui/UButton.vue'
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import UBlackLogo from '@/ui/UBlackLogo.vue'
 import { useRoute, useRouter } from 'vue-router'
+import { UserService } from '@/shared/services/user.service'
 
 const router = useRouter()
 const route = useRoute()
@@ -62,6 +63,11 @@ const isHaveAnimatePage = computed(() => {
 
 onMounted(() => {
   // console.log(route)
+})
+
+const authRoute = computed(() => {
+  const user = UserService.getUser()
+  return user ? '/profile/info' : '/auth'
 })
 </script>
 

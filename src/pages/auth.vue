@@ -16,7 +16,7 @@
               <input type="text" placeholder="Adviser" v-model="registerForm.adviser">
               <input type="text" placeholder="Course" v-model="registerForm.course">
               <input type="date" placeholder="Birthday" v-model="registerForm.birthday">
-              <input type="number" placeholder="Group" v-model="registerForm.group">
+              <input type="text" placeholder="Group" v-model="registerForm.group">
             </template>
             <template v-if="step === 3">
               <!--              <div class="userGender">-->
@@ -126,6 +126,7 @@ const loginForm = {
 
 function setCourses() {
   registerForm.value.courses = CoursesService.getCoursesFromSemester(Number(registerForm.value.course))
+  console.log(registerForm.value.courses)
 }
 
 async function registerUser() {

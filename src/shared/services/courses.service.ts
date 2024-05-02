@@ -18,10 +18,9 @@ export class CoursesService {
 		const coursesMap = []
 		for (const key in cur) {
 			const copy = {...cur[key]}
-			console.log(copy)
 			const teacher = [...copy.teachers]
 			copy.teachers = TeachersService.getTeachersFromIds(teacher)
-			if (copy.semester === String(sem)) coursesMap.push(copy)
+			if (Number(copy.semester) <= Number(sem)) coursesMap.push(copy)
 		}
 		return coursesMap
 	}

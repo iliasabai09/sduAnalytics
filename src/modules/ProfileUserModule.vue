@@ -31,6 +31,7 @@
 import { ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { AuthService } from '@/shared/services/auth.service'
+import { UserService } from '@/shared/services/user.service'
 
 const router = useRouter()
 const route = useRoute()
@@ -49,13 +50,13 @@ const menu = ref([
     route: '/profile/teachers',
     icon: 'for_you'
   },
-  {
-    id: 3,
-    title: 'plan',
-    isActive: false,
-    route: '/profile/plan',
-    icon: 'note_alt'
-  },
+  // {
+  //   id: 3,
+  //   title: 'plan',
+  //   isActive: false,
+  //   route: '/profile/plan',
+  //   icon: 'note_alt'
+  // },
   {
     id: 4,
     title: 'grades',
@@ -83,6 +84,7 @@ const menu = ref([
 function toContent(r: string) {
   if (r === '/auth') {
     AuthService.logout()
+    UserService.logout()
   }
   router.push(r)
 }
