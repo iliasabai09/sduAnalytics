@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper boxShadow">
     <div class="user">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz73Qfzp2C1E_75YyUAGxMEltKpxd5b29GqiWxdzO3A&s"
+      <img src="https://img.freepik.com/premium-vector/a-girl-s-face-with-a-beautiful-smile-a-female-avatar-for-a-website-and-social-network_499739-527.jpg?w=740"
            alt="img" width="100" height="100">
       <div class="user-info">
         <div class="titleMedium">{{ user.name }} {{ user.surname }}</div>

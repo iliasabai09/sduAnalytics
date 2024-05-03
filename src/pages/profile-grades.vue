@@ -14,9 +14,10 @@
     </div>
 
     <div class="groupTwo">
+      <div class="titleMedium" style="margin-bottom: 16px">Forecast</div>
       <v-expansion-panels>
         <v-expansion-panel
-            v-for="group in firstGroups"
+            v-for="group in second"
             :key="group"
             :text="firstGroup[2].description"
             :title="group"
@@ -51,9 +52,17 @@ const firstGroups = ref([
   'Additional chapters of linear algebra. 100%',
   'Mathematical analysis 2. 74%'
 ])
-
+/*
+* Algebra 84
+Discrete mathematics 84
+Ordinary differential equations 100
+Mathematical analysis 3 90
+* */
 const second = ref([
-    'Mathematical analysis',
+  'Algebra. 84%',
+  'Discrete mathematics. 84%',
+  'Ordinary differential equations. 100%',
+  'Mathematical analysis. 3 90%'
 
 ])
 </script>
@@ -66,9 +75,7 @@ const second = ref([
   flex-direction: column;
   gap: 24px;
   display: flex;
-  &-title {
-    margin-bottom: 16px;
-  }
+
 
   &-group {
     display: flex;
