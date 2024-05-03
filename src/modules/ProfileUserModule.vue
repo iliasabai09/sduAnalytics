@@ -4,8 +4,8 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjz73Qfzp2C1E_75YyUAGxMEltKpxd5b29GqiWxdzO3A&s"
            alt="img" width="100" height="100">
       <div class="user-info">
-        <div class="titleMedium">{{ 'Brbale Brbale' }}</div>
-        <div class="user-link textLarge">{{ 'test@sdu.com' }}</div>
+        <div class="titleMedium">{{ user.name }} {{ user.surname }}</div>
+        <div class="user-link textLarge">{{ user.email }}</div>
       </div>
     </div>
     <div class="menu">
@@ -35,6 +35,7 @@ import { UserService } from '@/shared/services/user.service'
 
 const router = useRouter()
 const route = useRoute()
+const user = ref(UserService.getUser());
 const menu = ref([
   {
     id: 1,
