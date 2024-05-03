@@ -3,7 +3,7 @@
     <div class="titleLarge grades-title">Grades</div>
 
     <div class="groupOne">
-      <v-expansion-panels>
+      <v-expansion-panels color="rgb(227 255 231)">
         <v-expansion-panel
             v-for="group in firstGroups"
             :key="group"
