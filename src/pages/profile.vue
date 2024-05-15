@@ -20,7 +20,7 @@ import ProfileUserModule from '@/modules/ProfileUserModule.vue'</script>
 
 <style scoped lang="scss">
 .profilePage {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: var(--greyBg);
 

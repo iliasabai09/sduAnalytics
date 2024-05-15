@@ -23,8 +23,8 @@
   </template>
 
   <template v-if="!isHaveAnimatePage">
-    <header ref="header" :class="{ headerAnimation: !isAnimated }" class="headerWithoutAnimate">
-      <div class="_container content" :class="{ noVisible: isAnimated}">
+    <header ref="header" class="headerWithoutAnimate noAnimated">
+      <div class="_container content">
         <RouterLink to="/">
           <UBlackLogo/>
         </RouterLink>
@@ -99,6 +99,12 @@ header {
 
 .noVisible {
   visibility: hidden;
+}
+
+.noAnimated {
+  background-color: #F7F8F8 !important;
+  position: fixed !important;
+  top: 0;
 }
 
 .headerWithoutAnimate {

@@ -41,21 +41,22 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-
+  background-color: #ffffff !important;
   .content {
     display: flex;
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
   }
+
 }
 
-.headerAnimation {
-  transition: .6s ease;
-  background-color: #ffffff !important;
-  position: fixed !important;
-  top: 0;
-}
+//.headerAnimation {
+//  transition: .6s ease;
+//  background-color: #ffffff !important;
+//  position: fixed !important;
+//  top: 0;
+//}
 
 .noVisible {
   visibility: hidden;

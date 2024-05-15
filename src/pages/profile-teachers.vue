@@ -20,7 +20,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .wrapper {
-
+  padding-bottom: 24px;
 }
 
 .teachersTitle {

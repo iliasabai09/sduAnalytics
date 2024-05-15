@@ -109,6 +109,8 @@ watch(() => route.fullPath, (value, oldValue, onCleanup) => {
   padding: 16px;
   box-sizing: border-box;
   height: fit-content;
+  top: 102px;
+  position: sticky;
 }
 
 .user {
