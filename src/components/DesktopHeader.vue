@@ -7,7 +7,7 @@
         </RouterLink>
         <DesktopNavbar color="#000"/>
         <RouterLink :to="authRoute">
-          <UButton :title="'Мой кабинет'"/>
+          <UButton :title="'My profile'"/>
         </RouterLink>
       </div>
       <div class="_container content" v-if="!isAnimated">
@@ -16,7 +16,7 @@
         </RouterLink>
         <DesktopNavbar/>
         <RouterLink :to="authRoute">
-          <UButton :title="'Мой кабинет'"/>
+          <UButton :title="'My profile'"/>
         </RouterLink>
       </div>
     </header>
@@ -30,7 +30,7 @@
         </RouterLink>
         <DesktopNavbar color="#000"/>
         <RouterLink :to="authRoute">
-          <UButton :title="'Мой кабинет'"/>
+          <UButton :title="'My profile'"/>
         </RouterLink>
       </div>
     </header>

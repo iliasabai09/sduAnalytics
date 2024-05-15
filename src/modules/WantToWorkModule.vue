@@ -5,8 +5,8 @@
       <h3 class="title">Analyze your performance</h3>
       <div class="description">Feel free to reach out to us if you have any questions or need further assistance. We are always ready to help and address all your inquiries. Contact us using the provided contact information, and our team will ensure you receive all the necessary support. Your satisfaction is our priority!</div>
       <div class="actions">
-        <UButton :title="'Позвоните сейчас'"/>
-        <UButton :title="'Свяжитесь с нами'"/>
+        <UButton :title="'Call now'"/>
+        <UButton :title="'Contact us'"/>
       </div>
     </div>
   </section>

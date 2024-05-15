@@ -49,6 +49,7 @@ const courses = ref([]);
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses();
+  console.log(courses.value)
 });
 
 function toCourseDetail(item) {
