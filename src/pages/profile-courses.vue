@@ -18,7 +18,7 @@
           class="courses-list"
       >
         <v-list
-            :items="courses"
+            :items="courses.filter(course => !course?.grade)"
             item-title="title"
             item-value="title"
         ></v-list>
