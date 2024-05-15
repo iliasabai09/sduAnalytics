@@ -21,35 +21,11 @@
             <template v-if="step === 3">
               <div class="userGrades">
                 <div class="titleMedium">Grades</div>
-<!--                <input-->
-<!--                    type="number"-->
-<!--                    :placeholder="course?.title + ' grade'"-->
-<!--                    v-model="course.grade"-->
-<!--                    v-for="(course, index) in registerForm.courses"-->
-<!--                >-->
                 <input
                     type="number"
-                    :placeholder="'Linear Algebra and Analytic Geometry' + ' grade'"
-                >
-                <input
-                    type="number"
-                    :placeholder="'Fundamentals of Programming' + ' grade'"
-                >
-                <input
-                    type="number"
-                    :placeholder="'Mathematical analysis 1' + ' grade'"
-                >
-                <input
-                    type="number"
-                    :placeholder="'Programming Technologies and Educational Practice' + ' grade'"
-                >
-                <input
-                    type="number"
-                    :placeholder="'Additional chapters of linear algebra' + ' grade'"
-                >
-                <input
-                    type="number"
-                    :placeholder="'Mathematical analysis 2' + ' grade'"
+                    :placeholder="course?.title + ' grade'"
+                    v-model="course.grade"
+                    v-for="(course, index) in registerForm.courses"
                 >
               </div>
             </template>

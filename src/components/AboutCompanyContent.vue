@@ -8,7 +8,7 @@
       <UPercentIndicator title="Concentration" percent="75"/>
       <UPercentIndicator title="Right Approach to Learning" percent="85"/>
     </div>
-    <UButton title="Узнать больше"/>
+<!--    <UButton title="Узнать больше"/>-->
   </div>
 </template>
 

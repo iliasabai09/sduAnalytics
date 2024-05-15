@@ -3,7 +3,7 @@
     <HomeSectionModule/>
 <!--    <OurServicesModule/>-->
     <AboutCompanyModule/>
-    <OverviewModule/>
+<!--    <OverviewModule/>-->
     <TrustUsModule/>
 <!--    <OurPortfolioModule/>-->
 <!--    <CounterSectionModule/>-->
