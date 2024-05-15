@@ -1,54 +1,43 @@
 <template>
   <div class="courses">
-    <div class="groupOne">
-      <v-expansion-panels color="rgb(227 255 231)">
-        <v-expansion-panel
-            v-for="group in firstGroups"
-            :key="group"
-            :text="firstGroup[2].description"
-            :title="group"
-        ></v-expansion-panel>
-      </v-expansion-panels>
+    <div>
+      <div class="titleLarge text-green">Completed courses</div>
+      <v-card
+          class="courses-list"
+      >
+        <v-list
+            :items="courses.filter(course => course?.grade)"
+            item-title="title"
+            item-value="title"
+        ></v-list>
+      </v-card>
     </div>
-
-    <div class="groupTwo">
-      <v-expansion-panels>
-        <v-expansion-panel
-            v-for="group in secondGroups"
-            :key="group"
-            :text="firstGroup[0].description"
-            :title="group"
-        ></v-expansion-panel>
-      </v-expansion-panels>
+    <div>
+      <div class="titleLarge greyText">Other courses</div>
+      <v-card
+          class="courses-list"
+      >
+        <v-list
+            :items="courses"
+            item-title="title"
+            item-value="title"
+        ></v-list>
+      </v-card>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { CoursesService } from '@/shared/services/courses.service'
+import { ref } from 'vue';
+import { CoursesService } from '@/shared/services/courses.service';
+import { onMounted } from 'vue';
 
-const firstGroups = ref([
-  'Linear Algebra and Analytic Geometry',
-  'Fundamentals of Programming',
-  'Mathematical analysis 1',
-  'Programming Technologies and Educational Practice',
-  'Additional chapters of linear algebra',
-  'Mathematical analysis 2'
-])
+const courses = ref([]);
 
-const secondGroups = ref([
-  'Algebra',
-  'Discrete mathematics',
-  'Ordinary differential equations',
-  'Mathematical analysis 3',
-  'Classical mechanics',
-  'Theory of Probablility and Mathematical Statistics',
-  'Mathematical and Complex analysis',
-  'Data wrangling and visualization',
-  'Numerical methods'
-])
-const firstGroup = ref(CoursesService.getCoursesFromSemester(4))
+onMounted(() => {
+  courses.value = CoursesService.getGroupedCourses();
+  console.log(courses.value);
+});
 
 </script>
 
@@ -56,10 +45,21 @@ const firstGroup = ref(CoursesService.getCoursesFromSemester(4))
 .courses {
   width: 100%;
   box-sizing: border-box;
-  //border-radius: 16px;
-  //overflow: hidden;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #ededed;
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  .titleLarge {
+    padding-bottom: 12px;
+  }
+
+  &-list {
+    width: 100%;
+    border-radius: 16px;
+  }
 }
 </style>
