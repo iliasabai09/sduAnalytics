@@ -2,12 +2,12 @@
   <section class="_container" id="services">
     <USectionTitle title="Услуги" sub-title="Что мы предоставляем"/>
     <div class="servicesGroup">
-      <ServiceBlock
-          v-for="service in services.services"
-          :title="service.title"
-          :description="service.description"
-          :img="service.image"
-      />
+<!--      <ServiceBlock-->
+<!--          v-for="service in services.services"-->
+<!--          :title="service.title"-->
+<!--          :description="service.description"-->
+<!--          :img="service.image"-->
+<!--      />-->
     </div>
   </section>
 </template>
@@ -16,7 +16,7 @@
 import USectionTitle from '@/ui/USectionTitle.vue';
 import ServiceBlock from '@/components/ServiceBlock.vue';
 import { ref } from 'vue';
-import * as services from "../db/services.json"
+// import * as services from "../db/services.json"
 </script>
 
 <style scoped lang="scss">

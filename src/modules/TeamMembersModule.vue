@@ -3,7 +3,7 @@
     <div class="_container">
       <USectionTitle title="Наша команда" sub-title="Члены команды"/>
       <div class="teamUsers">
-        <TeamMemberCard v-for="user in members.members" :user="user"/>
+<!--        <TeamMemberCard v-for="user in members.members" :user="user"/>-->
       </div>
     </div>
   </section>
@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import USectionTitle from '@/ui/USectionTitle.vue'
 import TeamMemberCard from '@/components/TeamMemberCard.vue'
-import * as members from "../db/members.json"
+// import * as members from "../db/members.json"
 
 </script>
 

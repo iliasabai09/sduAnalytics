@@ -27,13 +27,12 @@ export class CoursesService {
 	}
 
 	static getGroupedCourses() {
-		const cur = {...courses.default};
-		const userCourses = UserService.getUser().courses;
+		const cur: any = {...courses.default}
+		const userCourses = UserService.getUser().courses
 		const coursesMap = [];
 		for (const key in cur) {
 			coursesMap.push(cur[key]);
 		}
-		return [...userCourses, ...coursesMap.filter(course => !userCourses.find(uCourse => uCourse.title === course.title))];
-		// console.log(coursesMap);
+		return [...userCourses, ...coursesMap.filter(course => !userCourses.find((uCourse: any) => uCourse.title === course.title))]
 	}
 }

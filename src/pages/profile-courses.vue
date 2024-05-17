@@ -10,7 +10,7 @@
             <v-list-item
                 color="secondary"
                 @click="toCourseDetail(item)"
-                v-for="(item, i) in courses.filter(course => course?.grade)"
+                v-for="(item, i) in courses.filter((course) => course?.grade)"
                 :key="i"
                 :value="item"
             >
@@ -29,7 +29,7 @@
           <v-list density="comfortable">
             <v-list-item
                 @click="toCourseDetail(item)"
-                v-for="(item, i) in courses.filter(course => !course?.grade)"
+                v-for="(item, i) in courses.filter((course:any) => !course?.grade)"
                 :key="i"
                 :value="item"
                 color="primary"
@@ -177,15 +177,15 @@ import { onMounted, ref } from 'vue'
 import { CoursesService } from '@/shared/services/courses.service'
 import TeacherCard from '@/components/TeacherCard.vue'
 
-const courses = ref([])
-const activeCourse = ref(null)
-const tab = ref('description')
+const courses: any = ref([])
+const activeCourse: any = ref(null)
+const tab: any = ref('description')
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses()
 })
 
-function toCourseDetail(item) {
+function toCourseDetail(item: any) {
   activeCourse.value = item
 }
 
