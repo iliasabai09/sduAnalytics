@@ -36,10 +36,10 @@ const links = ref([
     title: 'HowItWorks',
     link: 'howItWorks'
   },
-  {
-    title: 'Talk with AC',
-    link: 'talkWithAc'
-  },
+  // {
+  //   title: 'Talk with AC',
+  //   link: 'talkWithAc'
+  // },
 ])
 </script>
 

@@ -6,7 +6,7 @@
         <v-card
             class="courses-list"
         >
-          <v-list density="comfortable">
+          <v-list density="comfortable" color="primary">
             <v-list-item
                 color="secondary"
                 @click="toCourseDetail(item)"
@@ -54,11 +54,11 @@
             v-model="tab"
             color="primary"
         >
-          <v-tab value="assessment_methods">Assessment methods</v-tab>
-          <v-tab value="course_plan">Course plan</v-tab>
-          <v-tab value="description">description</v-tab>
+          <v-tab value="description"> Description</v-tab>
           <v-tab value="reading_list">Reading list</v-tab>
-          <v-tab value="teachers">teachers</v-tab>
+          <v-tab value="teachers">Teachers</v-tab>
+          <v-tab value="course_plan">Course plan</v-tab>
+          <v-tab value="assessment_methods">Assessment methods</v-tab>
         </v-tabs>
       </div>
       <div class="activeCourse-value">
@@ -179,14 +179,13 @@ import TeacherCard from '@/components/TeacherCard.vue'
 
 const courses = ref([])
 const activeCourse = ref(null)
-const tab = ref('assessment_methods')
+const tab = ref('description')
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses()
 })
 
 function toCourseDetail(item) {
-  console.log(item)
   activeCourse.value = item
 }
 
@@ -246,6 +245,9 @@ function toCourseDetail(item) {
   &-list {
     width: 100%;
     border-radius: 16px;
+
+    &:first-child {
+    }
   }
 }
 </style>

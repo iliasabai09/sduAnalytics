@@ -177,7 +177,7 @@
         "week": "5"
       },
       {
-        "activity": "Equivalence Relations Partial Orderings",
+        "activity": "\tEquivalence Relations Partial Orderings",
         "topics": "Relations",
         "week": "6"
       },
@@ -532,5 +532,881 @@
       16
     ],
     "title": "Classical mechanics"
+  },
+  "1715796844688": {
+    "assessment_methods": [
+      {
+        "assessment": "Pre-final grade",
+        "description": "Quiz",
+        "percent": "40 %",
+        "qty": "4"
+      },
+      {
+        "assessment": "Pre-final grade",
+        "description": "Lectures",
+        "percent": "5 %",
+        "qty": "13"
+      },
+      {
+        "assessment": "Pre-final grade",
+        "description": "Assignment",
+        "percent": "5 %",
+        "qty": "5"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "3HW 5 questions",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Optional midterm acitvity",
+        "description": "1 point",
+        "percent": "10 %",
+        "qty": "10"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "1: ch.1",
+        "topics": "The primary goal of mathematical statistics. General set and sample. Variation set and statistical series. Selective numerical characteristics: mathematical expectation, dispersion, ets.",
+        "week": "1"
+      },
+      {
+        "activity": "1: ch.1 3:IHW 19.1",
+        "topics": "Grouped data. All characteristics. Histogram",
+        "week": "2"
+      },
+      {
+        "activity": "1: ch.2; 3: IHW 18.1(1-4)",
+        "topics": "Classic, geometric, statistic definitions of probability. Formulas of addition and multiplication formulas of probabilities.",
+        "week": "3"
+      },
+      {
+        "activity": "1: ch.2; 3: IHW 18.1(1-4) 3: p 324-334",
+        "topics": "Conditional probability. Independent events. Formulas of total probability and Bayes. Curcits",
+        "week": "4"
+      },
+      {
+        "activity": "1: ch.3; 3:IHW 18.2(1)",
+        "topics": "Random values. Law of distribution, function of distribution and its properties. Discrete random values. Operations over random values.",
+        "week": "5"
+      },
+      {
+        "activity": "1: ch.3 3:IHW 18.1(5-6)",
+        "topics": "Special Discrete Distributions. Bernully formula. The most probable number of successes in n tests of Bernully Approached formula of Poisson. Muavre-Laplace theorem",
+        "week": "6"
+      },
+      {
+        "activity": "1: ch.4 3:IHW 18.2(2)",
+        "topics": "Continuous Random Variables. Probability Density Functions. Variance of a random value and its properties. Other numerical characteristics of random values. The normal law of distribution.",
+        "week": "7"
+      },
+      {
+        "activity": "1: ch.4 3:IHW 18.2(3)",
+        "topics": "Midterm / Special Continuous Distributions. Uniform Random Variable. Exponential Random Variable. The normal law of distribution.",
+        "week": "8"
+      },
+      {
+        "activity": "1: ch.4 3:IHW 18.2(3)/",
+        "topics": "Special Continuous Distributions. Uniform Random Variable. Exponential Random Variable. The normal law of distribution.",
+        "week": "9"
+      },
+      {
+        "activity": "1: ch.5 3:IHW 18.2(4)",
+        "topics": "Sampling Distributions. Mean and Standard Deviation of X (x-bar); Sampling Distributions of proportion p;  Sampling Distributions of sample variance; Limit Theorems. Markov and Chebyshev Inequalities. Laws of Large Numbers.More Expectations and Variances.",
+        "week": "10"
+      },
+      {
+        "activity": "1: ch.5 3:IHW 18.2(3)",
+        "topics": "Limit Theorems. Markov and Chebyshev Inequalities. Laws of Large Numbers.More Expectations and Variances.",
+        "week": "11"
+      },
+      {
+        "activity": "1, ch. 6;",
+        "topics": "Method of confidential intervals. Confidential interval for a mathematical expectation and variance of normal general set.",
+        "week": "12"
+      },
+      {
+        "activity": "2: ch.2,3;",
+        "topics": "Covariance. Correlation.",
+        "week": "13"
+      },
+      {
+        "activity": "2: ch.2,3;",
+        "topics": "Covariance. Correlation. End term",
+        "week": "14"
+      },
+      {
+        "topics": "Pearson's criterion. Review. Preparation for final exam",
+        "week": "15"
+      }
+    ],
+    "description": "The course “Statistics” may be divided by two parts: The first part “Probability theory” contains three topics: Definition of probability. 1. Basic formulas of probability theory. 2. Circuit of Bernoulli, 3. Random values. The second part “Mathematical statistics” contains two topics: 4. Main concepts of mathematical statistics. 5. Estimations of unknown parameters",
+    "reading_list": [
+      {
+        "authors": "H.N.Aliyev",
+        "isbn": "ISBN № 9965-9605-7-7",
+        "publisher_web_site": "",
+        "publishing_year": "2006",
+        "title": "Statistic. Solved problems and exercises. Part 1",
+        "type": "Required"
+      },
+      {
+        "authors": "А.П. Рябушко",
+        "isbn": "ISBN 985-06-1186-3",
+        "publisher_web_site": "",
+        "publishing_year": "2000",
+        "title": "Индивидуальные задания по высшей математике, часть4",
+        "type": "Required"
+      },
+      {
+        "authors": "Saeed Ghahramani I",
+        "isbn": "ISBN-978-1-498-75509-2",
+        "publisher_web_site": "",
+        "publishing_year": "2004",
+        "title": "Fundamentals of probability",
+        "type": "Recommended"
+      }
+    ],
+    "semester": "4",
+    "teachers": [
+      17,
+      18
+    ],
+    "title": "Theory of Probablility and Mathematical Statistics"
+  },
+  "1715797549561": {
+    "assessment_methods": [
+      {
+        "assessment": "Final Exam",
+        "description": "writing form, 2 hours'",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "The average score of the 4 quizzes is assumed (each 0-100 points) plus points for active class work (maximum 10 points ).",
+        "percent": "60 %",
+        "qty": "4"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "History of complex numbers. Algebra and geometry in the complex plane.. Point Representation of Complex Vectors and Polar Forms representation of complex numbers",
+        "week": "1"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "The Complex Exponential The Riemann Sphere and Stereographic Projection",
+        "week": "2"
+      },
+      {
+        "activity": "Quiz 1 Definitions. Different forms of complex numbers Simple math operations with comp- lex numbers.",
+        "topics": "Functions of a complex variable Definitions. Powers and Roots Topology in the plane. Limits and Continuity. Sequences and limits of complex numbers.",
+        "week": "3"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "Analyticity of complex functions The complex derivative. The Cauchy-Riemann equations. Harmonic functions Laplace’s equations. Applications.",
+        "week": "4"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "Elementary Functions Polynomials and Rational Functions The Exponential, Trigonometric and Hyperbolic Functions. The Logarithmic Function",
+        "week": "5"
+      },
+      {
+        "activity": "Quiz 2. Properties and math operations with complex functions",
+        "topics": "The complex trigonometric functions. Complex Powers and Inverse Trigonometric Functions First property of analytic functions.",
+        "week": "6"
+      },
+      {
+        "activity": "Homework 1 Elementary complex integral",
+        "topics": "Complex Integration Contours. Contour Integrals. Independence of Path. Examples and first facts.",
+        "week": "7"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "Cauchy's Integral Theorem Cauchy's Integral Formula and Its Consequences Bounds for Analytic Functions",
+        "week": "8"
+      },
+      {
+        "activity": "Quiz 3 Complexes Derivative and Integrals",
+        "topics": "Infinite series of complex numbers. Power series. The radius of convergence of a power series.",
+        "week": "9"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "Series Representations for Analytic Functions Sequences and Series. Definitions Taylor Series Power Series. Mathematical Theory of Convergence",
+        "week": "10"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "Laurent Series. Zeros and Singularities The Point at Infinity",
+        "week": "11"
+      },
+      {
+        "activity": "Lectures, practical works, independent work",
+        "topics": "Residue Theory The Residue Theorem. Trigonometric Integrals Improper Integrals of Certain Functions Improper Integrals Involving Trigonometric Functions",
+        "week": "12"
+      },
+      {
+        "activity": "Quiz 4. Complex Series. Applications of Residues theory",
+        "topics": "Residues and Poles (Residues, Cauchy's Residue Theorem, Residue at Infinity, Zeros of Analytic Functions)",
+        "week": "13"
+      },
+      {
+        "activity": "Homework",
+        "topics": "Overview lecture: Basic properties of conformal mappings. Conformal mappings by elementary functions",
+        "week": "14"
+      },
+      {
+        "activity": "Review and Discussions.  Home work",
+        "topics": "Summarization of the course.Final exams Q&A",
+        "week": "15"
+      }
+    ],
+    "description": "Complex Analysis is a subject that is extremely useful in many applied topics such as numerical analysis, electrical engineering, mathematical physics, chaos theory, and much more, and you will see some of these applications throughout the course. This course provides an introduction to complex analysis which is the theory of complex functions of a complex variable. We will start by introducing the complex numbers, complex plane, along with the algebra and geometry, and then we will make our way via differentiation, power series representation Laurent series, integration, Cauchy&#39;s theorem, residue calculus",
+    "reading_list": [
+      {
+        "authors": "N.H. Asmar, L.Grafakos",
+        "isbn": "978-3-319- 94062-5",
+        "publisher_web_site": "Springer Nature Swiss AG",
+        "publishing_year": "2018",
+        "title": "Complex Analysis with appl.",
+        "type": "Required"
+      },
+      {
+        "authors": "M.Y.Antimirov , et al.",
+        "isbn": "N/A",
+        "publisher_web_site": "Academ.Pre ss. San Diego",
+        "publishing_year": "1998",
+        "title": "Complex variable",
+        "type": "Required"
+      },
+      {
+        "authors": "М.Tулегенова, У. Койлышов",
+        "isbn": "N/A",
+        "publisher_web_site": "Алматы «Қазақ университе ті»/magkaz nu.kz/",
+        "publishing_year": "2017",
+        "title": "Комплекс айнымалы функциялар теориясы және амалдық есептеу",
+        "type": "Recommended"
+      }
+    ],
+    "semester": "4",
+    "teachers": [
+      19,
+      7
+    ],
+    "title": "Mathematical and Complex analysis"
+  },
+  "1715798226593": {
+    "assessment_methods": [
+      {
+        "assessment": "Field Work",
+        "description": "Final Project",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Field Work",
+        "description": "assignments",
+        "percent": "30 %",
+        "qty": "12"
+      },
+      {
+        "assessment": "Field Work",
+        "description": "Midterm exam",
+        "percent": "30 %",
+        "qty": "1"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 1 Introduction. Getting started",
+        "week": "1"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 2. Fundamental Tools of Data Wrangling",
+        "week": "2"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 3. Data Collection and Integration basics",
+        "week": "3"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 4. Data Collection and Integration.",
+        "week": "4"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 5. Data Understanding and Visualization basics",
+        "week": "5"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 6. Data Understanding and Visualization",
+        "week": "6"
+      },
+      {
+        "activity": "Midterm",
+        "topics": "Midterm",
+        "week": "7"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 7. Data Processing and Manipulation",
+        "week": "8"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 8. Data Wrangling vs. ETL",
+        "week": "9"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 9. Designing dashboards in Tableau",
+        "week": "10"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 10. Designing dashboards Power BI",
+        "week": "11"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 11.Introduction to Data Wrangling and Data Visualization using R",
+        "week": "12"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 12. Chat GPT for data wrangling, visualization and analyisis",
+        "week": "13"
+      },
+      {
+        "activity": "Lecture, assignment",
+        "topics": "Lecture 13. API and data wrangling",
+        "week": "14"
+      },
+      {
+        "topics": "Project preparation progress report",
+        "week": "15"
+      }
+    ],
+    "description": "A data wrangling and visualization course covers a range of topics aimed at equipping students with the skills needed to handle, clean, analyze, and visually represent data effectively. By the end of this course students will be able to effectively work with introductory methods for data wrangling and visualization of data. Prior programming experience is necessary.",
+    "semester": "5",
+    "teachers": [
+      21,
+      20
+    ],
+    "title": "Data wrangling and visualization"
+  },
+  "1715798828341": {
+    "assessment_methods": [
+      {
+        "assessment": "Final Exam",
+        "description": "written, 2h",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Laboratory",
+        "description": "solving and present report",
+        "percent": "30 %",
+        "qty": "6"
+      },
+      {
+        "assessment": "Practice",
+        "description": "",
+        "percent": "20 %",
+        "qty": "12"
+      },
+      {
+        "assessment": "Attendance score",
+        "description": "take part in class work",
+        "percent": "10 %",
+        "qty": "15"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Lectures. Terminology. Analysis ofsome result of numerical solutions.Lab #1 : Constructing of Lagrange Interpolation Polynomial.Evaluation and analysis of interpolation errors",
+        "topics": "1-2 weeks. Lect.1. Introduction to Numerical analysis method. Definitions. Interpolation echniques.Examples of interpolation techniques Discretization of derivatives using Lagrange interpolation polynomial.",
+        "week": "1"
+      },
+      {
+        "activity": "Lectures, Terminology. Lab #2: Least square method of data approximation. Analysis and Comparison of different basis function. Comparison different methods for roots searching.",
+        "topics": "3-5 weeks. Lect. 2. Fundamentals of approximation , LS-method. Methods for finding the roots of nonlinear equations. Iterative methods. Examples.",
+        "week": "3"
+      },
+      {
+        "activity": "Lab#3 Electrical circuits. Numerical analysis and solution of correspondent ODE ( beginning of work). Preparing software.",
+        "topics": "Lecture.3 Numerical solution of ODE - Iterative methods. Examples",
+        "week": "6"
+      },
+      {
+        "activity": "Lectures, Lab#3: Graphical output of results. (completion of work) Preparing for Lab #4",
+        "topics": "7-8 weeks. Lect.4. Numerical solution of ODE (continuation) Examples of ODE soln",
+        "week": "7"
+      },
+      {
+        "activity": "Lab #4: numerical solution of 1st boundary problem for 1D heat equation. Method of soln for algebraic equations with three diagonals matrix",
+        "topics": "9-10 weeks. Lect.5. Numerical analysis methods for partial Differential equations. Definitions. Differences technique. Discretization of derivatives using Lagrange interpolation polynomial. Solution of parabolic type of PDE.",
+        "week": "9"
+      },
+      {
+        "activity": "Lab#5 - Numerical solution of 2D parabolic or elliptic equation. Method of diff. operator splitting. Graphical output of soln.",
+        "topics": "11-12 weeks. Lect.6. Examples of Explicit and Implicit difference approximation for 2D, 3D problems. Yanenko's method of splitting of differential operators (fractional steps). Stability of difference schemes. Solution of system of 3- diagonals system of algebraic equations.",
+        "week": "11"
+      },
+      {
+        "activity": "Lab #6(optional), Iterative soln of elliptical PDE Preparing to Final exam.",
+        "topics": "13-14 weeks. Lect. 7 Numerical solution of Elliptic PDE - two different Iterative methods. Numerical solution of hyperbolic PDE.",
+        "week": "13"
+      },
+      {
+        "activity": "Evaluation of Lab#5 and #6. Preparing to Final exam (during the Lab hours).",
+        "topics": "Lect.8. Overview of some other numerical analysis methods. Calculation of definite integrals (1D).",
+        "week": "15"
+      }
+    ],
+    "description": "Purpose of this course is to provide the students, the future computer modeling and simulation scientist, and engineers with numerical methods of computational modeling and a seamless approach to numerical algorithms for solving of a typical engineering and applied mathematics problems. Course covers the different numerical methods and will focus on a base material of numerical methods of applied mathematics and analysis. Students will familiarize with following topics: computer algorithms, polynomial and spline interpolation, functional methods of data approximation, numerical integration, iterative methods for solving linear systems and nonlinear equations, numerical methods for solving ordinary and partial differential equations.",
+    "reading_list": [
+      {
+        "authors": "P Richard L. Burden, J. Douglas Faires.",
+        "isbn": "0538735643, 9780538735643",
+        "publisher_web_site": "",
+        "publishing_year": "2011",
+        "title": "Numerical Analysis.",
+        "type": ""
+      },
+      {
+        "authors": "McDonough. .",
+        "isbn": "N/A",
+        "publisher_web_site": "Kentucky University",
+        "publishing_year": "2011",
+        "title": "Lectures in basic computational numerical analysis",
+        "type": "Required"
+      },
+      {
+        "authors": "Lecturer",
+        "isbn": "N/A",
+        "publisher_web_site": "SDU Moodle",
+        "publishing_year": "2023",
+        "title": "Lectures slides",
+        "type": "Recommended"
+      }
+    ],
+    "semester": "5",
+    "teachers": [
+      19,
+      22
+    ],
+    "title": "Numerical methods"
+  },
+  "1715799921238": {
+    "assessment_methods": [
+      {
+        "assessment": "1",
+        "description": "Find a determinant, inverse matrix,  linear algebra",
+        "percent": "30/69",
+        "qty": ""
+      },
+      {
+        "assessment": "2",
+        "description": "Calculations of analytic geometry",
+        "percent": "30/60",
+        "qty": ""
+      },
+      {
+        "assessment": "3",
+        "description": "Google Forms Test",
+        "percent": "40/40",
+        "qty": ""
+      }
+    ],
+    "course_plan": [
+      {
+        "topics": "Algebra of Matrices.  Matrix Addition. Matrix Multiplication.  Transpose of Matrix. Invertible  Matrices. Special types of square  matrices.",
+        "week": "1"
+      },
+      {
+        "topics": "Determinants.  Determinants. Properties of  Determinants. Minors. Cofactors.  Adjugate matrices. Inverse matrices.",
+        "week": "2"
+      },
+      {
+        "topics": "System of Linear Equations.  Elementary operations and Equivalent  Systems. Gaussian Elimination. Row  Canonical Form",
+        "week": "3"
+      },
+      {
+        "topics": "Vector spaces.  Vector Spaces. Subspaces. Linear  spans. Linear dependence and  independence. Basis and Dimension.  Sums, Intersection and Direct Sums of  Spaces",
+        "week": "4"
+      },
+      {
+        "topics": "Linear mappings.  Linear mappings. Kernel and Image of  Linear Mapping.  Operations with Linear mappings.  Algebra of Linear operators. Linear  mappings and Matrices. Change of  Basis. Similarity.",
+        "week": "5"
+      },
+      {
+        "topics": "Inner product spaces.  Inner product spaces, Orthogonality.  Cauchy-Schwartz inequality.  Gramm-Schmidt orthogonalization  process.",
+        "week": "6"
+      },
+      {
+        "topics": "Dual spaces.  Linear functionals. Dual spaces and  dual basis. Bilinear, quadratic and  Hermitian forms.",
+        "week": "7"
+      },
+      {
+        "activity": "Middle Term Exam",
+        "topics": "Invariant subspaces.  Eigenvalues and eigenvectors.  Characteristic polynomial. Minimal  polynomial.  Hamilton-Cayley Theorem. Criterion of  diagonalizability. Root subspaces.  Jordan Canonical Form.",
+        "week": "8"
+      },
+      {
+        "topics": "Straight line on a plane.",
+        "week": "9"
+      },
+      {
+        "topics": "Straight line and plane in a space.",
+        "week": "10"
+      },
+      {
+        "topics": "Lines of  second order which given by  canonical equations",
+        "week": "11"
+      },
+      {
+        "topics": "Surfaces of second order which given  by canonical equations",
+        "week": "12"
+      },
+      {
+        "topics": "Lines of  second order which given by  general  equations",
+        "week": "13"
+      },
+      {
+        "topics": "Surfaces of second order which given  by general equations.",
+        "week": "14"
+      },
+      {
+        "activity": "End Term Exam",
+        "topics": "Linear and Affine Transformations",
+        "week": "15"
+      }
+    ],
+    "description": "Linear algebra is the branch of mathematics concerning linear equations, linear maps  and their representations in  vector spaces and through matrices. Linear algebra is central to almost all areas of mathematics.  Analytic geometry, also called coordinate geometry, mathematical subject in which algebraic symbolism and methods  are used to represent and solve problems in geometry.  The importance of analytic geometry is that it establishes a  correspondence between geometric curves and algebraic equations. Student can use the knowledge of the given  course in order to construct the mathematical models in economy and business.",
+    "reading_list": [
+      {
+        "authors": "S. Lipschutz,  M. Lipson",
+        "isbn": "",
+        "publisher_web_site": "The McGraw Hill Companies",
+        "publishing_year": "Linear Algebra",
+        "title": "",
+        "type": "Published"
+      },
+      {
+        "authors": "Под  редакцией  А.И.  Кострикина",
+        "isbn": "",
+        "publisher_web_site": "Москва,  Физико Математическ  ая  Литература,  2001",
+        "publishing_year": "Сборник  задач по  алгебре",
+        "title": "2001",
+        "type": "Published"
+      },
+      {
+        "authors": "П.С. Моденов",
+        "isbn": "",
+        "publisher_web_site": "Издательство  Московского  Университета",
+        "publishing_year": "2000",
+        "title": "Аналитическа  я геометрия",
+        "type": "Published"
+      },
+      {
+        "authors": "П.С. Моденов,  А.С.  Пархоменко",
+        "isbn": "",
+        "publisher_web_site": "Москва,  Физико Математическ  ая Литература",
+        "publishing_year": "2000",
+        "title": "Сборник  задач по  аналитическо  й геометрии",
+        "type": "Published"
+      }
+    ],
+    "semester": "1",
+    "teachers": [
+      9,
+      23
+    ],
+    "title": "Linear Algebra and Analytic Geometry"
+  },
+  "1715800450448": {
+    "assessment_methods": [
+      {
+        "assessment": "Final Exam",
+        "description": "",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "",
+        "percent": "15 %",
+        "qty": "15"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "",
+        "percent": "20 %",
+        "qty": "4"
+      },
+      {
+        "assessment": "Project",
+        "description": "",
+        "percent": "10 %",
+        "qty": "2"
+      },
+      {
+        "assessment": "Extra exam",
+        "description": "",
+        "percent": "15 %",
+        "qty": "15"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "What is Object, instance of it and how to use it",
+        "topics": "Intro to OOP",
+        "week": "1"
+      },
+      {
+        "activity": "Idea of inheritance and polymorphism, some examples how to use it",
+        "topics": "Inheritance and Polymorphism",
+        "week": "2"
+      },
+      {
+        "activity": "Idea of exception, example of using exceptions, handling and creation of own exceptions",
+        "topics": "Exception Handling and Text I/O",
+        "week": "3"
+      },
+      {
+        "activity": "Idea of abstract and interface in OOP, some examples how to use abstract and interface in Java",
+        "topics": "Abstract classes and interfaces",
+        "week": "4"
+      },
+      {
+        "activity": "Intro to GUI library of Java",
+        "topics": "Java FX Basics",
+        "week": "5"
+      },
+      {
+        "activity": "Java FX library for event-driven animations and examples how to use it",
+        "topics": "Event-Driven programming and animations",
+        "week": "6"
+      },
+      {
+        "activity": "Java FX library for controls and multimedia, examples how to use it",
+        "topics": "Java FX UI Controls and Multimedia",
+        "week": "7"
+      },
+      {
+        "activity": "Libraries of I/O, examples how to use in programming",
+        "topics": "Binary I/O",
+        "week": "8"
+      },
+      {
+        "activity": "What is Generics? Why do we use it? Example to show how to use it",
+        "topics": "Generics",
+        "week": "9"
+      },
+      {
+        "activity": "What are dynamic arrays and advantage, disadvantage of each one. Example of using them",
+        "topics": "Lists, Stack, Queue and Priority Queue",
+        "week": "10"
+      },
+      {
+        "activity": "What is set and map, how it is overriden into hashset and hashmap. Example of using them",
+        "topics": "Sets and Maps",
+        "week": "11"
+      },
+      {
+        "activity": "Code how to implement your own source code to create dynamic arrays",
+        "topics": "Implementing List, Stack, Queue and Priority Queue",
+        "week": "12"
+      },
+      {
+        "activity": "Thread, idea of it. How to use it? What is parallel computing and how to use it",
+        "topics": "Multithreading and Parallel Computing",
+        "week": "13"
+      },
+      {
+        "activity": "Socker, ServerSocket example of using",
+        "topics": "Networking",
+        "week": "14"
+      },
+      {
+        "activity": "Review of all topics of current semester",
+        "topics": "Review of semester",
+        "week": "15"
+      }
+    ],
+    "description": "This course covers some of the main practical aspects of programming, and serves as a continuation of the introduction to programming class. The topics discussed include Object-Oriented programming, GUI programming, data structures, networking, multithreading, and so on. Java is used as the programming language. Flipped classroom practices such as online video lectures, group work activities during classes, peer reviewing, etc. are planned to be included. Small-size projects considered to facilitate project-based learning",
+    "reading_list": [
+      {
+        "authors": "Daniel Liang.",
+        "isbn": "",
+        "publisher_web_site": "",
+        "publishing_year": "2013",
+        "title": "Introduction to Java Programming (Comprehensive version, 10th edition)",
+        "type": ""
+      }
+    ],
+    "semester": "2",
+    "teachers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "title": "Programming Technologies and Educational Practice"
+  },
+  "1715801344878": {
+    "assessment_methods": [
+      {
+        "assessment": "Midterm",
+        "description": "",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Midterm",
+        "description": "",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "",
+        "percent": "100 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "",
+        "percent": "10 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "",
+        "percent": "10 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "",
+        "percent": "10 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "",
+        "percent": "40 %",
+        "qty": "1"
+      }
+    ],
+    "course_plan": [
+      {
+        "topics": "Vector Spaces. Vector Spaces. Vector Subspaces. Linear Combinations. Linear Span. Linear Dependence. Linear Independence.",
+        "week": "1"
+      },
+      {
+        "topics": "Vector Spaces. Basis and Dimension of Vector Space.",
+        "week": "2"
+      },
+      {
+        "topics": "Vector Spaces. Sums, Intersections and Direct Sums of Vector Subspaces.",
+        "week": "3"
+      },
+      {
+        "activity": "Homework 1, Page 158, Supplementary Problems (all odd problems) ----------------------------------- Quiz 1",
+        "topics": "Linear Mappings. Kernel and Image of Linear Mapping. Singular and Nonsingular Linear Mappings.  QUIZ 1",
+        "week": "4"
+      },
+      {
+        "topics": "Linear Mappings. Operations with Linear Mappings. Algebra of Linear Operators.",
+        "week": "5"
+      },
+      {
+        "topics": "Linear Mappings and Matrices. Matrix Representation of Linear Operator. Change of Basis. Similarity.",
+        "week": "6"
+      },
+      {
+        "activity": "Homework 2, Pages 192, 223 Supplementary Problems (all odd problems)  ----------------------------------  Midterm",
+        "topics": "MIDTERM",
+        "week": "7"
+      },
+      {
+        "topics": "Inner Product Spaces. Inner Product Spaces. Cauchy-Schwarz Inequality. Orthogonal Bases. Orthonormal bases.",
+        "week": "8"
+      },
+      {
+        "topics": "Inner Product Spaces. Projections. Gram-Schmidt Orthogonalization Process.",
+        "week": "9"
+      },
+      {
+        "topics": "Dual Spaces. Linear Functionals. Dual Space. Dual Basis.",
+        "week": "10"
+      },
+      {
+        "topics": "Forms. Bilinear Forms. Quadratic Forms. Law of Inertia.",
+        "week": "11"
+      },
+      {
+        "activity": "Homework 3, Pages 260, 358, 375 Supplementary Problems (all odd problems)  ----------------------------------  Quiz 2",
+        "topics": "Invariant Subspaces. Eigenvalues and Eigenvectors. Characteristic Polynomials. Minimal Polynomials. Hamilton-Cayley Theorem.  QUIZ 2",
+        "week": "12"
+      },
+      {
+        "topics": "Invariant Subspaces. Criterion of Diagonalizability. Root Subspaces. Jordan Canonical Form (Jordan Matrix).",
+        "week": "13"
+      },
+      {
+        "topics": "Linear Operators on Inner Product Spaces. Adjoint Operators. Self-Adjoint Operators. Orthogonal and Unitary Operators.",
+        "week": "14"
+      },
+      {
+        "activity": "Homework 4, Pages 323, 347, 394 Supplementary Problems (all odd problems)  ----------------------------------  Endterm",
+        "topics": "ENDTERM",
+        "week": "15"
+      }
+    ],
+    "description": "In this course we will consider vector spaces, linear mappings of vector spaces, inner product spaces, dual spaces, forms, invariant spaces, Jordan matrices, linear operators on inner product spaces.",
+    "reading_list": [
+      {
+        "authors": "S. Lipschutz, M. Lipson",
+        "isbn": "978-0-07-154353-8",
+        "publisher_web_site": "",
+        "publishing_year": "2009",
+        "title": "Linear Algebra, Fourth Edition",
+        "type": "Required"
+      },
+      {
+        "authors": "А.И. Кострикин",
+        "isbn": "5-9221-0017-3",
+        "publisher_web_site": "",
+        "publishing_year": "2000",
+        "title": "Введение в алгебру, Ч. 2., Линейная алгебра",
+        "type": "Recommended"
+      },
+      {
+        "authors": "А.И. Кострикин",
+        "isbn": "5-9221-0018-1",
+        "publisher_web_site": "",
+        "publishing_year": "2000",
+        "title": "Введение в алгебру, Ч. 2., Линейная алгебра",
+        "type": "Recommended"
+      }
+    ],
+    "semester": "2",
+    "teachers": [],
+    "title": "Additional chapters of linear algebra"
   }
 }

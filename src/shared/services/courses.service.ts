@@ -1,18 +1,18 @@
-import * as courses from '../../../public/db/courses.json';
-import { TeachersService } from '@/shared/services/teachers.service';
-import { UserService } from '@/shared/services/user.service';
+import * as courses from '../../../public/db/courses.json'
+import { TeachersService } from '@/shared/services/teachers.service'
+import { UserService } from '@/shared/services/user.service'
 
 export class CoursesService {
 	static getCourses() {
 		//@ts-ignore
-		const cur = courses.default;
-		const coursesMap = [];
+		const cur = courses.default
+		const coursesMap = []
 		for (const key in cur) {
-			coursesMap.push(cur[key]);
+			coursesMap.push(cur[key])
 		}
-		return coursesMap;
+		return coursesMap
 	}
-	
+
 	static getCoursesFromSemester(sem: string | number) {
 		//@ts-ignore
 		const cur = {...courses.default};
@@ -25,7 +25,7 @@ export class CoursesService {
 		}
 		return coursesMap;
 	}
-	
+
 	static getGroupedCourses() {
 		const cur = {...courses.default};
 		const userCourses = UserService.getUser().courses;

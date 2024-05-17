@@ -170,6 +170,8 @@ async function loginUser() {
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow-y: scroll;
+  max-height: 310px;
 }
 
 .container {
