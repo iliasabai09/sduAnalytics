@@ -2,6 +2,7 @@ import { useGet } from '@/shared/composables/useGet'
 import { usePut } from '@/shared/composables/usePut'
 import { hashSum } from '@/utils/functions/hashSum'
 import { LocalstorageProvider } from '@/shared/providers/localstorage.provider'
+import { UserService } from './user.service'
 
 export class AuthService {
 	static async registerUser(user: any) {
@@ -25,5 +26,10 @@ export class AuthService {
 		LocalstorageProvider.removeItem('user')
 	}
 
-
+	static async updateImg(img) {
+		if (!img) throw new Error('Не передано изображение')
+		const user = UserService.getUser()
+		const _id = user._id
+		return await usePut('users', {...user, img}, _id)
+	}
 }

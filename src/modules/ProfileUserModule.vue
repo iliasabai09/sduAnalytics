@@ -1,8 +1,13 @@
 <template>
   <div class="wrapper boxShadow">
     <div class="user">
-      <img src="https://img.freepik.com/premium-vector/a-girl-s-face-with-a-beautiful-smile-a-female-avatar-for-a-website-and-social-network_499739-527.jpg?w=740"
-           alt="img" width="100" height="100">
+      <img
+          :src="user?.img || 'https://img.freepik.com/premium-vector/a-girl-s-face-with-a-beautiful-smile-a-female-avatar-for-a-website-and-social-network_499739-527.jpg?w=740'"
+          alt="img"
+          height="100"
+          @click="$refs.fileInput.click()" style="cursor: pointer;border-radius: 50%"
+      >
+      <input type="file" ref="fileInput" style="display: none;" @change="handleFileChange">
       <div class="user-info">
         <div class="titleMedium">{{ user.name }} {{ user.surname }}</div>
         <div class="user-link textLarge">{{ user.email }}</div>
@@ -51,13 +56,6 @@ const menu = ref([
     route: '/profile/teachers',
     icon: 'for_you'
   },
-  // {
-  //   id: 3,
-  //   title: 'plan',
-  //   isActive: false,
-  //   route: '/profile/plan',
-  //   icon: 'note_alt'
-  // },
   {
     id: 4,
     title: 'grades',
@@ -88,6 +86,19 @@ function toContent(r: string) {
     UserService.logout()
   }
   router.push(r)
+}
+
+function handleFileChange(event) {
+  const file = event.target.files[0]
+  if (file) {
+    const reader = new FileReader()
+    reader.onload = (e) => {
+      AuthService.updateImg(e.target.result)
+      UserService.updateImg(e.target.result)
+      user.value.img = e.target.result;
+    }
+    reader.readAsDataURL(file)
+  }
 }
 
 watch(() => route.fullPath, (value, oldValue, onCleanup) => {

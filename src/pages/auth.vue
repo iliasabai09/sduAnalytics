@@ -97,6 +97,7 @@ const registerForm: any = ref({
   birthday: null,
   gender: null,
   semester: null,
+  img: '',
   courses: []
 })
 
