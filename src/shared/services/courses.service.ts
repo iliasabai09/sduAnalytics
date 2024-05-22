@@ -14,6 +14,7 @@ export class CoursesService {
 	}
 
 	static getCoursesFromSemester(sem: string | number) {
+		console.log('VVV', sem)
 		//@ts-ignore
 		const cur = {...courses.default};
 		const coursesMap = [];

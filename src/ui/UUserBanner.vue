@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <div class="banner-text">{{ 'Добро пожаловать ' + user?.name }}</div>
+    <div class="banner-text">{{ 'Welcome ' + user?.name }}</div>
   </div>
 </template>
 

@@ -16,7 +16,7 @@
               <input type="text" placeholder="Adviser" v-model="registerForm.adviser">
               <input type="text" placeholder="Course" v-model="registerForm.course">
               <input type="date" placeholder="Birthday" v-model="registerForm.birthday">
-              <input type="text" placeholder="Group" v-model="registerForm.group">
+              <input type="text" placeholder="Semester" v-model="registerForm.semester">
             </template>
             <template v-if="step === 3">
               <div class="userGrades">
@@ -96,7 +96,7 @@ const registerForm: any = ref({
   course: null,
   birthday: null,
   gender: null,
-  group: null,
+  semester: null,
   courses: []
 })
 
@@ -106,7 +106,7 @@ const loginForm = {
 }
 
 function setCourses() {
-  registerForm.value.courses = CoursesService.getCoursesFromSemester(Number(registerForm.value.course))
+  registerForm.value.courses = CoursesService.getCoursesFromSemester(Number((registerForm.value.course - 1) * 2 + Number(registerForm.value.semester)))
 }
 
 async function registerUser() {
@@ -143,7 +143,7 @@ async function loginUser() {
   bottom: 0;
   z-index: 10;
   background-size: cover;
-  background-image: url("https://nurlysaulet.kz/assets/images/projects/SDU/04-min.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFOwCQ4NQIhH6HkYFzUotcNZ_76AUFn5tf_56QM2R2g&s");
 
   &-form {
     position: absolute;

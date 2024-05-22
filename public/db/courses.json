@@ -1408,5 +1408,29 @@
     "semester": "2",
     "teachers": [],
     "title": "Additional chapters of linear algebra"
+  },
+  "1715801984878": {
+    "assessment_methods": [],
+    "course_plan": [],
+    "description": "",
+    "reading_list": [],
+    "semester": "1",
+    "teachers": [
+      24
+    ],
+    "title": "Fundamentals of programming"
+  },
+  "17199801984878": {
+    "assessment_methods": [],
+    "course_plan": [],
+    "description": "",
+    "reading_list": [],
+    "semester": "1",
+    "teachers": [
+      5,
+      6,
+      7
+    ],
+    "title": "Mathematical analysis 1"
   }
 }

@@ -14,7 +14,7 @@
                 :key="i"
                 :value="item"
             >
-              <v-list-item-title style="font-weight: 600;padding-bottom: 4px" v-text="item.title"></v-list-item-title>
+              <v-list-item-title style="font-weight: 600; padding-bottom: 4px" v-text="item.title"></v-list-item-title>
               <v-list-item-subtitle style="font-weight: 600; color: #848484"
                                     v-text="item.description"></v-list-item-subtitle>
             </v-list-item>
@@ -54,7 +54,7 @@
             v-model="tab"
             color="primary"
         >
-          <v-tab value="description"> Description</v-tab>
+          <v-tab value="description">Description</v-tab>
           <v-tab value="reading_list">Reading list</v-tab>
           <v-tab value="teachers">Teachers</v-tab>
           <v-tab value="course_plan">Course plan</v-tab>
@@ -63,7 +63,7 @@
       </div>
       <div class="activeCourse-value">
         <template v-if="tab === 'assessment_methods'">
-          <v-table>
+          <v-table v-if="activeCourse.assessment_methods?.length">
             <thead style="color: var(--secondary)" class="titleMedium">
             <tr>
               <th class="text-left">
@@ -92,19 +92,25 @@
             </tr>
             </tbody>
           </v-table>
+          <div v-else class="emptyState">
+            <img
+                :src="emptyImg"
+                alt="img">
+            <div class="titleLarge redText">EMPTY</div>
+          </div>
         </template>
         <template v-if="tab === 'course_plan'">
-          <v-table>
+          <v-table v-if="activeCourse.course_plan?.length">
             <thead style="color: var(--secondary)" class="titleMedium">
             <tr>
+              <th class="text-left">
+                week
+              </th>
               <th class="text-left">
                 activity
               </th>
               <th class="text-left">
                 topics
-              </th>
-              <th class="text-left">
-                week
               </th>
             </tr>
             </thead>
@@ -113,37 +119,51 @@
                 v-for="item in activeCourse.course_plan"
                 :key="item.name"
             >
+              <td>{{ item.week }}</td>
               <td>{{ item.activity }}</td>
               <td>{{ item.topics }}</td>
-              <td>{{ item.week }}</td>
             </tr>
             </tbody>
           </v-table>
+          <div v-else class="emptyState">
+            <img
+                :src="emptyImg"
+                alt="img">
+            <div class="titleLarge redText">EMPTY</div>
+          </div>
         </template>
         <template v-if="tab === 'description'">
-          <div class="textLarge text-grey activeCourse-description">{{ activeCourse.description }}</div>
+          <div v-if="activeCourse?.description" class="textLarge text-grey activeCourse-description">
+            {{ activeCourse.description }}
+          </div>
+          <div v-else class="emptyState">
+            <img
+                :src="emptyImg"
+                alt="img">
+            <div class="titleLarge redText">EMPTY</div>
+          </div>
         </template>
         <template v-if="tab === 'reading_list'">
-          <v-table>
+          <v-table v-if="activeCourse.reading_list?.length">
             <thead style="color: var(--secondary);white-space: nowrap" class="textLarge">
             <tr>
               <th class="text-left">
+                type
+              </th>
+              <th class="text-left">
                 authors
+              </th>
+              <th class="text-left">
+                title
+              </th>
+              <th class="text-left">
+                publishing year
               </th>
               <th class="text-left">
                 isbn
               </th>
               <th class="text-left">
                 publisher web site
-              </th>
-              <th class="text-left">
-                publishing year
-              </th>
-              <th class="text-left">
-                title
-              </th>
-              <th class="text-left">
-                type
               </th>
             </tr>
             </thead>
@@ -152,15 +172,21 @@
                 v-for="item in activeCourse.reading_list"
                 :key="item.name"
             >
+              <td>{{ item.type }}</td>
               <td>{{ item.authors }}</td>
+              <td>{{ item.title }}</td>
+              <td>{{ item.publishing_year }}</td>
               <td>{{ item.isbn }}</td>
               <td>{{ item.publisher_web_site }}</td>
-              <td>{{ item.publishing_year }}</td>
-              <td>{{ item.title }}</td>
-              <td>{{ item.type }}</td>
             </tr>
             </tbody>
           </v-table>
+          <div v-else class="emptyState">
+            <img
+                :src="emptyImg"
+                alt="img">
+            <div class="titleLarge redText">EMPTY</div>
+          </div>
         </template>
         <template v-if="tab === 'teachers'">
           <div class="teachers">
@@ -173,13 +199,23 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { CoursesService } from '@/shared/services/courses.service'
 import TeacherCard from '@/components/TeacherCard.vue'
 
 const courses: any = ref([])
 const activeCourse: any = ref(null)
-const tab: any = ref('description')
+const tab: any = ref(null)
+const emptyImg = ref('https://assets-global.website-files.com/65d605a3b4417479c154329f/65eb358ce14376aa28504ead_PA-Empty.png')
+
+const computedTab = computed(() => {
+  if (activeCourse.value?.description) return 'description'
+  if (activeCourse.value?.assessment_methods?.length) return 'assessment_methods'
+  if (activeCourse.value?.course_plan?.length) return 'course_plan'
+  if (activeCourse.value?.reading_list?.length) return 'reading_list'
+  if (activeCourse.value?.teachers?.length) return 'teachers'
+})
+
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses()
@@ -187,6 +223,11 @@ onMounted(() => {
 
 function toCourseDetail(item: any) {
   activeCourse.value = item
+  setActiveTab();
+}
+
+function setActiveTab() {
+  tab.value = computedTab.value
 }
 
 </script>
@@ -198,6 +239,7 @@ function toCourseDetail(item: any) {
   column-gap: 16px;
   row-gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  margin-top: 16px;
 }
 
 .activeCourse {
@@ -223,7 +265,7 @@ function toCourseDetail(item: any) {
   }
 
   &-value {
-
+    position: relative;
   }
 }
 
@@ -248,6 +290,22 @@ function toCourseDetail(item: any) {
 
     &:first-child {
     }
+  }
+}
+
+.emptyState {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 52px;
+  margin-bottom: 32px;
+
+  img {
+    width: 320px;
+    border-radius: 16px;
   }
 }
 </style>
