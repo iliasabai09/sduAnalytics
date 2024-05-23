@@ -12,10 +12,10 @@ const user = UserService.getUser()
 
 <style scoped lang="scss">
 .banner {
-  background-color: #ffdd40;
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,142,142,1) 100%);
   height: 100px;
   width: 100%;
-  color: #274dff;
+  color: #fff;
   border-radius: 16px;
   display: flex;
   align-items: center;
