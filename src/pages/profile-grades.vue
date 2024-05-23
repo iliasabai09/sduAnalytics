@@ -6,6 +6,16 @@
         <v-switch label="Table view" hide-details color="primary"></v-switch>
       </div>
     </div>
+    <div class="gradesInfo">
+      <div>
+        <div class="gradesInfo-completed"></div>
+        <div class="bodyMedium">completed</div>
+      </div>
+      <div>
+        <div class="gradesInfo-analytics"></div>
+        <div class="bodyMedium">analytics</div>
+      </div>
+    </div>
     <div class="grades-main">
       <ProfileGradesTable :grades="courses"/>
     </div>
@@ -40,21 +50,27 @@ onMounted(() => {
   }
 }
 
-//.grades {
-//  background-color: #fff;
-//  border-radius: 16px;
-//  padding: 16px;
-//  flex-direction: column;
-//  gap: 24px;
-//  display: flex;
-//
-//
-//  &-group {
-//    display: flex;
-//
-//    &:first-child {
-//      max-width: 400px;
-//    }
-//  }
-//}
+.gradesInfo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &-completed {
+    width: 30px;
+    height: 15px;
+    background-color: #b2ffac52;
+  }
+
+  &-analytics {
+    width: 30px;
+    height: 15px;
+    background-color: #ACFFF551;
+  }
+}
 </style>
