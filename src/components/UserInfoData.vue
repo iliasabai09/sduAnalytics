@@ -64,10 +64,10 @@ const userInfo = ref([
   //   icon: 'agender'
   // },
   {
-    type: 'Group',
+    type: 'Semester',
     value: '42BT19',
     icon: 'group',
-    key: 'group'
+    key: 'semester'
   }
 ])
 
