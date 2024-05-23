@@ -1,5 +1,5 @@
 <template>
-  <section class="_container" id="talkWithAc">
+  <section class="_container" id="howItWorks">
     <TrustUsContent/>
     <UTrustUsImg/>
   </section>

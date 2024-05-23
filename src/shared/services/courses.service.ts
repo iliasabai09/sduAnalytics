@@ -14,7 +14,6 @@ export class CoursesService {
 	}
 
 	static getCoursesFromSemester(sem: string | number) {
-		console.log('VVV', sem)
 		//@ts-ignore
 		const cur = {...courses.default};
 		const coursesMap = [];
@@ -24,7 +23,7 @@ export class CoursesService {
 			copy.teachers = TeachersService.getTeachersFromIds(teacher);
 			if (Number(copy.semester) <= Number(sem)) coursesMap.push(copy);
 		}
-		return coursesMap;
+		return coursesMap.sort((a, b) => a.semester - b.semester);
 	}
 
 	static getGroupedCourses() {

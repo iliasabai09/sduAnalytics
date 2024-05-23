@@ -15,8 +15,8 @@
             <template v-if="step === 2">
               <input type="text" placeholder="Adviser" v-model="registerForm.adviser">
               <input type="text" placeholder="Course" v-model="registerForm.course">
-              <input type="date" placeholder="Birthday" v-model="registerForm.birthday">
               <input type="text" placeholder="Semester" v-model="registerForm.semester">
+              <input type="date" placeholder="Birthday" v-model="registerForm.birthday">
             </template>
             <template v-if="step === 3">
               <div class="userGrades">
@@ -38,7 +38,6 @@
             <span>or use your email password</span>
             <input type="email" placeholder="Email" v-model="loginForm.email">
             <input type="password" placeholder="Password" v-model="loginForm.password">
-<!--            <a href="#">Forget Your Password?</a>-->
             <button type="submit">Sign In</button>
           </form>
         </div>
