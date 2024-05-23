@@ -143,9 +143,11 @@ function getGrade(title) {
 
 function gradeAnalyticConstructor(key) {
   const obj = {
-    'Numerical methods': 12.02 - 0.13 * getGrade('Ordinary differential equations') + 0.14 * getGrade('Mathematical analysis 1') - 0.25 * getGrade('Classical mechanics') - 0.027 * getGrade('Theory of Probablility and Mathematical Statistics') + 1.12 * getGrade('Mathematical and Complex analysis'),
+    'Numerical methods': 12.02 - 0.13 * getGrade('Ordinary differential equations') + 0.14 * getGrade('Mathematical analysis 3') - 0.25 * getGrade('Classical mechanics') - 0.027 * getGrade('Theory of Probablility and Mathematical Statistics') + 1.12 * getGrade('Mathematical and Complex analysis'),
     'Data wrangling and visualization': 12.63 + 0.54 * getGrade('Additional chapters of linear algebra') + 0.34 * getGrade('Ordinary differential equations') + 0.26 * getGrade('Classical mechanics') + 0.28 * getGrade('Mathematical and Complex analysis') - 0.49 * getGrade('Theory of Probablility and Mathematical Statistics'),
-    'Classical mechanics': 17.45 + 0.09 * getGrade('Mathematical analysis') 2+0,09*Algebra-0,08*Discrete mathematics+0,54*Ordinary differential equations+0,12*Mathematical analysis 3,
+    'Classical mechanics': 17.45 + 0.09 * getGrade('Mathematical analysis 2') + 0.09 * getGrade('Algebra') - 0.08 * getGrade('Discrete mathematics') + 0.54 * getGrade('Ordinary differential equations') + 0.12 * getGrade('Mathematical analysis 3'),
+    'Theory of Probablility and Mathematical Statistics': 12.7 + 0.38 * getGrade('Mathematical analysis 2') + 0.17 * getGrade('Algebra') + 0.065 * getGrade('Discrete mathematics') + 0.097 * getGrade('Ordinary differential equations') + 0.15 * getGrade('Numerical methods'),
+    'Mathematical and Complex analysis': 17.45 + 0.09 * getGrade('Mathematical analysis 2') + 0.09 * getGrade('Algebra') - 0.08 * getGrade('Discrete mathematics') + 0.54 * getGrade('Ordinary differential equations') + 0.12 * getGrade('Mathematical analysis 3')
   }
   return obj[key]
 }

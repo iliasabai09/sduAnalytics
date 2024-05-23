@@ -1432,5 +1432,133 @@
       7
     ],
     "title": "Mathematical analysis 1"
+  },
+  "57832583838464": {
+    "assessment_methods": [
+      {
+        "assessment": "Midterm",
+        "description": "Solving problems",
+        "percent": "30 %",
+        "qty": "2"
+      },
+      {
+        "assessment": "Final Exam",
+        "description": "Writing task and oral examination",
+        "percent": "40 %",
+        "qty": "1"
+      },
+      {
+        "assessment": "Homework",
+        "description": "Proving theorems, solving problems",
+        "percent": "10 %",
+        "qty": "10"
+      },
+      {
+        "assessment": "Quiz",
+        "description": "Solving problems",
+        "percent": "20 %",
+        "qty": "2"
+      }
+    ],
+    "course_plan": [
+      {
+        "activity": "Homework 1",
+        "topics": "Functions of several variables. Functions of two and three variables. Limits and continuity",
+        "week": "1"
+      },
+      {
+        "activity": "Homework 2",
+        "topics": "Partial Derivatives. Tangent planes and linear approximations",
+        "week": "2"
+      },
+      {
+        "activity": "Homework 3, Quiz 1",
+        "topics": "The chain rule. Directional derivatives and the gradient vector",
+        "week": "3"
+      },
+      {
+        "activity": "Homework 4",
+        "topics": "Maximum and minimum values. Lagrange multipliers",
+        "week": "4"
+      },
+      {
+        "activity": "Homework 5",
+        "topics": "Double Integral. Double Integral over rectangle regions. Iterated Integrals",
+        "week": "5"
+      },
+      {
+        "activity": "Homework 6",
+        "topics": "Double Integral over general regions. Double Integral in polar coordinates",
+        "week": "6"
+      },
+      {
+        "activity": "Homework 7, Midterm 1",
+        "topics": "Applications of double integrals",
+        "week": "7"
+      },
+      {
+        "activity": "Homework 8",
+        "topics": "Surface area. Triple integrals",
+        "week": "8"
+      },
+      {
+        "activity": "Homework 9",
+        "topics": "Triple integrals in cylindrical and spherical coordinates",
+        "week": "9"
+      },
+      {
+        "activity": "Homework 10, Quiz 2",
+        "topics": "Sequences. Series of numbers. Convergence and Divergence of the series",
+        "week": "10"
+      },
+      {
+        "topics": "Alternating Series. Absolute and Conditional Convergence",
+        "week": "11"
+      },
+      {
+        "topics": "Power series. Representations of functions as power series",
+        "week": "12"
+      },
+      {
+        "topics": "Taylor and Maclaurin series. Taylor polynomials and their applications",
+        "week": "13"
+      },
+      {
+        "activity": "Midterm 2",
+        "topics": "Review of the course",
+        "week": "14"
+      },
+      {
+        "topics": "Preparations for Exam",
+        "week": "15"
+      }
+    ],
+    "description": "The course Calculus 2 deals with the most basic concepts in analysis. The goal of the course is to acquaint the students with rigorous proofs in analysis and also to set a firm foundation for calculus of one variable. The course consists of concepts such as sets, functions, sequences and their limits, series of numbers, tests for convergence, concepts of alternating series, absolute and conditional convergence, power series. Taylor’s series, the study of functions using the methods of differential calculus.",
+    "reading_list": [
+      {
+        "authors": "Stewart James",
+        "isbn": "978-0538497817",
+        "publisher_web_site": "www.cengage.com",
+        "publishing_year": "2012",
+        "title": "Calculus (7th edition)",
+        "type": "Required"
+      },
+      {
+        "authors": "Jirí Lebl",
+        "isbn": "978-1718862401",
+        "publisher_web_site": "www.jirka.org/ra/",
+        "publishing_year": "2018",
+        "title": "Basic Analysis I. Introduction to Real Analysis, Volume I",
+        "type": "Required"
+      }
+    ],
+    "semester": "2",
+    "teachers": [
+      6,
+      7,
+      8,
+      5
+    ],
+    "title": "Mathematical analysis 2"
   }
 }

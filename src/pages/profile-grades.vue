@@ -3,7 +3,7 @@
     <div class="grades-header">
       <div class="titleMedium">Grades info</div>
       <div>
-        <v-switch label="Table view" hide-details color="primary"></v-switch>
+        <v-switch label="Table view" hide-details color="primary" v-model="tableView"></v-switch>
       </div>
     </div>
     <div class="gradesInfo">
@@ -17,7 +17,8 @@
       </div>
     </div>
     <div class="grades-main">
-      <ProfileGradesTable :grades="courses"/>
+      <ProfileGradesTable :grades="courses" v-if="tableView"/>
+      <ProfileGradesIndicator :grades="courses" v-if="!tableView"/>
     </div>
   </div>
 </template>
@@ -26,8 +27,10 @@
 import { onMounted, Ref, ref } from 'vue'
 import { CoursesService } from '@/shared/services/courses.service'
 import ProfileGradesTable from '../components/ProfileGradesTable.vue'
+import ProfileGradesIndicator from '../components/ProfileGradesIndicator.vue'
 
 const courses: Ref<any[]> = ref([])
+const tableView = ref(true)
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses()
