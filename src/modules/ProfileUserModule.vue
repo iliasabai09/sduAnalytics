@@ -2,7 +2,7 @@
   <div class="wrapper boxShadow">
     <div class="user">
       <img
-          :src="user?.img || 'https://img.freepik.com/premium-vector/a-girl-s-face-with-a-beautiful-smile-a-female-avatar-for-a-website-and-social-network_499739-527.jpg?w=740'"
+          :src="user?.img || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjAk2mEYjpQiYnlDto4Ewvl0IKxiozmlLc2BBwvnY6wg&s'"
           alt="img"
           height="100"
           @click="$refs.fileInput.click()" style="cursor: pointer;border-radius: 50%"

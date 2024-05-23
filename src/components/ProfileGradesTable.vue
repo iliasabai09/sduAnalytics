@@ -9,6 +9,9 @@
         name
       </th>
       <th class="text-left">
+        grade
+      </th>
+      <th class="text-left">
         with the letter
       </th>
       <th class="text-left">
@@ -21,9 +24,15 @@
     </thead>
     <tbody>
     <template v-for="(grade,idx) in grades">
-      <tr v-if="grade?.grade">
+      <tr v-if="grade?.grade" style="background-color: #b2ffac52">
         <td>{{ ++idx }}</td>
         <td>{{ grade.title }}</td>
+        <td
+            class="bodyMedium with-letter"
+            :class="'traditionalSystemColor-' + removeSpaces(gradeTraditionalSystem(grade.grade))"
+        >
+          {{ grade.grade }}
+        </td>
         <td
             class="bodyMedium with-letter"
             :class="'traditionalSystemColor-' + removeSpaces(gradeTraditionalSystem(grade.grade))"
@@ -43,10 +52,33 @@
           {{ gradeTraditionalSystem(grade.grade) }}
         </td>
       </tr>
-      <tr v-else>
+      <tr v-else style="background-color: rgba(172,255,245,0.32)">
         <td>{{ ++idx }}</td>
-        <td>{{ ++idx }}</td>
-        <td>{{ ++idx }}</td>
+        <td>{{ grade.title }}</td>
+        <td
+            class="textLarge"
+            :class="'traditionalSystemColor-' + removeSpaces(gradeTraditionalSystem(gradeAnalyticConstructor(grade.title)))"
+        >
+          {{ gradeAnalyticConstructor(grade.title) }}
+        </td>
+        <td
+            class="textLarge"
+            :class="'traditionalSystemColor-' + removeSpaces(gradeTraditionalSystem(gradeAnalyticConstructor(grade.title)))"
+        >
+          {{ gradeLetter(gradeAnalyticConstructor(grade.title)) }}
+        </td>
+        <td
+            class="textLarge"
+            :class="'traditionalSystemColor-' + removeSpaces(gradeTraditionalSystem(gradeAnalyticConstructor(grade.title)))"
+        >
+          {{ gradeBallman(gradeAnalyticConstructor(grade.title)) }}
+        </td>
+        <td
+            class="textLarge"
+            :class="'traditionalSystemColor-' + removeSpaces(gradeTraditionalSystem(gradeAnalyticConstructor(grade.title)))"
+        >
+          {{ gradeTraditionalSystem(gradeAnalyticConstructor(grade.title)) }}
+        </td>
       </tr>
     </template>
     </tbody>
@@ -54,9 +86,9 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, onMounted } from 'vue'
 
-defineProps({
+const props = defineProps({
   grades: {
     type: Array,
     required: true
@@ -64,6 +96,7 @@ defineProps({
 })
 
 function gradeTraditionalSystem(grade) {
+  if (!grade) return ''
   if (grade >= 90) return 'Very good'
   if (grade >= 70 && grade < 90) return 'Good'
   if (grade >= 50 && grade < 70) return 'Satisfying'
@@ -104,6 +137,21 @@ function removeSpaces(word) {
   return word.replace(/\s+/g, '').toLowerCase()
 }
 
+function getGrade(title) {
+  return props.grades.find(grade => grade.title === title)?.grade || 0
+}
+
+function gradeAnalyticConstructor(key) {
+  const obj = {
+    'Numerical methods': 12.02 - 0.13 * getGrade('Ordinary differential equations') + 0.14 * getGrade('Mathematical analysis 1') - 0.25 * getGrade('Classical mechanics') - 0.027 * getGrade('Theory of Probablility and Mathematical Statistics') + 1.12 * getGrade('Mathematical and Complex analysis'),
+    'Data wrangling and visualization': 12.63 + 0.54 * getGrade('Additional chapters of linear algebra') + 0.34 * getGrade('Ordinary differential equations') + 0.26 * getGrade('Classical mechanics') + 0.28 * getGrade('Mathematical and Complex analysis') - 0.49 * getGrade('Theory of Probablility and Mathematical Statistics')
+  }
+  return obj[key]
+}
+
+onMounted(() => {
+  console.log(props.grades)
+})
 </script>
 
 <style scoped lang="scss">
