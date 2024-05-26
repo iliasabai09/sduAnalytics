@@ -12,20 +12,10 @@
       v-model="dialog"
       width="auto"
   >
-    <v-card
-        max-width="400"
-        prepend-icon="mdi-update"
-        text="Your application will relaunch automatically after the update is complete."
-        title="Update in progress"
-    >
-      <template v-slot:actions>
-        <v-btn
-            class="ms-auto"
-            text="Ok"
-            @click="dialog = false"
-        ></v-btn>
-      </template>
-    </v-card>
+    <div class="teacher-info">
+
+    </div>
+    <pre>{{ teacher }}</pre>
   </v-dialog>
 </template>
 
@@ -73,5 +63,9 @@ const computedImage = computed(() => {
     margin-bottom: 4px;
     color: var(--grey);
   }
+}
+
+.teacher-info {
+  background-color: #fff;
 }
 </style>

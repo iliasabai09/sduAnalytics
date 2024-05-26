@@ -1,14 +1,18 @@
 <template>
   <div class="grades boxShadow">
     <div class="grades-header">
-<!--      <div class="headlineLarge">Grades info</div>-->
-      <div>
-        <v-switch label="Table view" hide-details color="primary" v-model="tableView"></v-switch>
-      </div>
+      <v-tabs
+          style="width: 100%"
+          v-model="tab"
+          color="primary"
+      >
+        <v-tab style="width: 50%" value="table">Table view</v-tab>
+        <v-tab style="width: 50%" value="analytics">Analytics view</v-tab>
+      </v-tabs>
     </div>
     <div class="grades-main">
-      <ProfileGradesTable :grades="courses" v-if="tableView"/>
-      <ProfileGradesIndicator :grades="courses" v-if="!tableView"/>
+      <ProfileGradesTable :grades="courses" v-if="tab === 'table'"/>
+      <ProfileGradesIndicator :grades="courses" v-if="tab === 'analytics'"/>
     </div>
   </div>
 </template>
@@ -21,6 +25,7 @@ import ProfileGradesIndicator from '../components/ProfileGradesIndicator.vue'
 
 const courses: Ref<any[]> = ref([])
 const tableView = ref(true)
+const tab = ref('table')
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses()
@@ -40,6 +45,7 @@ onMounted(() => {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 12px;
   }
 }
 
