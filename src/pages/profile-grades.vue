@@ -29,7 +29,6 @@ const tab = ref('table')
 
 onMounted(() => {
   courses.value = CoursesService.getGroupedCourses()
-  console.log(courses.value)
 })
 
 </script>
