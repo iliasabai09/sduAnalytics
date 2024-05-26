@@ -17,10 +17,10 @@ import { UserService } from '@/shared/services/user.service'
 
 const userInfo = ref([
   {
-    type: 'identify',
+    type: 'ID',
     value: '38725361275',
     icon: 'person_2',
-    key: 'createdAt'
+    key: 'identify'
   },
   {
     type: 'Name',
@@ -35,16 +35,10 @@ const userInfo = ref([
     key: 'surname'
   },
   {
-    type: 'Email',
-    value: 'brdene@sdu.kz',
-    icon: 'mail',
-    key: 'email'
-  },
-  {
-    type: 'Adviser',
-    value: 'Brdene Brdenesovich',
-    icon: 'person',
-    key: 'adviser'
+    type: 'Birthday',
+    value: '2002y 1 april',
+    icon: 'cake',
+    key: 'birthday'
   },
   {
     type: 'Course',
@@ -53,16 +47,22 @@ const userInfo = ref([
     key: 'course'
   },
   {
-    type: 'Birthday',
-    value: '2002y 1 april',
-    icon: 'cake',
-    key: 'birthday'
-  },
-  {
     type: 'Semester',
     value: '42BT19',
     icon: 'group',
     key: 'semester'
+  },
+  {
+    type: 'Adviser',
+    value: 'Brdene Brdenesovich',
+    icon: 'person',
+    key: 'adviser'
+  },
+  {
+    type: 'Email',
+    value: 'brdene@sdu.kz',
+    icon: 'mail',
+    key: 'email'
   }
 ])
 
