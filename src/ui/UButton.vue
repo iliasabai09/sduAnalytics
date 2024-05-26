@@ -40,7 +40,7 @@ button {
 }
 
 button.primary {
-  background-color: var(--primary);
+  background-color: #151c53;
 }
 
 button.mobileWidth {
