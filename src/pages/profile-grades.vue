@@ -1,19 +1,9 @@
 <template>
   <div class="grades boxShadow">
     <div class="grades-header">
-      <div class="titleMedium">Grades info</div>
+<!--      <div class="headlineLarge">Grades info</div>-->
       <div>
         <v-switch label="Table view" hide-details color="primary" v-model="tableView"></v-switch>
-      </div>
-    </div>
-    <div class="gradesInfo">
-      <div>
-        <div class="gradesInfo-completed"></div>
-        <div class="bodyMedium">completed</div>
-      </div>
-      <div>
-        <div class="gradesInfo-analytics"></div>
-        <div class="bodyMedium">analytics</div>
       </div>
     </div>
     <div class="grades-main">

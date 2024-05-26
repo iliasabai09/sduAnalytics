@@ -17,7 +17,7 @@ import { UserService } from '@/shared/services/user.service'
 
 const userInfo = ref([
   {
-    type: 'ID',
+    type: 'identify',
     value: '38725361275',
     icon: 'person_2',
     key: 'createdAt'
