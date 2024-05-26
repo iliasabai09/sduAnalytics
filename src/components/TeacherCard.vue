@@ -13,10 +13,63 @@
       width="auto"
   >
     <div class="teacher-info">
-
+      <div class="infoData-field">
+        <span class="material-symbols-outlined">{{ "person_2" }}</span>
+        <div class="textLarge">Fullname:</div>
+        <div class="text greyText">{{ teacher.fullName }}</div>
+      </div>
+      <div class="infoData-field">
+        <span class="material-symbols-outlined">{{ "subject" }}</span>
+        <div class="textLarge">Subjects:</div>
+        <div class="text greyText">{{ teacher.subjects }}</div>
+      </div>
+      <div class="infoData-field">
+        <span class="material-symbols-outlined">{{ "license" }}</span>
+        <div class="textLarge">Degree:</div>
+        <div class="text greyText">{{ teacher.degree }}</div>
+      </div>
+      <div class="infoData-field">
+        <span class="material-symbols-outlined">{{ "mail" }}</span>
+        <div class="textLarge">Contact info:</div>
+        <div class="text primaryText">{{ teacher.contact_info }}</div>
+      </div>
+      <div class="infoData-field">
+        <span class="material-symbols-outlined">{{ "wc" }}</span>
+        <div class="textLarge">Gender:</div>
+        <div class="text greyText">{{ teacher.gender }}</div>
+      </div>
     </div>
-    <pre>{{ teacher }}</pre>
   </v-dialog>
+
+<!--  <v-bottom-sheet v-model="dialog" inset>-->
+<!--    <div class="teacher-info">-->
+<!--      <div class="infoData-field">-->
+<!--        <span class="material-symbols-outlined">{{ "person_2" }}</span>-->
+<!--        <div class="textLarge">Fullname:</div>-->
+<!--        <div class="text greyText">{{ teacher.fullName }}</div>-->
+<!--      </div>-->
+<!--      <div class="infoData-field">-->
+<!--        <span class="material-symbols-outlined">{{ "subject" }}</span>-->
+<!--        <div class="textLarge">Subjects:</div>-->
+<!--        <div class="text greyText">{{ teacher.subjects }}</div>-->
+<!--      </div>-->
+<!--      <div class="infoData-field">-->
+<!--        <span class="material-symbols-outlined">{{ "license" }}</span>-->
+<!--        <div class="textLarge">Degree:</div>-->
+<!--        <div class="text greyText">{{ teacher.degree }}</div>-->
+<!--      </div>-->
+<!--      <div class="infoData-field">-->
+<!--        <span class="material-symbols-outlined">{{ "mail" }}</span>-->
+<!--        <div class="textLarge">Contact info:</div>-->
+<!--        <div class="text primaryText">{{ teacher.contact_info }}</div>-->
+<!--      </div>-->
+<!--      <div class="infoData-field">-->
+<!--        <span class="material-symbols-outlined">{{ "wc" }}</span>-->
+<!--        <div class="textLarge">Gender:</div>-->
+<!--        <div class="text greyText">{{ teacher.gender }}</div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </v-bottom-sheet>-->
 </template>
 
 <script setup lang="ts">
@@ -67,5 +120,23 @@ const computedImage = computed(() => {
 
 .teacher-info {
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 16px;
+  padding: 16px;
+  min-width: 500px;
+}
+
+.infoData-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+span {
+  color: var(--primary);
+  font-size: 30px;
+  margin-right: 8px;
 }
 </style>

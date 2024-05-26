@@ -58,11 +58,6 @@ const userInfo = ref([
     icon: 'cake',
     key: 'birthday'
   },
-  // {
-  //   type: 'Gender',
-  //   value: 'Male',
-  //   icon: 'agender'
-  // },
   {
     type: 'Semester',
     value: '42BT19',
