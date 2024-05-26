@@ -12,13 +12,15 @@ const user = UserService.getUser()
 
 <style scoped lang="scss">
 .banner {
-  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,142,142,1) 100%);
+  background-color: #151c53;
   height: 100px;
   width: 100%;
   color: #fff;
   border-radius: 16px;
   display: flex;
   align-items: center;
+  background-image: url('https://yt3.googleusercontent.com/82UnWmIFlgRnWam4R5tqS3qv-MaawpGx0QFLSYM5mrABFO1_XyFF7GRJLxToIU-gD9i4K_fc_w=s900-c-k-c0x00ffffff-no-rj');
+  background-size: 100px;
 
   &-text {
     font-family: "freight-big-pro", cursive;
