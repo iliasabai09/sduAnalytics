@@ -1,5 +1,6 @@
 {
   "1714602984370": {
+    "code": "MAT-108",
     "assessment_methods": [
       {
         "assessment": "Midterm",
@@ -124,6 +125,7 @@
     "title": "Algebra"
   },
   "1714603534692": {
+    "code": "MAT-201",
     "assessment_methods": [
       {
         "assessment": "Midterm",
@@ -244,6 +246,7 @@
     "title": "Discrete mathematics"
   },
   "1714604345153": {
+    "code": "MAT-205",
     "assessment_methods": [
       {
         "assessment": "Midterm",
@@ -390,6 +393,7 @@
     "title": "Ordinary differential equations"
   },
   "1714605085997": {
+    "code": "MAT-221",
     "assessment_methods": [
       {
         "assessment": "Midterm",
@@ -534,6 +538,7 @@
     "title": "Classical mechanics"
   },
   "1715796844688": {
+    "code": "MAT-312",
     "assessment_methods": [
       {
         "assessment": "Pre-final grade",
@@ -677,6 +682,7 @@
     "title": "Theory of Probablility and Mathematical Statistics"
   },
   "1715797549561": {
+    "code": "MCM-201",
     "assessment_methods": [
       {
         "assessment": "Final Exam",
@@ -803,6 +809,7 @@
     "title": "Mathematical and Complex analysis"
   },
   "1715798226593": {
+    "code": "CSS-330",
     "assessment_methods": [
       {
         "assessment": "Field Work",
@@ -908,6 +915,7 @@
     "title": "Data wrangling and visualization"
   },
   "1715798828341": {
+    "code": "MCM-302",
     "assessment_methods": [
       {
         "assessment": "Final Exam",
@@ -1011,6 +1019,7 @@
     "title": "Numerical methods"
   },
   "1715799921238": {
+    "code": "MAT-104",
     "assessment_methods": [
       {
         "assessment": "1",
@@ -1138,6 +1147,7 @@
     "title": "Linear Algebra and Analytic Geometry"
   },
   "1715800450448": {
+    "code": "CSS-108",
     "assessment_methods": [
       {
         "assessment": "Final Exam",
@@ -1268,6 +1278,7 @@
     "title": "Programming Technologies and Educational Practice"
   },
   "1715801344878": {
+    "code": "MAT-119",
     "assessment_methods": [
       {
         "assessment": "Midterm",
@@ -1410,6 +1421,7 @@
     "title": "Additional chapters of linear algebra"
   },
   "1715801984878": {
+    "code": "MCM-107",
     "assessment_methods": [],
     "course_plan": [],
     "description": "",
@@ -1421,6 +1433,7 @@
     "title": "Fundamentals of programming"
   },
   "17199801984878": {
+    "code": "MCM-111",
     "assessment_methods": [],
     "course_plan": [],
     "description": "",
@@ -1434,6 +1447,7 @@
     "title": "Mathematical analysis 1"
   },
   "57832583838464": {
+    "code": "MCM-102",
     "assessment_methods": [
       {
         "assessment": "Midterm",
@@ -1562,6 +1576,7 @@
     "title": "Mathematical analysis 2"
   },
   "17199801984848": {
+    "code": "MCM-202",
     "assessment_methods": [],
     "course_plan": [],
     "description": "",

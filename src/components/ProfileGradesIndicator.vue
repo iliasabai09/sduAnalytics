@@ -69,6 +69,7 @@ const computedAnalyzeGrades = computed(() => {
     display: flex;
     height: 350px;
     gap: 22px;
+    justify-content: space-between;
 
     & .dashboard-item {
       width: 40px;

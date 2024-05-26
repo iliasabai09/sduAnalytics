@@ -5,7 +5,7 @@
         <div class="item bodyMedium" :style="{height:grade.grade + '%', backgroundColor:bg}">
           {{ grade.grade }}
         </div>
-        <div class="smallLarge item-course">jse-212</div>
+        <div class="smallLarge item-course">{{ grade.code }}</div>
         <v-tooltip
             activator="parent"
             location="bottom"
@@ -62,7 +62,7 @@ function getSemesterLabel(sem) {
 }
 
 .item {
-  width: 45px;
+  width: 55px;
   border: 1px solid grey;
   text-align: center;
 
